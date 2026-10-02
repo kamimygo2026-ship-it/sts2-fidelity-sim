@@ -1,0 +1,2122 @@
+[
+ {
+  "id": "accelerant",
+  "class": "AccelerantPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "accuracy",
+  "class": "AccuracyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "adaptable",
+  "class": "AdaptablePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "afterimage",
+  "class": "AfterimagePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "aggression",
+  "class": "AggressionPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "ambergris",
+  "class": "AmbergrisPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "anticipate",
+  "class": "AnticipatePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "arsenal",
+  "class": "ArsenalPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "artifact",
+  "class": "ArtifactPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "asleep",
+  "class": "AsleepPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "automation",
+  "class": "AutomationPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "back_attack_left",
+  "class": "BackAttackLeftPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "back_attack_right",
+  "class": "BackAttackRightPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "barricade",
+  "class": "BarricadePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "battleworn_dummy_time_limit",
+  "class": "BattlewornDummyTimeLimitPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "beacon_of_hope",
+  "class": "BeaconOfHopePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "biased_cognition",
+  "class": "BiasedCognitionPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "black_hole",
+  "class": "BlackHolePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "block_next_turn",
+  "class": "BlockNextTurnPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "blur",
+  "class": "BlurPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "borrowed_time",
+  "class": "BorrowedTimePower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "buffer",
+  "class": "BufferPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "burrowed",
+  "class": "BurrowedPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "burst",
+  "class": "BurstPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "cacophony",
+  "class": "CacophonyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "calamity",
+  "class": "CalamityPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "calcify",
+  "class": "CalcifyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "call_of_the_void",
+  "class": "CallOfTheVoidPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "chains_of_binding",
+  "class": "ChainsOfBindingPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "child_of_the_stars",
+  "class": "ChildOfTheStarsPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "clarity",
+  "class": "ClarityPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "colossus",
+  "class": "ColossusPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "concoct",
+  "class": "ConcoctPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "confused",
+  "class": "ConfusedPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "conqueror",
+  "class": "ConquerorPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "constrict",
+  "class": "ConstrictPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "consuming_shadow",
+  "class": "ConsumingShadowPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "coolant",
+  "class": "CoolantPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "coordinate",
+  "class": "CoordinatePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "corrosive_wave",
+  "class": "CorrosiveWavePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "corruption",
+  "class": "CorruptionPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "countdown",
+  "class": "CountdownPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "covered",
+  "class": "CoveredPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "crab_rage",
+  "class": "CrabRagePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "creative_ai",
+  "class": "CreativeAiPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "crimson_mantle",
+  "class": "CrimsonMantlePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "cruelty",
+  "class": "CrueltyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "crush_under",
+  "class": "CrushUnderPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "curious",
+  "class": "CuriousPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "curl_up",
+  "class": "CurlUpPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "dampen",
+  "class": "DampenPower",
+  "stack_type": "none",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "danse_macabre",
+  "class": "DanseMacabrePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "dark_embrace",
+  "class": "DarkEmbracePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "dark_shackles",
+  "class": "DarkShacklesPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "debilitate",
+  "class": "DebilitatePower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "demesne",
+  "class": "DemesnePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "demise",
+  "class": "DemisePower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "demon_form",
+  "class": "DemonFormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "devour_life",
+  "class": "DevourLifePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "dexterity",
+  "class": "DexterityPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": true,
+  "instance_type": "none"
+ },
+ {
+  "id": "die_for_you",
+  "class": "DieForYouPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "disintegration",
+  "class": "DisintegrationPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "doom",
+  "class": "DoomPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "double_damage",
+  "class": "DoubleDamagePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "draw_cards_next_turn",
+  "class": "DrawCardsNextTurnPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "duplication",
+  "class": "DuplicationPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "dying_star",
+  "class": "DyingStarPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "echo_form",
+  "class": "EchoFormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "energy_next_turn",
+  "class": "EnergyNextTurnPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "enfeebling_touch",
+  "class": "EnfeeblingTouchPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "enrage",
+  "class": "EnragePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "entropy",
+  "class": "EntropyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "envenom",
+  "class": "EnvenomPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "escape_artist",
+  "class": "EscapeArtistPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "fade",
+  "class": "FadePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "fan_of_knives",
+  "class": "FanOfKnivesPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "fasten",
+  "class": "FastenPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "feeding_frenzy",
+  "class": "FeedingFrenzyPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "feel_no_pain",
+  "class": "FeelNoPainPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "feral",
+  "class": "FeralPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "flame_barrier",
+  "class": "FlameBarrierPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "flanking",
+  "class": "FlankingPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "flex_potion",
+  "class": "FlexPotionPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "flutter",
+  "class": "FlutterPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "focused_strike",
+  "class": "FocusedStrikePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "focus",
+  "class": "FocusPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": true,
+  "instance_type": "none"
+ },
+ {
+  "id": "forbidden_grimoire",
+  "class": "ForbiddenGrimoirePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "foregone_conclusion",
+  "class": "ForegoneConclusionPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "frail",
+  "class": "FrailPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "free_attack",
+  "class": "FreeAttackPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "free_power",
+  "class": "FreePowerPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "free_skill",
+  "class": "FreeSkillPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "friendship",
+  "class": "FriendshipPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "furnace",
+  "class": "FurnacePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "galvanic",
+  "class": "GalvanicPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "genesis",
+  "class": "GenesisPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "gigantification",
+  "class": "GigantificationPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "gravity",
+  "class": "GravityPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "guarded",
+  "class": "GuardedPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "hailstorm",
+  "class": "HailstormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hammer_time",
+  "class": "HammerTimePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hang",
+  "class": "HangPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hardened_shell",
+  "class": "HardenedShellPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hard_to_kill",
+  "class": "HardToKillPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hatch",
+  "class": "HatchPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "haunt",
+  "class": "HauntPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "heist",
+  "class": "HeistPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "helical_dart",
+  "class": "HelicalDartPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hello_world",
+  "class": "HelloWorldPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hellraiser",
+  "class": "HellraiserPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hex",
+  "class": "HexPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hibernate",
+  "class": "HibernatePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "high_voltage",
+  "class": "HighVoltagePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hotfix",
+  "class": "HotfixPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "hyperbeam_focus_down",
+  "class": "HyperbeamFocusDownPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "illusion",
+  "class": "IllusionPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "imbalanced",
+  "class": "ImbalancedPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "imitation_learning",
+  "class": "ImitationLearningPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "improvement",
+  "class": "ImprovementPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "inferno",
+  "class": "InfernoPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "infested",
+  "class": "InfestedPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "infinite_blades",
+  "class": "InfiniteBladesPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "intangible",
+  "class": "IntangiblePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "intercept",
+  "class": "InterceptPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "iteration",
+  "class": "IterationPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "juggernaut",
+  "class": "JuggernautPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "juggling",
+  "class": "JugglingPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "knockdown",
+  "class": "KnockdownPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "leadership",
+  "class": "LeadershipPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "lethality",
+  "class": "LethalityPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "lightning_rod",
+  "class": "LightningRodPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "loop",
+  "class": "LoopPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "machine_learning",
+  "class": "MachineLearningPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "magic_bomb",
+  "class": "MagicBombPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "mangle",
+  "class": "ManglePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "master_planner",
+  "class": "MasterPlannerPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "mayhem",
+  "class": "MayhemPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "mind_rot",
+  "class": "MindRotPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "minion",
+  "class": "MinionPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "monarchs_gaze",
+  "class": "MonarchsGazePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "monarchs_gaze_strength_down",
+  "class": "MonarchsGazeStrengthDownPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "monologue",
+  "class": "MonologuePower",
+  "stack_type": null,
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "necro_mastery",
+  "class": "NecroMasteryPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "nemesis",
+  "class": "NemesisPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "neurosurge",
+  "class": "NeurosurgePower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "nightmare",
+  "class": "NightmarePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "no_block",
+  "class": "NoBlockPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "no_draw",
+  "class": "NoDrawPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "no_energy_gain",
+  "class": "NoEnergyGainPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "nostalgia",
+  "class": "NostalgiaPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "noxious_fumes",
+  "class": "NoxiousFumesPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "oblivion",
+  "class": "OblivionPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "instancedperapplier"
+ },
+ {
+  "id": "one_for_all",
+  "class": "OneForAllPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "one_two_punch",
+  "class": "OneTwoPunchPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "orbit",
+  "class": "OrbitPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "pagestorm",
+  "class": "PagestormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "painful_stabs",
+  "class": "PainfulStabsPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "pale_blue_dot",
+  "class": "PaleBlueDotPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "panache",
+  "class": "PanachePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "paper_cuts",
+  "class": "PaperCutsPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "parry",
+  "class": "ParryPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "personal_hive",
+  "class": "PersonalHivePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "phantom_blades",
+  "class": "PhantomBladesPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "piercing_wail",
+  "class": "PiercingWailPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "pillar_of_creation",
+  "class": "PillarOfCreationPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "plating",
+  "class": "PlatingPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "plow",
+  "class": "PlowPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "poison",
+  "class": "PoisonPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "possess_speed",
+  "class": "PossessSpeedPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "possess_strength",
+  "class": "PossessStrengthPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "prep_time",
+  "class": "PrepTimePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "pyre",
+  "class": "PyrePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "radiance",
+  "class": "RadiancePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "rage",
+  "class": "RagePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "rampart",
+  "class": "RampartPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "ravenous",
+  "class": "RavenousPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "reaper_form",
+  "class": "ReaperFormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "reattach",
+  "class": "ReattachPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "rebound",
+  "class": "ReboundPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "reflect",
+  "class": "ReflectPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "regen",
+  "class": "RegenPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "reptile_trinket",
+  "class": "ReptileTrinketPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "retain_hand",
+  "class": "RetainHandPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "ringing",
+  "class": "RingingPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "ritual",
+  "class": "RitualPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "rolling_boulder",
+  "class": "RollingBoulderPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "royalties",
+  "class": "RoyaltiesPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "rupture",
+  "class": "RupturePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "sandpit",
+  "class": "SandpitPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "seeking_edge",
+  "class": "SeekingEdgePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "self_forming_clay",
+  "class": "SelfFormingClayPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "sentry_mode",
+  "class": "SentryModePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "serpent_form",
+  "class": "SerpentFormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "setup_strike",
+  "class": "SetupStrikePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "shackling_potion",
+  "class": "ShacklingPotionPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "shadowmeld",
+  "class": "ShadowmeldPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "shadow_step",
+  "class": "ShadowStepPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "shriek",
+  "class": "ShriekPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": true,
+  "instance_type": "none"
+ },
+ {
+  "id": "shrink",
+  "class": "ShrinkPower",
+  "stack_type": null,
+  "type": "debuff",
+  "allow_negative": true,
+  "instance_type": "none"
+ },
+ {
+  "id": "shroud",
+  "class": "ShroudPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "sic_em",
+  "class": "SicEmPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "signal_boost",
+  "class": "SignalBoostPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "skittish",
+  "class": "SkittishPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "sleight_of_flesh",
+  "class": "SleightOfFleshPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "slippery",
+  "class": "SlipperyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "sloth",
+  "class": "SlothPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "slow",
+  "class": "SlowPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "slumber",
+  "class": "SlumberPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "smoggy",
+  "class": "SmoggyPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "smokestack",
+  "class": "SmokestackPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "sneaky",
+  "class": "SneakyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "soar",
+  "class": "SoarPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "soulbound",
+  "class": "SoulboundPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "spectrum_shift",
+  "class": "SpectrumShiftPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "speed_potion",
+  "class": "SpeedPotionPower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "speedster",
+  "class": "SpeedsterPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "spinner",
+  "class": "SpinnerPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "spirit_of_ash",
+  "class": "SpiritOfAshPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "stampede",
+  "class": "StampedePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "star_next_turn",
+  "class": "StarNextTurnPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "steam_eruption",
+  "class": "SteamEruptionPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "stock",
+  "class": "StockPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "storm",
+  "class": "StormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "strangle",
+  "class": "StranglePower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "instancedperapplier"
+ },
+ {
+  "id": "stratagem",
+  "class": "StratagemPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "strength",
+  "class": "StrengthPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": true,
+  "instance_type": "none"
+ },
+ {
+  "id": "subroutine",
+  "class": "SubroutinePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "suck",
+  "class": "SuckPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "summon_next_turn",
+  "class": "SummonNextTurnPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "surprise",
+  "class": "SurprisePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "surrounded",
+  "class": "SurroundedPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "swipe",
+  "class": "SwipePower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "sword_sage",
+  "class": "SwordSagePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "synchronize",
+  "class": "SynchronizePower",
+  "stack_type": "counter",
+  "type": null,
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "tag_team",
+  "class": "TagTeamPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "tainted",
+  "class": "TaintedPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "tangled",
+  "class": "TangledPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "tank",
+  "class": "TankPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "tender",
+  "class": "TenderPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "territorial",
+  "class": "TerritorialPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "the_bomb",
+  "class": "TheBombPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "the_gambit",
+  "class": "TheGambitPower",
+  "stack_type": "single",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "the_hunt",
+  "class": "TheHuntPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "the_sealed_throne",
+  "class": "TheSealedThronePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "thievery",
+  "class": "ThieveryPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "thorns",
+  "class": "ThornsPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "thunder",
+  "class": "ThunderPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "tools_of_the_trade",
+  "class": "ToolsOfTheTradePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "toric_toughness",
+  "class": "ToricToughnessPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "tracking",
+  "class": "TrackingPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "trash_to_treasure",
+  "class": "TrashToTreasurePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "tyranny",
+  "class": "TyrannyPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "underworld",
+  "class": "UnderworldPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "unmovable",
+  "class": "UnmovablePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "veilpiercer",
+  "class": "VeilpiercerPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "vicious",
+  "class": "ViciousPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "vigor",
+  "class": "VigorPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "vital_spark",
+  "class": "VitalSparkPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "void_form",
+  "class": "VoidFormPower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "vulnerable",
+  "class": "VulnerablePower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "waste_away",
+  "class": "WasteAwayPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "weak",
+  "class": "WeakPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "well_laid_plans",
+  "class": "WellLaidPlansPower",
+  "stack_type": "single",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "none"
+ },
+ {
+  "id": "withering_presence",
+  "class": "WitheringPresencePower",
+  "stack_type": "counter",
+  "type": "buff",
+  "allow_negative": false,
+  "instance_type": "instanced"
+ },
+ {
+  "id": "wraith_form",
+  "class": "WraithFormPower",
+  "stack_type": "counter",
+  "type": "debuff",
+  "allow_negative": false,
+  "instance_type": "none"
+ }
+]

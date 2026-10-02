@@ -1,0 +1,8147 @@
+[
+ {
+  "eid": "aeonglass",
+  "name": "Aeonglass",
+  "hp": [
+   512,
+   512
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "ebb",
+    "name": "Ebb",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 26,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 26
+     },
+     {
+      "op": "block",
+      "amount": 33,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "eye_lasers",
+    "name": "Eye Lasers",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 11,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     },
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "increasing_intensity",
+    "name": "Increasing Intensity",
+    "intent": "unknown",
+    "intent_text": "Status + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "ebb",
+   "eye_lasers",
+   "increasing_intensity",
+   "ebb"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "architect",
+  "name": "The Architect",
+  "hp": [
+   9999,
+   9999
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "nothing"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "assassin_ruby_raider",
+  "name": "Assassin Raider",
+  "hp": [
+   18,
+   23
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "killshot",
+    "name": "Killshot",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "killshot",
+   "killshot"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "axe_ruby_raider",
+  "name": "Axe Raider",
+  "hp": [
+   20,
+   22
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "swing_1",
+    "name": "Swing 1",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 5,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "block",
+      "amount": 5,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "swing_2",
+    "name": "Swing 2",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 5,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "block",
+      "amount": 5,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "big_swing",
+    "name": "Big Swing",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "swing_1",
+   "swing_2",
+   "big_swing"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "axebot",
+  "name": "Axebot",
+  "hp": [
+   70,
+   78
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "boot_up",
+    "name": "Boot Up",
+    "intent": "block",
+    "intent_text": "Defend + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 10,
+      "target": "self"
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "one_two",
+    "name": "The One-Two",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 9,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "hammer_uppercut",
+    "name": "Hammer Uppercut",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "boot_up"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "battle_friend_v1",
+  "name": "Battle Friend V1.0",
+  "hp": [
+   75,
+   75
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "battleworn_dummy_time_limit",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "battleworn_dummy_time_limit"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "battle_friend_v2",
+  "name": "Battle Friend V2.0",
+  "hp": [
+   150,
+   150
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "battleworn_dummy_time_limit",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "battleworn_dummy_time_limit"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "battle_friend_v3",
+  "name": "Battle Friend V3.0",
+  "hp": [
+   300,
+   300
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "battleworn_dummy_time_limit",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "battleworn_dummy_time_limit"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "bowlbug_egg",
+  "name": "Bowlbug (Egg)",
+  "hp": [
+   21,
+   22
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "bite",
+    "name": "Bite",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "block",
+      "amount": 7,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "bite",
+   "bite"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "bowlbug_nectar",
+  "name": "Bowlbug (Nectar)",
+  "hp": [
+   35,
+   38
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "thrash",
+    "name": "Thrash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "buff",
+    "name": "Buff",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 15,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "thrash2",
+    "name": "Thrash2",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "thrash",
+   "buff",
+   "thrash2"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "bowlbug_rock",
+  "name": "Bowlbug (Rock)",
+  "hp": [
+   45,
+   48
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "headbutt",
+    "name": "Headbutt",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dizzy",
+    "name": "Dizzy",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "imbalanced",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "imbalanced"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "bowlbug_silk",
+  "name": "Bowlbug (Silk)",
+  "hp": [
+   40,
+   43
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "thrash",
+    "name": "Thrash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "toxic_spit",
+    "name": "Toxic Spit",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "brute_ruby_raider",
+  "name": "Brute Raider",
+  "hp": [
+   30,
+   33
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "beat",
+    "name": "Beat",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "roar",
+    "name": "Roar",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "beat"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "bygone_effigy",
+  "name": "Bygone Effigy",
+  "hp": [
+   127,
+   127
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "sleep",
+    "name": "Sleep",
+    "intent": "unknown",
+    "intent_text": "Sleep",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "wake",
+    "name": "Wake",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 10,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "sleep_move_2",
+    "name": "Sleep Move 2",
+    "intent": "unknown",
+    "intent_text": "Sleep",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "slashes",
+    "name": "Slashes",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "sleep",
+   "wake",
+   "slashes"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "slow",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "slow"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "byrdonis",
+  "name": "Byrdonis",
+  "hp": [
+   81,
+   84
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "peck",
+    "name": "Peck",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "swoop",
+    "name": "Swoop",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 17,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 17
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "territorial",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "territorial"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "byrdpip",
+  "name": "Byrdpip",
+  "hp": [
+   9999,
+   9999
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "calcified_cultist",
+  "name": "Calcified Cultist",
+  "hp": [
+   38,
+   41
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "incantation",
+    "name": "Incantation",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "dark_strike",
+    "name": "Dark Strike",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 9,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "incantation"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "ceremonial_beast",
+  "name": "Ceremonial Beast",
+  "hp": [
+   252,
+   252
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "stamp",
+    "name": "Stamp",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "plow",
+    "name": "Plow",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "stun",
+    "name": "Stun",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "beast_cry",
+    "name": "Beast Cry",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "stomp",
+    "name": "Stomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "crush",
+    "name": "Crush",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 17,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 17
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "stamp",
+   "plow"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "chomper",
+  "name": "Chomper",
+  "hp": [
+   60,
+   64
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "clamp",
+    "name": "Clamp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "screech",
+    "name": "Screech",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 2,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "corpse_slug",
+  "name": "Corpse Slug",
+  "hp": [
+   25,
+   27
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "whip_slap",
+    "name": "Whip Slap",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "glomp",
+    "name": "Glomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "goop",
+    "name": "Goop",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "ravenous",
+    "amount": 4,
+    "amount_ascension": 5,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "ravenous"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "crossbow_ruby_raider",
+  "name": "Crossbow Raider",
+  "hp": [
+   18,
+   21
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "fire",
+    "name": "Fire!",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "reload",
+    "name": "Reload",
+    "intent": "block",
+    "intent_text": "Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 3,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "crusher",
+  "name": "Crusher",
+  "hp": [
+   209,
+   209
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "thrash",
+    "name": "Thrash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "enlarging_strike",
+    "name": "Enlarging Strike",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bug_sting",
+    "name": "Bug Sting",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 6,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "adapt",
+    "name": "Adapt",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "guarded_strike",
+    "name": "Guarded Strike",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     },
+     {
+      "op": "block",
+      "amount": 18,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "thrash",
+   "enlarging_strike",
+   "bug_sting",
+   "adapt",
+   "guarded_strike",
+   "thrash"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "back_attack_left",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   },
+   {
+    "power": "crab_rage",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "back_attack_left",
+   "crab_rage"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "cubex_construct",
+  "name": "Cubex Construct",
+  "hp": [
+   65,
+   65
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "charge_up",
+    "name": "Charge Up",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "repeater_blast",
+    "name": "Repeater Blast",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "repeater_blast_move_2",
+    "name": "Repeater Blast Move 2",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "expel",
+    "name": "Expel",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "charge_up",
+   "repeater_blast",
+   "repeater_blast_move_2",
+   "expel"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "damp_cultist",
+  "name": "Damp Cultist",
+  "hp": [
+   51,
+   53
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "incantation",
+    "name": "Incantation",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "dark_strike",
+    "name": "Dark Strike",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 1,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 1
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "incantation"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "decimillipede_segment",
+  "name": "Decimillipede",
+  "hp": [
+   40,
+   46
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "writhe",
+    "name": "Writhe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bulk",
+    "name": "Bulk",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "constrict",
+    "name": "Constrict",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dead",
+    "name": "Dead",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "reattach",
+    "name": "Reattach",
+    "intent": "unknown",
+    "intent_text": "Heal",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [
+   {
+    "power": "reattach",
+    "amount": 25,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "reattach"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "devoted_sculptor",
+  "name": "Devoted Sculptor",
+  "hp": [
+   162,
+   162
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "forbidden_incantation",
+    "name": "Forbidden Incantation",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "savage",
+    "name": "Savage",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "forbidden_incantation"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "entomancer",
+  "name": "Entomancer",
+  "hp": [
+   145,
+   145
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "pheromone_spit",
+    "name": "Pheromone Spit",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "strength",
+      "target": "self"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bees",
+    "name": "Beeeees!",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 7,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "spear",
+    "name": "Spear!",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "bees"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "personal_hive",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "personal_hive"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "exoskeleton",
+  "name": "Exoskeleton",
+  "hp": [
+   24,
+   28
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "skitter",
+    "name": "Skitter",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 1,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "mandibles",
+    "name": "Mandibles",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "enrage",
+    "name": "Enrage",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "mixed",
+  "innate_powers": [
+   {
+    "power": "hard_to_kill",
+    "amount": 9,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "hard_to_kill"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "eye_with_teeth",
+  "name": "Eye with Teeth",
+  "hp": [
+   6,
+   6
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "distract",
+    "name": "Distract",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "distract",
+   "distract"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "illusion",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "illusion"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fabricator",
+  "name": "Fabricator",
+  "hp": [
+   150,
+   150
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "fabricate",
+    "name": "Fabricate",
+    "intent": "buff",
+    "intent_text": "Summon",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "fabricating_strike",
+    "name": "Fabricating Strike",
+    "intent": "attack",
+    "intent_text": "Attack + Summon",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "disintegrate",
+    "name": "Disintegrate",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "mixed",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "fake_merchant_monster",
+  "name": "The Merchant???",
+  "hp": [
+   165,
+   165
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "swipe",
+    "name": "Swipe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "spew_coins",
+    "name": "Spew Coins",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 2,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 2
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "throw_relic",
+    "name": "Throw Relic",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 9,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "enrage",
+    "name": "Enrage",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "fat_gremlin",
+  "name": "Fat Gremlin",
+  "hp": [
+   13,
+   17
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "spawned",
+    "name": "Wake Up",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "flee",
+    "name": "Flee",
+    "intent": "unknown",
+    "intent_text": "Escape",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "spawned"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "flail_knight",
+  "name": "Flail Knight",
+  "hp": [
+   101,
+   101
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "war_chant",
+    "name": "War Chant",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flail",
+    "name": "Flail",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 9,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "ram",
+    "name": "Ram",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "flyconid",
+  "name": "Flyconid",
+  "hp": [
+   47,
+   49
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "vulnerable_spores",
+    "name": "Vulnerable Spores",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "frail_spores",
+    "name": "Frail Spores",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "smash",
+    "name": "Smash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "fogmog",
+  "name": "Fogmog",
+  "hp": [
+   74,
+   74
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "illusion",
+    "name": "Illusory Spores",
+    "intent": "buff",
+    "intent_text": "Summon",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "swipe",
+    "name": "Thwack",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "swipe_random",
+    "name": "Swipe Random",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "headbutt",
+    "name": "Headbutt",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "fossil_stalker",
+  "name": "Fossil Stalker",
+  "hp": [
+   51,
+   53
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "tackle",
+    "name": "Tackle",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 9,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "latch",
+    "name": "Latch",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "lash",
+    "name": "Lash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [
+   {
+    "power": "suck",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "suck"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "frog_knight",
+  "name": "Frog Knight",
+  "hp": [
+   191,
+   191
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "for_the_queen",
+    "name": "For the Queen",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "strike_down_evil",
+    "name": "Strike Down Evil",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 21,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 21
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "tongue_lash",
+    "name": "Tongue Lash",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "beetle_charge",
+    "name": "Beetle Charge",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 35,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 35
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "plating",
+    "amount": 15,
+    "amount_ascension": 19,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "plating"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fuzzy_wurm_crawler",
+  "name": "Fuzzy Wurm Crawler",
+  "hp": [
+   55,
+   57
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "first_acid_goop",
+    "name": "First Acid Goop",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "acid_goop",
+    "name": "Acid Goop",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "inhale",
+    "name": "Inhale",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 7,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "first_acid_goop"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "gas_bomb",
+  "name": "Gas Bomb",
+  "hp": [
+   7,
+   7
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "explode",
+    "name": "Explode",
+    "intent": "unknown",
+    "intent_text": "Special",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "explode"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "minion",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "minion"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "globe_head",
+  "name": "Globe Head",
+  "hp": [
+   148,
+   148
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "thunder_strike",
+    "name": "Channel Lightning",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "shocking_slap",
+    "name": "Shocking Slap",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "galvanic_burst",
+    "name": "Galvanic Burst",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "shocking_slap",
+   "thunder_strike",
+   "galvanic_burst"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "galvanic",
+    "amount": 6,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "galvanic"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "gremlin_merc",
+  "name": "Gremlin Merc",
+  "hp": [
+   47,
+   49
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "gimme",
+    "name": "Gimme",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "double_smash",
+    "name": "Double Smash",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 6,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "hehe",
+    "name": "Hehe",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "gimme",
+   "double_smash",
+   "hehe",
+   "gimme"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "surprise",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "surprise"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "guardbot",
+  "name": "Guardbot",
+  "hp": [
+   16,
+   20
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "guard",
+    "name": "Guard",
+    "intent": "block",
+    "intent_text": "Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 15,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "guard",
+   "guard"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "haunted_ship",
+  "name": "Haunted Ship",
+  "hp": [
+   63,
+   63
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "swipe",
+    "name": "Swipe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "stomp",
+    "name": "Stomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "haunt",
+    "name": "Haunt",
+    "intent": "unknown",
+    "intent_text": "Debuff + Status",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "haunt"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "hunter_killer",
+  "name": "Hunter Killer",
+  "hp": [
+   121,
+   121
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "tenderizing_goop",
+    "name": "Tenderizing Goop",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "bite",
+    "name": "Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 17,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 17
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "puncture",
+    "name": "Puncture",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "infested_prism",
+  "name": "Infested Prism",
+  "hp": [
+   161,
+   161
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "jab",
+    "name": "Jab",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "radiate",
+    "name": "Radiate",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     },
+     {
+      "op": "block",
+      "amount": 11,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "whirlwind",
+    "name": "Whirlwind",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "pulsate",
+    "name": "Pulsate",
+    "intent": "unknown",
+    "intent_text": "Attack + Buff + Defend",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "block",
+      "amount": 20,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "jab",
+   "radiate",
+   "whirlwind",
+   "pulsate",
+   "jab"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "vital_spark",
+    "amount": 2,
+    "amount_ascension": 3,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "vital_spark"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "inklet",
+  "name": "Inklet",
+  "hp": [
+   11,
+   17
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "jab",
+    "name": "Jab",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "whirlwind",
+    "name": "Whirlwind",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 2,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 2
+     },
+     {
+      "op": "damage",
+      "amount": 2
+     },
+     {
+      "op": "damage",
+      "amount": 2
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "piercing_gaze",
+    "name": "Piercing Gaze",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [
+   {
+    "power": "slippery",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "slippery"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "kin_follower",
+  "name": "Kin Follower",
+  "hp": [
+   58,
+   59
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "quick_slash",
+    "name": "Quick Slash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "boomerang",
+    "name": "Boomerang",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 2,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 2
+     },
+     {
+      "op": "damage",
+      "amount": 2
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "power_dance",
+    "name": "Power Dance",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "power_dance",
+   "quick_slash",
+   "boomerang",
+   "power_dance"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "minion",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "minion"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "kin_priest",
+  "name": "Kin Priest",
+  "hp": [
+   190,
+   190
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "orb_of_frailty",
+    "name": "Orb of Frailty",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "orb_of_weakness",
+    "name": "Orb of Weakness",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "beam",
+    "name": "Soul Beam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "ritual",
+    "name": "Dark Ritual",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "orb_of_frailty",
+   "orb_of_weakness",
+   "beam",
+   "ritual",
+   "orb_of_frailty"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "knowledge_demon",
+  "name": "Knowledge Demon",
+  "hp": [
+   379,
+   379
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "curse_of_knowledge",
+    "name": "Curse of Knowledge",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "slap",
+    "name": "Slap",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 17,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 17
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "knowledge_overwhelming",
+    "name": "Knowledge Overwhelming",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "ponder",
+    "name": "Ponder",
+    "intent": "unknown",
+    "intent_text": "Attack + Heal + Buff",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "lagavulin_matriarch",
+  "name": "Lagavulin Matriarch",
+  "hp": [
+   222,
+   222
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "sleep",
+    "name": "Sleep",
+    "intent": "unknown",
+    "intent_text": "Sleep",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "slash",
+    "name": "Slash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 19,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 19
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "slash2",
+    "name": "Slash2",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     },
+     {
+      "op": "block",
+      "amount": 12,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "disembowel",
+    "name": "Disembowel",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 9,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "soul_siphon",
+    "name": "Soul Siphon",
+    "intent": "unknown",
+    "intent_text": "Debuff + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "plating",
+    "amount": 12,
+    "amount_ascension": null,
+    "modeled": false
+   },
+   {
+    "power": "asleep",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "asleep",
+   "plating"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "leaf_slime_m",
+  "name": "Leaf Slime (M)",
+  "hp": [
+   32,
+   35
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "clump_shot",
+    "name": "Clump Shot",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "sticky_shot",
+    "name": "Sticky Shot",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "leaf_slime_s",
+  "name": "Leaf Slime (S)",
+  "hp": [
+   11,
+   15
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "tackle",
+    "name": "Tackle",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "goop",
+    "name": "Goop",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "living_fog",
+  "name": "Living Fog",
+  "hp": [
+   80,
+   80
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "advanced_gas",
+    "name": "Advanced Gas",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bloat",
+    "name": "Bloat",
+    "intent": "attack",
+    "intent_text": "Attack + Summon",
+    "value": 5,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "super_gas_blast",
+    "name": "Super Gas Blast",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "advanced_gas",
+   "bloat",
+   "super_gas_blast"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "living_shield",
+  "name": "Living Shield",
+  "hp": [
+   55,
+   55
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "shield_slam",
+    "name": "Shield Slam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "smash",
+    "name": "Smash",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "rampart",
+    "amount": 25,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "rampart"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "louse_progenitor",
+  "name": "Louse Progenitor",
+  "hp": [
+   134,
+   136
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "web_cannon",
+    "name": "Web Cannon",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 9,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "pounce",
+    "name": "Pounce",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "curl_and_grow",
+    "name": "Curl and Grow",
+    "intent": "block",
+    "intent_text": "Defend + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 14,
+      "target": "self"
+     },
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "web_cannon"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "curl_up",
+    "amount": 14,
+    "amount_ascension": 18,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "curl_up"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "magi_knight",
+  "name": "Magi Knight",
+  "hp": [
+   82,
+   82
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "power_shield",
+    "name": "Power Shield",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "block",
+      "amount": 5,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dampen",
+    "name": "Dampen",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "prep",
+    "name": "Prep",
+    "intent": "block",
+    "intent_text": "Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "magic_bomb",
+    "name": "Magic Bomb",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 35,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 35
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "ram",
+    "name": "Ram",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "power_shield",
+   "dampen",
+   "ram",
+   "prep",
+   "magic_bomb"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "mawler",
+  "name": "Mawler",
+  "hp": [
+   72,
+   72
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "rip_and_tear",
+    "name": "Rip and Tear",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "roar",
+    "name": "Roar",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "claw",
+    "name": "Claw",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "mecha_knight",
+  "name": "Mecha Knight",
+  "hp": [
+   300,
+   300
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "charge",
+    "name": "Charge",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 25,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 25
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flamethrower",
+    "name": "Flamethrower",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "windup",
+    "name": "Windup",
+    "intent": "block",
+    "intent_text": "Defend + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 15,
+      "target": "self"
+     },
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "heavy_cleave",
+    "name": "Heavy Cleave",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 35,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 35
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "charge",
+   "flamethrower",
+   "windup",
+   "heavy_cleave"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "myte",
+  "name": "Myte",
+  "hp": [
+   61,
+   67
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "toxic",
+    "name": "Toxic Cornucopia",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "bite",
+    "name": "Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "suck",
+    "name": "Suck",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 4,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "nibbit",
+  "name": "Nibbit",
+  "hp": [
+   42,
+   46
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "butt",
+    "name": "Butt",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "slice",
+    "name": "Slice",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "block",
+      "amount": 5,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "hiss",
+    "name": "Hiss",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "noisebot",
+  "name": "Noisebot",
+  "hp": [
+   18,
+   23
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "noise",
+    "name": "Noise",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "noise",
+   "noise"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "osty",
+  "name": "Osty",
+  "hp": [
+   1,
+   1
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "ovicopter",
+  "name": "Ovicopter",
+  "hp": [
+   124,
+   130
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "lay_eggs",
+    "name": "Lay Eggs",
+    "intent": "buff",
+    "intent_text": "Summon",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "smash",
+    "name": "Smash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "tenderizer",
+    "name": "Tenderizer",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "nutritional_paste",
+    "name": "Nutritional Paste",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "owl_magistrate",
+  "name": "Owl Magistrate",
+  "hp": [
+   231,
+   231
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "magistrate_scrutiny",
+    "name": "Magistrate Scrutiny",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "peck_assault",
+    "name": "Peck Assault",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 6,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "judicial_flight",
+    "name": "Judicial Flight",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "verdict",
+    "name": "Verdict",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 33,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 33
+     },
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "magistrate_scrutiny",
+   "peck_assault",
+   "judicial_flight",
+   "verdict"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "paels_legion",
+  "name": "Pael's Legion",
+  "hp": [
+   9999,
+   9999
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "nothing",
+    "name": "Nothing",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "parafright",
+  "name": "Parafright",
+  "hp": [
+   21,
+   21
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "slam",
+    "name": "Slam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "slam",
+   "slam"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "illusion",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "illusion"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "phantasmal_gardener",
+  "name": "Phantasmal Gardener",
+  "hp": [
+   26,
+   31
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "bite",
+    "name": "Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "lash",
+    "name": "Lash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flail",
+    "name": "Flail",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 1,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "enlarge",
+    "name": "Enlarge",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "skittish",
+    "amount": 6,
+    "amount_ascension": 7,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "skittish"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "phrog_parasite",
+  "name": "Phrog Parasite",
+  "hp": [
+   61,
+   64
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "infect",
+    "name": "Infect",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "lash",
+    "name": "Lash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 4,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [
+   {
+    "power": "infested",
+    "amount": 4,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "infested"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "punch_construct",
+  "name": "Punch Construct",
+  "hp": [
+   55,
+   55
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "ready",
+    "name": "READY",
+    "intent": "block",
+    "intent_text": "Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 10,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "strong_punch",
+    "name": "Strong Punch",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "fast_punch",
+    "name": "Fast Punch",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "queen",
+  "name": "Queen",
+  "hp": [
+   400,
+   400
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "puppet_strings",
+    "name": "Puppet Strings",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "you_are_mine",
+    "name": "You Are Mine",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "power": "weak",
+      "target": "enemy"
+     },
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "burn_bright_for_me",
+    "name": "Burn Bright for Me",
+    "intent": "unknown",
+    "intent_text": "Buff + Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 20,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "off_with_your_head",
+    "name": "Off with Your Head",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 5,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "execution",
+    "name": "Execution",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "enrage",
+    "name": "Enrage",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "rocket",
+  "name": "Rocket",
+  "hp": [
+   199,
+   199
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "targeting_reticle",
+    "name": "Targeting Reticle",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "precision_beam",
+    "name": "Precision Beam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "charge_up",
+    "name": "Charge Up",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "laser",
+    "name": "Laser",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 31,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 31
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "recharge",
+    "name": "Recharge",
+    "intent": "unknown",
+    "intent_text": "Sleep",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "targeting_reticle",
+   "precision_beam",
+   "charge_up",
+   "laser",
+   "recharge",
+   "targeting_reticle"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "back_attack_right",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   },
+   {
+    "power": "crab_rage",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "back_attack_right",
+   "crab_rage"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "scroll_of_biting",
+  "name": "Scroll of Biting",
+  "hp": [
+   30,
+   37
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "chomp",
+    "name": "Chomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "chew",
+    "name": "Chew",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "more_teeth",
+    "name": "More Teeth",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [
+   {
+    "power": "paper_cuts",
+    "amount": 2,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "paper_cuts"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "seapunk",
+  "name": "Seapunk",
+  "hp": [
+   44,
+   46
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "sea_kick",
+    "name": "Sea Kick",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "spinning_kick",
+    "name": "Spinning Kick",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 2,
+    "times": 4,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 2
+     },
+     {
+      "op": "damage",
+      "amount": 2
+     },
+     {
+      "op": "damage",
+      "amount": 2
+     },
+     {
+      "op": "damage",
+      "amount": 2
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bubble_burp",
+    "name": "Bubble Burp",
+    "intent": "unknown",
+    "intent_text": "Buff + Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 7,
+      "target": "self"
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "sea_kick",
+   "spinning_kick",
+   "bubble_burp",
+   "sea_kick"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "sewer_clam",
+  "name": "Sewer Clam",
+  "hp": [
+   56,
+   56
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "pressurize",
+    "name": "Pressurize",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "jet",
+    "name": "Jet",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "shrinker_beetle",
+  "name": "Shrinker Beetle",
+  "hp": [
+   38,
+   40
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "shrinker",
+    "name": "Shrinker",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "chomp",
+    "name": "Chomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "stomp",
+    "name": "Stomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "shrinker",
+   "chomp",
+   "stomp"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "skulking_colony",
+  "name": "Skulking Colony",
+  "hp": [
+   75,
+   75
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "zoom",
+    "name": "Zoom",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "zoom_move_2",
+    "name": "Zoom Move 2",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "inertia",
+    "name": "Inertia",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 9,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "piercing_stabs",
+    "name": "Piercing Stabs",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "zoom",
+   "zoom_move_2",
+   "inertia",
+   "piercing_stabs",
+   "zoom"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "hardened_shell",
+    "amount": 20,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "hardened_shell"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "slimed_berserker",
+  "name": "Slimed Berserker",
+  "hp": [
+   261,
+   261
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "vomit_ichor",
+    "name": "Vomit Ichor",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "leeching_hug",
+    "name": "Leeching Hug",
+    "intent": "unknown",
+    "intent_text": "Debuff + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "weak",
+      "target": "enemy"
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "smother",
+    "name": "Smother",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 30,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 30
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "furious_pummeling",
+    "name": "Furious Pummeling",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 4,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "vomit_ichor"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "slithering_strangler",
+  "name": "Slithering Strangler",
+  "hp": [
+   53,
+   55
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "constrict",
+    "name": "Constrict",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "thwack",
+    "name": "Thwack",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     },
+     {
+      "op": "block",
+      "amount": 5,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "lash",
+    "name": "Lash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "sludge_spinner",
+  "name": "Sludge Spinner",
+  "hp": [
+   37,
+   39
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "oil_spray",
+    "name": "Oil Spray",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "slam",
+    "name": "Slam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "rage",
+    "name": "Rage",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "slumbering_beetle",
+  "name": "Slumbering Beetle",
+  "hp": [
+   86,
+   86
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "snore",
+    "name": "Snore",
+    "intent": "unknown",
+    "intent_text": "Sleep",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "roll_out",
+    "name": "Roll Out",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "plating",
+    "amount": 15,
+    "amount_ascension": 18,
+    "modeled": false
+   },
+   {
+    "power": "slumber",
+    "amount": 3,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "plating",
+   "slumber"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "snapping_jaxfruit",
+  "name": "Snapping Jaxfruit",
+  "hp": [
+   31,
+   33
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "energy_orb",
+    "name": "Energy Orb",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 3,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "energy_orb",
+   "energy_orb"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "sneaky_gremlin",
+  "name": "Sneaky Gremlin",
+  "hp": [
+   10,
+   14
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "spawned",
+    "name": "Wake Up",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "tackle",
+    "name": "Tackle",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 9,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "spawned"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "soul_fysh",
+  "name": "Soul Fysh",
+  "hp": [
+   211,
+   211
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "beckon",
+    "name": "Beckon",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "de_gas",
+    "name": "De-Gas",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "gaze",
+    "name": "Gaze",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Status",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "fade",
+    "name": "Fade",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "scream",
+    "name": "Scream",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "beckon",
+   "de_gas",
+   "gaze",
+   "fade",
+   "scream",
+   "beckon"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "soul_nexus",
+  "name": "Soul Nexus",
+  "hp": [
+   234,
+   234
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "soul_burn",
+    "name": "Soul Burn",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 29,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 29
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "maelstrom",
+    "name": "Maelstrom",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 4,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "drain_life",
+    "name": "Drain Life",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "vulnerable",
+      "target": "enemy"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "spectral_knight",
+  "name": "Spectral Knight",
+  "hp": [
+   93,
+   93
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "hex",
+    "name": "Hex",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "soul_slash",
+    "name": "Soul Slash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "soul_flame",
+    "name": "Soul Flame",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "spiny_toad",
+  "name": "Spiny Toad",
+  "hp": [
+   116,
+   119
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "protruding_spikes",
+    "name": "Protruding Spikes",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "spike_explosion",
+    "name": "Spike Explosion",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 23,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 23
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "tongue_lash",
+    "name": "Tongue Lash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 17,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 17
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "protruding_spikes",
+   "spike_explosion",
+   "tongue_lash",
+   "protruding_spikes"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "stabbot",
+  "name": "Stabbot",
+  "hp": [
+   18,
+   23
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "stab",
+    "name": "Stab",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "stab",
+   "stab"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "terror_eel",
+  "name": "Terror Eel",
+  "hp": [
+   140,
+   140
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "crash",
+    "name": "Crash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "thrash",
+    "name": "Thrash",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 3,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "stun",
+    "name": "Stun",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "terror",
+    "name": "Terrorize",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "crash",
+   "thrash",
+   "crash"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "shriek",
+    "amount": 70,
+    "amount_ascension": 75,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "shriek"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "test_subject",
+  "name": "Test Subject #C14",
+  "hp": null,
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "respawn",
+    "name": "Respawn",
+    "intent": "unknown",
+    "intent_text": "Heal + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "bite",
+    "name": "Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 20,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 20
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "skull_bash",
+    "name": "Skull Bash",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "vulnerable",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "multi_claw",
+    "name": "Multi-Claw",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "phase3_lacerate",
+    "name": "Lacerate",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     },
+     {
+      "op": "damage",
+      "amount": 10
+     },
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "big_pounce",
+    "name": "Big Pounce",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 45,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 45
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "burning_growl",
+    "name": "Burning Growl",
+    "intent": "unknown",
+    "intent_text": "Status + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [
+   {
+    "power": "adaptable",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   },
+   {
+    "power": "enrage",
+    "amount": 2,
+    "amount_ascension": 3,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "adaptable",
+   "enrage"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_adversary_mk_one",
+  "name": "The Adversary Mk 1",
+  "hp": [
+   100,
+   100
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "smash",
+    "name": "Smash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 12,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 12
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "beam",
+    "name": "Beam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "barrage",
+    "name": "Barrage",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 8,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "smash",
+   "beam",
+   "barrage",
+   "smash"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 0,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_adversary_mk_three",
+  "name": "The Adversary Mk 3",
+  "hp": [
+   300,
+   300
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "crash",
+    "name": "Crash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flame_beam",
+    "name": "Flame Beam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "barrage",
+    "name": "Barrage",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 10,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     },
+     {
+      "op": "damage",
+      "amount": 10
+     },
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "crash",
+   "flame_beam",
+   "barrage",
+   "crash"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 2,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_adversary_mk_two",
+  "name": "The Adversary Mk 2",
+  "hp": [
+   200,
+   200
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "bash",
+    "name": "Bash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flame_beam",
+    "name": "Flame Beam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "barrage",
+    "name": "Barrage",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 9,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "bash",
+   "flame_beam",
+   "barrage",
+   "bash"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "artifact",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "artifact"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_forgotten",
+  "name": "The Forgotten",
+  "hp": [
+   106,
+   106
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "miasma",
+    "name": "Miasma",
+    "intent": "unknown",
+    "intent_text": "Debuff + Defend + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 8,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dread",
+    "name": "Dread",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "miasma"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "possess_speed",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "possess_speed"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_insatiable",
+  "name": "The Insatiable",
+  "hp": [
+   321,
+   321
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "liquify_ground",
+    "name": "Liquify Ground",
+    "intent": "unknown",
+    "intent_text": "Buff + Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "thrash",
+    "name": "Thrash",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "thrash_move_2",
+    "name": "Thrash Move 2",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "lunging_bite",
+    "name": "Lunging Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 28,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 28
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "salivate",
+    "name": "Salivate",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "liquify_ground",
+   "thrash",
+   "lunging_bite",
+   "salivate",
+   "thrash_move_2"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "the_lost",
+  "name": "The Lost",
+  "hp": [
+   93,
+   93
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "debilitating_smog",
+    "name": "Debilitating Smog",
+    "intent": "unknown",
+    "intent_text": "Debuff + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "eye_lasers",
+    "name": "Eye Lasers",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     },
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "debilitating_smog"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "possess_strength",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "possess_strength"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_obscura",
+  "name": "The Obscura",
+  "hp": [
+   123,
+   123
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "illusion",
+    "name": "Illusion",
+    "intent": "buff",
+    "intent_text": "Summon",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "piercing_gaze",
+    "name": "Piercing Gaze",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "sail",
+    "name": "Sail",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "hardening_strike",
+    "name": "Hardening Strike",
+    "intent": "attack",
+    "intent_text": "Attack + Defend",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "block",
+      "amount": 6,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "thieving_hopper",
+  "name": "Thieving Hopper",
+  "hp": [
+   79,
+   79
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "thievery",
+    "name": "Thievery",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 17,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 17
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "nab",
+    "name": "Nab",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "hat_trick",
+    "name": "Hat Trick",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 21,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 21
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flutter",
+    "name": "Flutter",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "escape",
+    "name": "Escape",
+    "intent": "unknown",
+    "intent_text": "Escape",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "thievery",
+   "flutter",
+   "hat_trick",
+   "nab",
+   "escape"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "escape_artist",
+    "amount": 5,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "escape_artist"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "toadpole",
+  "name": "Toadpole",
+  "hp": [
+   21,
+   25
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "spike_spit",
+    "name": "Spike Spit",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "whirl",
+    "name": "Whirl",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "spiken",
+    "name": "Spiken",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "torch_head_amalgam",
+  "name": "Torch Head Amalgam",
+  "hp": [
+   199,
+   199
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "tackle",
+    "name": "Tackle",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "tackle_2",
+    "name": "Tackle 2",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 18,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 18
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "beam",
+    "name": "Beam",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 3,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "tackle_3",
+    "name": "Tackle 3",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "tackle_4",
+    "name": "Tackle 4",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "tackle",
+   "tackle_2",
+   "beam",
+   "tackle_3",
+   "tackle_4"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "minion",
+    "amount": 1,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "minion"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "tough_egg",
+  "name": "Tough Egg",
+  "hp": [
+   14,
+   18
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "hatch",
+    "name": "Hatch",
+    "intent": "buff",
+    "intent_text": "Summon",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "nibble",
+    "name": "Nibble",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "hatch"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "tracker_ruby_raider",
+  "name": "Tracker Raider",
+  "hp": [
+   21,
+   25
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "track",
+    "name": "Track",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "hounds",
+    "name": "Unleash the Hounds",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 1,
+    "times": 8,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     },
+     {
+      "op": "damage",
+      "amount": 1
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "track"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "tunneler",
+  "name": "Tunneler",
+  "hp": [
+   87,
+   87
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "bite",
+    "name": "Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "burrow",
+    "name": "Burrow",
+    "intent": "unknown",
+    "intent_text": "Buff + Defend",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "block",
+      "amount": 32,
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "below",
+    "name": "Attack from Below",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 23,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 23
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dizzy",
+    "name": "Dizzy",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "bite",
+   "burrow",
+   "below"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "turret_operator",
+  "name": "Turret Operator",
+  "hp": [
+   41,
+   41
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "unload",
+    "name": "Unload!",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 5,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "unload_move_2",
+    "name": "Unload Move 2",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 3,
+    "times": 5,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     },
+     {
+      "op": "damage",
+      "amount": 3
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "reload",
+    "name": "Reload",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "unload",
+   "unload_move_2",
+   "reload",
+   "unload"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "twig_slime_m",
+  "name": "Twig Slime (M)",
+  "hp": [
+   26,
+   28
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "pokey_pounce",
+    "name": "Pokey Pounce",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 11,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 11
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "sticky_shot",
+    "name": "Sticky Shot",
+    "intent": "debuff",
+    "intent_text": "Status",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "twig_slime_s",
+  "name": "Twig Slime (S)",
+  "hp": [
+   7,
+   11
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "tackle",
+    "name": "Tackle",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 4,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 4
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "tackle",
+   "tackle"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "two_tailed_rat",
+  "name": "Two-Tailed Rat",
+  "hp": [
+   17,
+   21
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "scratch",
+    "name": "Scratch",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "disease_bite",
+    "name": "Disease Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "screech",
+    "name": "Screech",
+    "intent": "debuff",
+    "intent_text": "Debuff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "call_for_backup",
+    "name": "Call for Backup",
+    "intent": "buff",
+    "intent_text": "Summon",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "random",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "vantom",
+  "name": "Vantom",
+  "hp": [
+   173,
+   173
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "ink_blot",
+    "name": "Ink Blot",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 7,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 7
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "inky_lance",
+    "name": "Inky Lance",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dismember",
+    "name": "Dismember",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Status",
+    "value": 26,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 26
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "prepare",
+    "name": "Prepare",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "ink_blot",
+   "inky_lance",
+   "dismember",
+   "prepare",
+   "ink_blot"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "slippery",
+    "amount": 8,
+    "amount_ascension": 9,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "slippery"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "vine_shambler",
+  "name": "Vine Shambler",
+  "hp": [
+   61,
+   61
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "grasping_vines",
+    "name": "Grasping Vines",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "swipe",
+    "name": "Swipe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "chomp",
+    "name": "Chomp",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 16,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 16
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "swipe",
+   "grasping_vines",
+   "chomp",
+   "swipe"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "waterfall_giant",
+  "name": "Waterfall Giant",
+  "hp": [
+   240,
+   240
+  ],
+  "type": "Boss",
+  "moves": [
+   {
+    "mid": "pressurize",
+    "name": "Pressurize",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "stomp",
+    "name": "Stomp",
+    "intent": "unknown",
+    "intent_text": "Attack + Debuff + Buff",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "ram",
+    "name": "Ram",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 10,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 10
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "siphon",
+    "name": "Siphon",
+    "intent": "unknown",
+    "intent_text": "Heal + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "pressure_gun",
+    "name": "Pressure Gun",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "pressure_up",
+    "name": "Pressure Up",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 13,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 13
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "about_to_blow",
+    "name": "About to Blow",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "explode",
+    "name": "Explode",
+    "intent": "unknown",
+    "intent_text": "Special",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "pressurize",
+   "stomp",
+   "ram",
+   "siphon",
+   "pressure_gun",
+   "pressure_up"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "wriggler",
+  "name": "Wriggler",
+  "hp": [
+   17,
+   21
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "nasty_bite",
+    "name": "Nasty Bite",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "wriggle",
+    "name": "Wriggle",
+    "intent": "unknown",
+    "intent_text": "Buff + Status",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "spawned",
+    "name": "Spawned",
+    "intent": "unknown",
+    "intent_text": "Stun",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "conditional",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "zapbot",
+  "name": "Zapbot",
+  "hp": [
+   18,
+   23
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "zap",
+    "name": "Zap",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 14,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 14
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [
+   "zap"
+  ],
+  "pattern_type": "cycle",
+  "innate_powers": [
+   {
+    "power": "high_voltage",
+    "amount": 2,
+    "amount_ascension": null,
+    "modeled": false
+   }
+  ],
+  "unmodeled_innate_powers": [
+   "high_voltage"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "decimillipede_segment_back",
+  "name": "Decimillipede Segment (Back)",
+  "hp": [
+   40,
+   46
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "writhe",
+    "name": "Writhe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bulk",
+    "name": "Bulk",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "constrict",
+    "name": "Constrict",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dead",
+    "name": "Dead",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "reattach",
+    "name": "Reattach",
+    "intent": "unknown",
+    "intent_text": "Heal",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "decimillipede_segment_front",
+  "name": "Decimillipede Segment (Front)",
+  "hp": [
+   40,
+   46
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "writhe",
+    "name": "Writhe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bulk",
+    "name": "Bulk",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "constrict",
+    "name": "Constrict",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dead",
+    "name": "Dead",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "reattach",
+    "name": "Reattach",
+    "intent": "unknown",
+    "intent_text": "Heal",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "decimillipede_segment_middle",
+  "name": "Decimillipede Segment (Middle)",
+  "hp": [
+   40,
+   46
+  ],
+  "type": "Elite",
+  "moves": [
+   {
+    "mid": "writhe",
+    "name": "Writhe",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 5,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 5
+     },
+     {
+      "op": "damage",
+      "amount": 5
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "bulk",
+    "name": "Bulk",
+    "intent": "attack",
+    "intent_text": "Attack + Buff",
+    "value": 6,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 6
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "constrict",
+    "name": "Constrict",
+    "intent": "attack_debuff",
+    "intent_text": "Attack + Debuff",
+    "value": 8,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 8
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "power": "weak",
+      "target": "enemy"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "dead",
+    "name": "Dead",
+    "intent": "unknown",
+    "intent_text": "Unknown",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   },
+   {
+    "mid": "reattach",
+    "name": "Reattach",
+    "intent": "unknown",
+    "intent_text": "Heal",
+    "value": 0,
+    "times": 1,
+    "effects": [],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ },
+ {
+  "eid": "mysterious_knight",
+  "name": "Mysterious Knight",
+  "hp": [
+   101,
+   101
+  ],
+  "type": "Normal",
+  "moves": [
+   {
+    "mid": "war_chant",
+    "name": "War Chant",
+    "intent": "buff",
+    "intent_text": "Buff",
+    "value": 0,
+    "times": 1,
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "power": "strength",
+      "target": "self"
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "flail",
+    "name": "Flail",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 9,
+    "times": 2,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 9
+     },
+     {
+      "op": "damage",
+      "amount": 9
+     }
+    ],
+    "weight": 1.0
+   },
+   {
+    "mid": "ram",
+    "name": "Ram",
+    "intent": "attack",
+    "intent_text": "Attack",
+    "value": 15,
+    "times": 1,
+    "effects": [
+     {
+      "op": "damage",
+      "amount": 15
+     }
+    ],
+    "weight": 1.0
+   }
+  ],
+  "cycle": [],
+  "pattern_type": "",
+  "innate_powers": [],
+  "unmodeled_innate_powers": [],
+  "verified": false
+ }
+]

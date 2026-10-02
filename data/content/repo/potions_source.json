@@ -1,0 +1,2092 @@
+[
+ {
+  "pid": "ambergris",
+  "class": "Ambergris",
+  "rarity": "event",
+  "usage": "any_time",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": 1,
+    "amount_var": null,
+    "power": "ambergris",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "1m"
+   }
+  ],
+  "vars": [
+   {
+    "name": "HealPercent",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 50,
+    "raw": "50m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [
+   "OnUse 含非战斗分支（商人/事件交互），本引擎只建模战斗内分支"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "ashwater",
+  "class": "Ashwater",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "exhaust",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": ""
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "CardSelectCmd(用途不明)"
+  ],
+  "choice_commands": 1
+ },
+ {
+  "pid": "attack_potion",
+  "class": "AttackPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "hand",
+    "purpose": "choose",
+    "count": 1,
+    "target": "self",
+    "amount": 1
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "AddGeneratedCardToCombat(选牌结果（需要玩家选择）)",
+   "本回合免费（SetToFreeThisTurn）用在生成牌之外的路径，引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "beetle_juice",
+  "class": "BeetleJuice",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Repeat",
+    "power": "shrink",
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Repeat.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "DamageDecrease",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 30,
+    "raw": "30m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Repeat",
+    "var_type": "RepeatVar",
+    "type_param": null,
+    "named": false,
+    "base": 4,
+    "raw": "4",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "blessing_of_the_forge",
+  "class": "BlessingOfTheForge",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "upgrade_card",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": ""
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "block_potion",
+  "class": "BlockPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "block",
+    "amount": null,
+    "amount_var": "Block",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Block",
+    "unpowered": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Block",
+    "var_type": "BlockVar",
+    "type_param": null,
+    "named": false,
+    "base": 12,
+    "raw": "12m",
+    "value_prop": "Unpowered",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "blood_potion",
+  "class": "BloodPotion",
+  "rarity": "common",
+  "usage": "any_time",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "heal",
+    "amount": null,
+    "amount_var": "HealPercent",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "(decimal)target.MaxHp * base.DynamicVars[\"HealPercent\"].BaseValue / 100m"
+   }
+  ],
+  "vars": [
+   {
+    "name": "HealPercent",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 20,
+    "raw": "20m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "bone_brew",
+  "class": "BoneBrew",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [],
+  "vars": [
+   {
+    "name": "Summon",
+    "var_type": "SummonVar",
+    "type_param": null,
+    "named": false,
+    "base": 15,
+    "raw": "15m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [
+   "OstyCmd.Summon"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "bottled_potential",
+  "class": "BottledPotential",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "move_all_matching",
+    "from": "hand",
+    "filter": [],
+    "take_random": "",
+    "pile": "draw",
+    "target": "self",
+    "amount": 0
+   },
+   {
+    "op": "shuffle",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": ""
+   },
+   {
+    "op": "draw",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 5,
+    "raw": "5",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "clarity",
+  "class": "Clarity",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "draw",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.BaseValue"
+   },
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Clarity",
+    "power": "clarity",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"ClarityPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Clarity",
+    "var_type": "PowerVar",
+    "type_param": "ClarityPower",
+    "named": false,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 1,
+    "raw": "1",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "colorless_potion",
+  "class": "ColorlessPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "hand",
+    "purpose": "choose",
+    "count": 1,
+    "target": "self",
+    "amount": 1
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "AddGeneratedCardToCombat(选牌结果（需要玩家选择）)",
+   "本回合免费（SetToFreeThisTurn）用在生成牌之外的路径，引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "cosmic_concoction",
+  "class": "CosmicConcoction",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "generate_card",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.IntValue",
+    "filter": [
+     [
+      "pool",
+      "colorless"
+     ]
+    ],
+    "pile": "hand",
+    "upgrade": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "cunning_potion",
+  "class": "CunningPotion",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "add_card",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.IntValue",
+    "card": "shiv",
+    "pile": "hand",
+    "position": "",
+    "upgrade": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "cure_all",
+  "class": "CureAll",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "gain_energy",
+    "amount": null,
+    "amount_var": "Energy",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Energy.BaseValue"
+   },
+   {
+    "op": "draw",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Energy",
+    "var_type": "EnergyVar",
+    "type_param": null,
+    "named": false,
+    "base": 1,
+    "raw": "1",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "deprecated_potion",
+  "class": "DeprecatedPotion",
+  "rarity": "none",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "dexterity_potion",
+  "class": "DexterityPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Dexterity",
+    "power": "dexterity",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Dexterity.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Dexterity",
+    "var_type": "PowerVar",
+    "type_param": "DexterityPower",
+    "named": false,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "distilled_chaos",
+  "class": "DistilledChaos",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "autoplay_from_draw",
+    "amount": null,
+    "amount_var": "Repeat",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Repeat.IntValue",
+    "position": "top",
+    "force_exhaust": false
+   }
+  ],
+  "vars": [
+   {
+    "name": "Repeat",
+    "var_type": "RepeatVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "droplet_of_precognition",
+  "class": "DropletOfPrecognition",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "draw",
+    "purpose": "to_hand",
+    "count": 1,
+    "target": "self",
+    "amount": 1
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "duplicator",
+  "class": "Duplicator",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": 1,
+    "amount_var": null,
+    "power": "duplication",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "1m"
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "energy_potion",
+  "class": "EnergyPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "gain_energy",
+    "amount": null,
+    "amount_var": "Energy",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Energy.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Energy",
+    "var_type": "EnergyVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "entropic_brew",
+  "class": "EntropicBrew",
+  "rarity": "rare",
+  "usage": "any_time",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "procure_random_potion",
+    "amount": 0,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": ""
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "essence_of_darkness",
+  "class": "EssenceOfDarkness",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "channel",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "",
+    "orb": "dark"
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "循环次数取决于运行期状态（球数/牌数/条件）引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "explosive_ampoule",
+  "class": "ExplosiveAmpoule",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "all_enemies",
+  "effects": [
+   {
+    "op": "damage",
+    "amount": null,
+    "amount_var": "Damage",
+    "power": null,
+    "target": "all_enemies",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Damage.BaseValue",
+    "unpowered": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 10,
+    "raw": "10m",
+    "value_prop": "Unpowered",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "fairy_in_a_bottle",
+  "class": "FairyInABottle",
+  "rarity": "rare",
+  "usage": "automatic",
+  "target_type": "self",
+  "effects": [
+   {
+    "op": "heal",
+    "amount": null,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "Math.Max((decimal)target.MaxHp * 0.3m, 1m)",
+    "needs_runtime": false
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "fire_potion",
+  "class": "FirePotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "damage",
+    "amount": null,
+    "amount_var": "Damage",
+    "power": null,
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Damage.BaseValue",
+    "unpowered": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 20,
+    "raw": "20m",
+    "value_prop": "Unpowered",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "flex_potion",
+  "class": "FlexPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Strength",
+    "power": "flex_potion",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Strength.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Strength",
+    "var_type": "PowerVar",
+    "type_param": "StrengthPower",
+    "named": false,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "focus_potion",
+  "class": "FocusPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Focus",
+    "power": "focus",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"FocusPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Focus",
+    "var_type": "PowerVar",
+    "type_param": "FocusPower",
+    "named": false,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "fortifier",
+  "class": "Fortifier",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "block",
+    "amount": null,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "target.Block * 2",
+    "needs_runtime": false
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "foul_potion",
+  "class": "FoulPotion",
+  "rarity": "event",
+  "usage": "any_time",
+  "target_type": "all_enemies",
+  "effects": [
+   {
+    "op": "damage",
+    "amount": null,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "",
+    "needs_runtime": false
+   }
+  ],
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 12,
+    "raw": "12m",
+    "value_prop": "Unpowered",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 100,
+    "raw": "100",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [
+   "OnUse 含非战斗分支（商人/事件交互），本引擎只建模战斗内分支",
+   "TargetType 是按战斗状态分支的条件属性，取值 TargetedNoCreature/AllEnemies；这里采用战斗内分支 AllEnemies"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "fruit_juice",
+  "class": "FruitJuice",
+  "rarity": "rare",
+  "usage": "any_time",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "gain_max_hp",
+    "amount": null,
+    "amount_var": "MaxHp",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "MaxHp",
+    "var_type": "MaxHpVar",
+    "type_param": null,
+    "named": false,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "fysh_oil",
+  "class": "FyshOil",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Strength",
+    "power": "strength",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Strength.BaseValue"
+   },
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Dexterity",
+    "power": "dexterity",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Dexterity.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Strength",
+    "var_type": "PowerVar",
+    "type_param": "StrengthPower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Dexterity",
+    "var_type": "PowerVar",
+    "type_param": "DexterityPower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "gamblers_brew",
+  "class": "GamblersBrew",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "hand",
+    "purpose": "discard",
+    "count": 0,
+    "target": "self",
+    "amount": 0
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "ghost_in_a_jar",
+  "class": "GhostInAJar",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Intangible",
+    "power": "intangible",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"IntangiblePower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Intangible",
+    "var_type": "PowerVar",
+    "type_param": "IntangiblePower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "gigantification_potion",
+  "class": "GigantificationPotion",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Gigantification",
+    "power": "gigantification",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"GigantificationPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Gigantification",
+    "var_type": "PowerVar",
+    "type_param": "GigantificationPower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "glowwater_potion",
+  "class": "GlowwaterPotion",
+  "rarity": "event",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "exhaust",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": ""
+   },
+   {
+    "op": "draw",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 10,
+    "raw": "10",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "heart_of_iron",
+  "class": "HeartOfIron",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Plating",
+    "power": "plating",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"PlatingPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Plating",
+    "var_type": "PowerVar",
+    "type_param": "PlatingPower",
+    "named": false,
+    "base": 7,
+    "raw": "7m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "kings_courage",
+  "class": "KingsCourage",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [],
+  "vars": [
+   {
+    "name": "Forge",
+    "var_type": "ForgeVar",
+    "type_param": null,
+    "named": false,
+    "base": 15,
+    "raw": "15",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [
+   "ForgeCmd.Forge"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "liquid_bronze",
+  "class": "LiquidBronze",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Thorns",
+    "power": "thorns",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"ThornsPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Thorns",
+    "var_type": "PowerVar",
+    "type_param": "ThornsPower",
+    "named": false,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "liquid_memories",
+  "class": "LiquidMemories",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "discard",
+    "purpose": "to_hand",
+    "count": 1,
+    "target": "self",
+    "amount": 1
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "本回合免费（SetToFreeThisTurn）用在生成牌之外的路径，引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "lucky_tonic",
+  "class": "LuckyTonic",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Buffer",
+    "power": "buffer",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"BufferPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Buffer",
+    "var_type": "PowerVar",
+    "type_param": "BufferPower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "mazaleths_gift",
+  "class": "MazalethsGift",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Ritual",
+    "power": "ritual",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"RitualPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Ritual",
+    "var_type": "PowerVar",
+    "type_param": "RitualPower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "orobic_acid",
+  "class": "OrobicAcid",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "generate_card",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "1",
+    "filter": [
+     [
+      "pool",
+      "character"
+     ],
+     [
+      "card_type",
+      "attack"
+     ]
+    ],
+    "pile": "hand",
+    "free": true
+   },
+   {
+    "op": "generate_card",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "1",
+    "filter": [
+     [
+      "pool",
+      "character"
+     ],
+     [
+      "card_type",
+      "skill"
+     ]
+    ],
+    "pile": "hand",
+    "free": true
+   },
+   {
+    "op": "generate_card",
+    "amount": 1,
+    "amount_var": null,
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "1",
+    "filter": [
+     [
+      "pool",
+      "character"
+     ],
+     [
+      "card_type",
+      "power"
+     ]
+    ],
+    "pile": "hand",
+    "free": true
+   }
+  ],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "poison_potion",
+  "class": "PoisonPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Poison",
+    "power": "poison",
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Poison.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Poison",
+    "var_type": "PowerVar",
+    "type_param": "PoisonPower",
+    "named": false,
+    "base": 6,
+    "raw": "6m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "potion_of_binding",
+  "class": "PotionOfBinding",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "all_enemies",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Vulnerable",
+    "power": "weak",
+    "target": "all_enemies",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"VulnerablePower\"].IntValue"
+   },
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Weak",
+    "power": "vulnerable",
+    "target": "all_enemies",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"WeakPower\"].IntValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Vulnerable",
+    "var_type": "PowerVar",
+    "type_param": "VulnerablePower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Weak",
+    "var_type": "PowerVar",
+    "type_param": "WeakPower",
+    "named": false,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "potion_of_capacity",
+  "class": "PotionOfCapacity",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "add_orb_slots",
+    "amount": null,
+    "amount_var": "Repeat",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Repeat.IntValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Repeat",
+    "var_type": "RepeatVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "potion_of_doom",
+  "class": "PotionOfDoom",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Doom",
+    "power": "doom",
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Doom.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Doom",
+    "var_type": "PowerVar",
+    "type_param": "DoomPower",
+    "named": false,
+    "base": 33,
+    "raw": "33m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "potion_shaped_rock",
+  "class": "PotionShapedRock",
+  "rarity": "token",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "damage",
+    "amount": null,
+    "amount_var": "Damage",
+    "power": null,
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Damage",
+    "unpowered": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 15,
+    "raw": "15m",
+    "value_prop": "Unpowered",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "pot_of_ghouls",
+  "class": "PotOfGhouls",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "add_card",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.IntValue",
+    "card": "soul",
+    "pile": "hand",
+    "position": ""
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "powdered_demise",
+  "class": "PowderedDemise",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Demise",
+    "power": "demise",
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"Demise\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Demise",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 9,
+    "raw": "9m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "power_potion",
+  "class": "PowerPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "hand",
+    "purpose": "choose",
+    "count": 1,
+    "target": "self",
+    "amount": 1
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "AddGeneratedCardToCombat(选牌结果（需要玩家选择）)",
+   "本回合免费（SetToFreeThisTurn）用在生成牌之外的路径，引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "radiant_tincture",
+  "class": "RadiantTincture",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "gain_energy",
+    "amount": null,
+    "amount_var": "Energy",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Energy.IntValue"
+   },
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Radiance",
+    "power": "radiance",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"RadiancePower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Energy",
+    "var_type": "EnergyVar",
+    "type_param": null,
+    "named": false,
+    "base": 1,
+    "raw": "1",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Radiance",
+    "var_type": "PowerVar",
+    "type_param": "RadiancePower",
+    "named": false,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "regen_potion",
+  "class": "RegenPotion",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Regen",
+    "power": "regen",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars[\"RegenPower\"].BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Regen",
+    "var_type": "PowerVar",
+    "type_param": "RegenPower",
+    "named": false,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "shackling_potion",
+  "class": "ShacklingPotion",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "all_enemies",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Strength",
+    "power": "shackling_potion",
+    "target": "all_enemies",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Strength.IntValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Strength",
+    "var_type": "PowerVar",
+    "type_param": "StrengthPower",
+    "named": false,
+    "base": 7,
+    "raw": "7m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "ship_in_a_bottle",
+  "class": "ShipInABottle",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "block",
+    "amount": null,
+    "amount_var": "Block",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Block",
+    "unpowered": true
+   },
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Block",
+    "power": "block_next_turn",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Block.IntValue",
+    "unpowered": true
+   }
+  ],
+  "vars": [
+   {
+    "name": "Block",
+    "var_type": "BlockVar",
+    "type_param": null,
+    "named": false,
+    "base": 10,
+    "raw": "10m",
+    "value_prop": "Unpowered",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "skill_potion",
+  "class": "SkillPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "select_card",
+    "from": "hand",
+    "purpose": "choose",
+    "count": 1,
+    "target": "self",
+    "amount": 1
+   }
+  ],
+  "vars": [],
+  "unsupported": [
+   "AddGeneratedCardToCombat(选牌结果（需要玩家选择）)",
+   "本回合免费（SetToFreeThisTurn）用在生成牌之外的路径，引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "snecko_oil",
+  "class": "SneckoOil",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "draw",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 7,
+    "raw": "7",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [
+   "战斗内改费用（EnergyCost.Add/SetThisCombat）引擎未实现",
+   "本回合内改费用（SetThisTurnOrUntilPlayed）引擎未实现"
+  ],
+  "choice_commands": 0
+ },
+ {
+  "pid": "soldiers_stew",
+  "class": "SoldiersStew",
+  "rarity": "rare",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [],
+  "vars": [],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "speed_potion",
+  "class": "SpeedPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Dexterity",
+    "power": "speed_potion",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Dexterity.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Dexterity",
+    "var_type": "PowerVar",
+    "type_param": "DexterityPower",
+    "named": false,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "stable_serum",
+  "class": "StableSerum",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Repeat",
+    "power": "retain_hand",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Repeat.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Repeat",
+    "var_type": "RepeatVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "star_potion",
+  "class": "StarPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "gain_stars",
+    "amount": null,
+    "amount_var": "Stars",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Stars.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Stars",
+    "var_type": "StarsVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "strength_potion",
+  "class": "StrengthPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Strength",
+    "power": "strength",
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Strength.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Strength",
+    "var_type": "PowerVar",
+    "type_param": "StrengthPower",
+    "named": false,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "swift_potion",
+  "class": "SwiftPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [
+   {
+    "op": "draw",
+    "amount": null,
+    "amount_var": "Cards",
+    "power": null,
+    "target": "self",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Cards.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "touch_of_insanity",
+  "class": "TouchOfInsanity",
+  "rarity": "uncommon",
+  "usage": "combat_only",
+  "target_type": "any_player",
+  "effects": [],
+  "vars": [],
+  "unsupported": [
+   "CardSelectCmd(用途不明)",
+   "本场免费（SetToFreeThisCombat）引擎未实现"
+  ],
+  "choice_commands": 1
+ },
+ {
+  "pid": "vulnerable_potion",
+  "class": "VulnerablePotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Vulnerable",
+    "power": "vulnerable",
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Vulnerable.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Vulnerable",
+    "var_type": "PowerVar",
+    "type_param": "VulnerablePower",
+    "named": false,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ },
+ {
+  "pid": "weak_potion",
+  "class": "WeakPotion",
+  "rarity": "common",
+  "usage": "combat_only",
+  "target_type": "any_enemy",
+  "effects": [
+   {
+    "op": "apply_power",
+    "amount": null,
+    "amount_var": "Weak",
+    "power": "weak",
+    "target": "enemy",
+    "times": 1,
+    "amount_raw": "base.DynamicVars.Weak.BaseValue"
+   }
+  ],
+  "vars": [
+   {
+    "name": "Weak",
+    "var_type": "PowerVar",
+    "type_param": "WeakPower",
+    "named": false,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "unsupported": [],
+  "choice_commands": 0
+ }
+]

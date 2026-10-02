@@ -1,0 +1,177 @@
+{
+ "checked": 217,
+ "mismatches": [
+  {
+   "cid": "collision_course",
+   "op": "damage",
+   "source_value": 10,
+   "description_numbers": [
+    11
+   ],
+   "description": "Deal 11 damage.\nAdd a Debris into your Hand."
+  },
+  {
+   "cid": "colossus",
+   "op": "block",
+   "source_value": 4,
+   "description_numbers": [
+    5,
+    50
+   ],
+   "description": "Gain 5 Block.\nYou receive 50% less damage from Vulnerable enemies this turn."
+  },
+  {
+   "cid": "crush_under",
+   "op": "damage_all",
+   "source_value": 8,
+   "description_numbers": [
+    1,
+    7
+   ],
+   "description": "Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn."
+  },
+  {
+   "cid": "devastate",
+   "op": "damage",
+   "source_value": 35,
+   "description_numbers": [
+    30
+   ],
+   "description": "Deal 30 damage."
+  },
+  {
+   "cid": "flick_flack",
+   "op": "damage_all",
+   "source_value": 7,
+   "description_numbers": [
+    6
+   ],
+   "description": "Deal 6 damage to ALL enemies."
+  },
+  {
+   "cid": "giant_rock",
+   "op": "damage",
+   "source_value": 20,
+   "description_numbers": [
+    16
+   ],
+   "description": "Deal 16 damage."
+  },
+  {
+   "cid": "howl_from_beyond",
+   "op": "damage_all",
+   "source_value": 18,
+   "description_numbers": [
+    16
+   ],
+   "description": "Deal 16 damage to ALL enemies.\nAt the end of your turn, if this is in your Exhaust Pile, play it."
+  },
+  {
+   "cid": "hyperbeam",
+   "op": "damage_all",
+   "source_value": 24,
+   "description_numbers": [
+    3,
+    28
+   ],
+   "description": "Deal 28 damage to ALL enemies.\nLose 3 Focus."
+  },
+  {
+   "cid": "mangle",
+   "op": "damage",
+   "source_value": 20,
+   "description_numbers": [
+    10,
+    15
+   ],
+   "description": "Deal 15 damage.\nEnemy loses 10 Strength this turn."
+  },
+  {
+   "cid": "minion_sacrifice",
+   "op": "block",
+   "source_value": 7,
+   "description_numbers": [
+    8
+   ],
+   "description": "Gain 8 Block."
+  },
+  {
+   "cid": "momentum_strike",
+   "op": "damage",
+   "source_value": 11,
+   "description_numbers": [
+    0,
+    10
+   ],
+   "description": "Deal 10 damage.\nReduce this card's cost to 0 ."
+  },
+  {
+   "cid": "pacts_end",
+   "op": "damage_all",
+   "source_value": 18,
+   "description_numbers": [
+    3,
+    17
+   ],
+   "description": "If you have 3 or more cards in your Exhaust Pile,\ndeal 17 damage to ALL enemies."
+  },
+  {
+   "cid": "rampage",
+   "op": "damage",
+   "source_value": 10,
+   "description_numbers": [
+    5,
+    9
+   ],
+   "description": "Deal 9 damage.\nIncrease this card's damage by 5 this combat."
+  },
+  {
+   "cid": "reave",
+   "op": "damage",
+   "source_value": 10,
+   "description_numbers": [
+    9
+   ],
+   "description": "Deal 9 damage.\nAdd a Soul into your Draw Pile."
+  },
+  {
+   "cid": "refract",
+   "op": "damage",
+   "source_value": 10,
+   "description_numbers": [
+    2,
+    9
+   ],
+   "description": "Deal 9 damage twice.\nChannel 2 Glass."
+  },
+  {
+   "cid": "relax",
+   "op": "block",
+   "source_value": 16,
+   "description_numbers": [
+    2,
+    15
+   ],
+   "description": "Gain 15 Block.\nNext turn, draw 2 cards and gain ."
+  },
+  {
+   "cid": "sunder",
+   "op": "damage",
+   "source_value": 26,
+   "description_numbers": [
+    24
+   ],
+   "description": "Deal 24 damage.\nIf this kills an enemy, gain ."
+  },
+  {
+   "cid": "taunt",
+   "op": "block",
+   "source_value": 6,
+   "description_numbers": [
+    1,
+    7
+   ],
+   "description": "Gain 7 Block.\nApply 1 Vulnerable."
+  }
+ ]
+}

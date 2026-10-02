@@ -1,0 +1,7566 @@
+[
+ {
+  "eid": "abyssal_baths",
+  "class": "AbyssalBaths",
+  "act": "Underdocks",
+  "name": "Abyssal Baths",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "ABYSSAL_BATHS.pages.INITIAL.options.IMMERSE",
+      "text_key": "ABYSSAL_BATHS.pages.INITIAL.options.IMMERSE",
+      "page": "INITIAL",
+      "on_chosen": "Immerse",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       },
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "IMMERSE"
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     },
+     {
+      "key": "ABYSSAL_BATHS.pages.INITIAL.options.ABSTAIN",
+      "text_key": "ABYSSAL_BATHS.pages.INITIAL.options.ABSTAIN",
+      "page": "INITIAL",
+      "on_chosen": "Abstain",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": "Heal",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Heal.IntValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "ABSTAIN"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "IMMERSE": {
+    "from": "Immerse() 内联",
+    "options": [
+     {
+      "key": "ABYSSAL_BATHS.pages.ALL.options.LINGER",
+      "text_key": "ABYSSAL_BATHS.pages.ALL.options.LINGER",
+      "page": "ALL",
+      "on_chosen": "Linger",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       },
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "DEATH_WARNING"
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     },
+     {
+      "key": "ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS",
+      "text_key": "ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS",
+      "page": "ALL",
+      "on_chosen": "ExitBaths",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXIT_BATHS"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "Immerse"
+   },
+   "DEATH_WARNING": {
+    "from": "Linger() 内联",
+    "options": [
+     {
+      "key": "ABYSSAL_BATHS.pages.ALL.options.LINGER",
+      "text_key": "ABYSSAL_BATHS.pages.ALL.options.LINGER",
+      "page": "ALL",
+      "on_chosen": "Linger",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       },
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "DEATH_WARNING"
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     },
+     {
+      "key": "ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS",
+      "text_key": "ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS",
+      "page": "ALL",
+      "on_chosen": "ExitBaths",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXIT_BATHS"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "Linger"
+   },
+   "ALL": {
+    "from": "Linger() 内联",
+    "options": [
+     {
+      "key": "ABYSSAL_BATHS.pages.ALL.options.LINGER",
+      "text_key": "ABYSSAL_BATHS.pages.ALL.options.LINGER",
+      "page": "ALL",
+      "on_chosen": "Linger",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       },
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "DEATH_WARNING"
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     },
+     {
+      "key": "ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS",
+      "text_key": "ABYSSAL_BATHS.pages.ALL.options.EXIT_BATHS",
+      "page": "ALL",
+      "on_chosen": "ExitBaths",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXIT_BATHS"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "Linger"
+   }
+  },
+  "vars": [
+   {
+    "name": "MaxHp",
+    "var_type": "MaxHpVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Heal",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": false,
+    "base": 10,
+    "raw": "10m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "amalgamator",
+  "class": "Amalgamator",
+  "act": "Act 2 - Hive",
+  "name": "Amalgamator",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "COMBINE_STRIKES",
+      "text_key": "COMBINE_STRIKES",
+      "page": null,
+      "on_chosen": "CombineStrikes",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 2,
+        "target": "self",
+        "amount": 2
+       },
+       {
+        "op": "add_card",
+        "card": "ultimate_strike",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "COMBINE_STRIKES"
+      },
+      "reasons": []
+     },
+     {
+      "key": "COMBINE_DEFENDS",
+      "text_key": "COMBINE_DEFENDS",
+      "page": null,
+      "on_chosen": "CombineDefends",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 2,
+        "target": "self",
+        "amount": 2
+       },
+       {
+        "op": "add_card",
+        "card": "ultimate_defend",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "COMBINE_DEFENDS"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Card1",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<UltimateStrike>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Card2",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<UltimateDefend>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Deck.Cards.Count((CardModel c) => IsValid(CardTag.Strike, c)) >= 2 && p.Deck.Cards.Count((CardModel c) => IsValid(CardTag.Defend, c)) >= 2);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "aroma_of_chaos",
+  "class": "AromaOfChaos",
+  "act": "Act 1 - Overgrowth",
+  "name": "Aroma of Chaos",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "AROMA_OF_CHAOS.pages.INITIAL.options.LET_GO",
+      "text_key": "AROMA_OF_CHAOS.pages.INITIAL.options.LET_GO",
+      "page": "INITIAL",
+      "on_chosen": "LetGo",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "transform",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "LET_GO"
+      },
+      "reasons": []
+     },
+     {
+      "key": "AROMA_OF_CHAOS.pages.INITIAL.options.MAINTAIN_CONTROL",
+      "text_key": "AROMA_OF_CHAOS.pages.INITIAL.options.MAINTAIN_CONTROL",
+      "page": "INITIAL",
+      "on_chosen": "MaintainControl",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "upgrade",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "battleworn_dummy",
+  "class": "BattlewornDummy",
+  "act": "Act 3 - Glory",
+  "name": "Battleworn Dummy",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "BATTLEWORN_DUMMY.pages.INITIAL.options.SETTING_1",
+      "text_key": "BATTLEWORN_DUMMY.pages.INITIAL.options.SETTING_1",
+      "page": "INITIAL",
+      "on_chosen": "Setting1",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "需要事件战斗交接"
+      ]
+     },
+     {
+      "key": "BATTLEWORN_DUMMY.pages.INITIAL.options.SETTING_2",
+      "text_key": "BATTLEWORN_DUMMY.pages.INITIAL.options.SETTING_2",
+      "page": "INITIAL",
+      "on_chosen": "Setting2",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "需要事件战斗交接"
+      ]
+     },
+     {
+      "key": "BATTLEWORN_DUMMY.pages.INITIAL.options.SETTING_3",
+      "text_key": "BATTLEWORN_DUMMY.pages.INITIAL.options.SETTING_3",
+      "page": "INITIAL",
+      "on_chosen": "Setting3",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "需要事件战斗交接"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Setting1Hp",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Monster<BattleFriendV1>().MinInitialHp",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Setting2Hp",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Monster<BattleFriendV2>().MinInitialHp",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Setting3Hp",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Monster<BattleFriendV3>().MinInitialHp",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": [
+   "需要事件战斗交接"
+  ]
+ },
+ {
+  "eid": "brain_leech",
+  "class": "BrainLeech",
+  "act": null,
+  "name": "Brain Leech",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "BRAIN_LEECH.pages.INITIAL.options.SHARE_KNOWLEDGE",
+      "text_key": "BRAIN_LEECH.pages.INITIAL.options.SHARE_KNOWLEDGE",
+      "page": "INITIAL",
+      "on_chosen": "ShareKnowledge",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "未识别的效果写法：CardFactory.CreateForReward"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SHARE_KNOWLEDGE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "BRAIN_LEECH.pages.INITIAL.options.RIP",
+      "text_key": "BRAIN_LEECH.pages.INITIAL.options.RIP",
+      "page": "INITIAL",
+      "on_chosen": "Rip",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "RipHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "(DamageVar)base.DynamicVars[\"RipHpLoss\"]"
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "choices",
+          3
+         ],
+         [
+          "kind",
+          "card"
+         ],
+         [
+          "pool",
+          "ColorlessCardPool"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "RIP"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "RipHpLoss",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": true,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "RewardCount",
+    "var_type": "IntVar",
+    "type_param": null,
+    "named": true,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "CardChoiceCount",
+    "var_type": "IntVar",
+    "type_param": null,
+    "named": true,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "FromCardChoiceCount",
+    "var_type": "IntVar",
+    "type_param": null,
+    "named": true,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.CurrentActIndex < 2;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "bugslayer",
+  "class": "Bugslayer",
+  "act": "Act 2 - Hive",
+  "name": "Bugslayer",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "BUGSLAYER.pages.INITIAL.options.EXTERMINATION",
+      "text_key": "BUGSLAYER.pages.INITIAL.options.EXTERMINATION",
+      "page": "INITIAL",
+      "on_chosen": "Extermination",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "card": "exterminate",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXTERMINATION"
+      },
+      "reasons": []
+     },
+     {
+      "key": "BUGSLAYER.pages.INITIAL.options.SQUASH",
+      "text_key": "BUGSLAYER.pages.INITIAL.options.SQUASH",
+      "page": "INITIAL",
+      "on_chosen": "Squash",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "card": "squash",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SQUASH"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Card1",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Exterminate>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Card2",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Squash>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "byrdonis_nest",
+  "class": "ByrdonisNest",
+  "act": "Act 1 - Overgrowth",
+  "name": "Byrdonis Nest",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "BYRDONIS_NEST.pages.INITIAL.options.EAT",
+      "text_key": "BYRDONIS_NEST.pages.INITIAL.options.EAT",
+      "page": "INITIAL",
+      "on_chosen": "Eat",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EAT"
+      },
+      "reasons": []
+     },
+     {
+      "key": "BYRDONIS_NEST.pages.INITIAL.options.TAKE",
+      "text_key": "BYRDONIS_NEST.pages.INITIAL.options.TAKE",
+      "page": "INITIAL",
+      "on_chosen": "Take",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "card": "byrdonis_egg",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TAKE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "MaxHp",
+    "var_type": "MaxHpVar",
+    "type_param": null,
+    "named": false,
+    "base": 7,
+    "raw": "7m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Card",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<ByrdonisEgg>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => !p.HasEventPet());"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "colorful_philosophers",
+  "class": "ColorfulPhilosophers",
+  "act": "Act 2 - Hive",
+  "name": "Colorful Philosophers",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "COLORFUL_PHILOSOPHERS.pages.INITIAL.options.",
+      "text_key": "COLORFUL_PHILOSOPHERS.pages.INITIAL.options.",
+      "page": "INITIAL",
+      "on_chosen": "() => OfferRewards(cardPool)",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": "OfferRewards(cardPool)",
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项 lambda 带参数：OfferRewards(cardPool)"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.UnlockState.CharacterCardPools.Count() > 1);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "colossal_flower",
+  "class": "ColossalFlower",
+  "act": "Act 2 - Hive",
+  "name": "Colossal Flower",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "COLOSSAL_FLOWER.pages.INITIAL.options.EXTRACT_CURRENT_PRIZE_{NumberOfDigs + 1}",
+      "text_key": "COLOSSAL_FLOWER.pages.INITIAL.options.EXTRACT_CURRENT_PRIZE_{NumberOfDigs + 1}",
+      "page": "INITIAL",
+      "on_chosen": "ExtractCurrentPrize",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "_prizeCosts[NumberOfDigs]",
+        "needs_runtime": false
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXTRACT_CURRENT_PRIZE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "COLOSSAL_FLOWER.pages.INITIAL.options.REACH_DEEPER_{NumberOfDigs + 1}",
+      "text_key": "COLOSSAL_FLOWER.pages.INITIAL.options.REACH_DEEPER_{NumberOfDigs + 1}",
+      "page": "INITIAL",
+      "on_chosen": "ReachDeeper",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "_prizeDamage[NumberOfDigs]",
+        "needs_runtime": false
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "REACH_DEEPER_2"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "REACH_DEEPER_2": {
+    "from": "ReachDeeper() 内联",
+    "options": [
+     {
+      "key": "COLOSSAL_FLOWER.pages.REACH_DEEPER_2.options.EXTRACT_INSTEAD",
+      "text_key": "COLOSSAL_FLOWER.pages.REACH_DEEPER_2.options.EXTRACT_INSTEAD",
+      "page": "REACH_DEEPER_2",
+      "on_chosen": "ExtractInstead",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "_prizeCosts[NumberOfDigs]",
+        "needs_runtime": false
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXTRACT_INSTEAD"
+      },
+      "reasons": []
+     },
+     {
+      "key": "COLOSSAL_FLOWER.pages.REACH_DEEPER_2.options.POLLINOUS_CORE",
+      "text_key": "COLOSSAL_FLOWER.pages.REACH_DEEPER_2.options.POLLINOUS_CORE",
+      "page": "REACH_DEEPER_2",
+      "on_chosen": "ObtainPollinousCore",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "_prizeDamage[NumberOfDigs]",
+        "needs_runtime": false
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "pollinous_core"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "POLLINOUS_CORE"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "ReachDeeper"
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": null,
+    "raw": "_prizeKeys[0]",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": null,
+    "raw": "_prizeKeys[1]",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": null,
+    "raw": "_prizeKeys[2]",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Creature.CurrentHp >= 19);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "crystal_sphere",
+  "class": "CrystalSphere",
+  "act": null,
+  "name": "Crystal Sphere",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "CRYSTAL_SPHERE.pages.INITIAL.options.UNCOVER_FUTURE",
+      "text_key": "CRYSTAL_SPHERE.pages.INITIAL.options.UNCOVER_FUTURE",
+      "page": "INITIAL",
+      "on_chosen": "UncoverFuture",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "UncoverFutureCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"UncoverFutureCost\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "FINISH"
+      },
+      "reasons": []
+     },
+     {
+      "key": "CRYSTAL_SPHERE.pages.INITIAL.options.PAYMENT_PLAN",
+      "text_key": "CRYSTAL_SPHERE.pages.INITIAL.options.PAYMENT_PLAN",
+      "page": "INITIAL",
+      "on_chosen": "PaymentPlan",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "debt",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "FINISH"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "UncoverFutureCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 50,
+    "raw": "50m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "UncoverFutureProphesizeCount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "PaymentPlanCount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 6,
+    "raw": "6m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "CurseTitle",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Debt>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.Players.All((Player p) => p.Gold >= 100))\n\t\t{\n\t\t\treturn runState.CurrentActIndex > 0;\n\t\t}\n\t\treturn false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "darv",
+  "class": "Darv",
+  "act": null,
+  "name": "Darv",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "dense_vegetation",
+  "class": "DenseVegetation",
+  "act": "Act 1 - Overgrowth",
+  "name": "Dense Vegetation",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "DENSE_VEGETATION.pages.INITIAL.options.TRUDGE_ON",
+      "text_key": "DENSE_VEGETATION.pages.INITIAL.options.TRUDGE_ON",
+      "page": "INITIAL",
+      "on_chosen": "TrudgeOn",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "HpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.HpLoss.BaseValue"
+       },
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TRUDGE_ON"
+      },
+      "reasons": []
+     },
+     {
+      "key": "DENSE_VEGETATION.pages.INITIAL.options.REST",
+      "text_key": "DENSE_VEGETATION.pages.INITIAL.options.REST",
+      "page": "INITIAL",
+      "on_chosen": "Rest",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "PlayerCmd.MimicRestSiteHeal"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "REST"
+      },
+      "reasons": [
+       "需要营火治疗量语义"
+      ]
+     }
+    ]
+   },
+   "REST": {
+    "from": "Rest() 内联",
+    "options": [
+     {
+      "key": "DENSE_VEGETATION.pages.REST.options.FIGHT",
+      "text_key": "DENSE_VEGETATION.pages.REST.options.FIGHT",
+      "page": "REST",
+      "on_chosen": "Fight",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "需要事件战斗交接"
+      ]
+     }
+    ],
+    "inline_in": "Rest"
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 0,
+    "raw": "0",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Heal",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": false,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "HpLoss",
+    "var_type": "HpLossVar",
+    "type_param": null,
+    "named": false,
+    "base": 8,
+    "raw": "8m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "Gold",
+    "raw": "base.Rng.NextInt(61, 100)",
+    "uses_event_rng": true
+   },
+   {
+    "var": "Heal",
+    "raw": "((base.Owner != null) ? HealRestSiteOption.GetHealAmount(base.Owner) : 0m)",
+    "uses_event_rng": false
+   }
+  ],
+  "gate": {
+   "body": "if (runState.Players.Count == 1)\n\t\t{\n\t\t\treturn true;\n\t\t}\n\t\tforeach (Player player in runState.Players)\n\t\t{\n\t\t\tif ((decimal)player.Creature.CurrentHp <= base.DynamicVars.HpLoss.BaseValue)\n\t\t\t{\n\t\t\t\treturn false;\n\t\t\t}\n\t\t}\n\t\treturn true;"
+  },
+  "combat_encounter": "DenseVegetationEventEncounter",
+  "reasons": [
+   "需要事件战斗交接"
+  ]
+ },
+ {
+  "eid": "deprecated_ancient_event",
+  "class": "DeprecatedAncientEvent",
+  "act": null,
+  "name": null,
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "deprecated_event",
+  "class": "DeprecatedEvent",
+  "act": null,
+  "name": null,
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "doll_room",
+  "class": "DollRoom",
+  "act": null,
+  "name": "Doll Room",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "DOLL_ROOM.pages.INITIAL.options.RANDOM",
+      "text_key": "DOLL_ROOM.pages.INITIAL.options.RANDOM",
+      "page": "INITIAL",
+      "on_chosen": "ChooseRandom",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "Obtain(遗物 id 解析不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "DOLL_ROOM.pages.INITIAL.options.TAKE_SOME_TIME",
+      "text_key": "DOLL_ROOM.pages.INITIAL.options.TAKE_SOME_TIME",
+      "page": "INITIAL",
+      "on_chosen": "TakeSomeTime",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "TakeTimeHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "(DamageVar)base.DynamicVars[\"TakeTimeHpLoss\"]"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "TAKE_SOME_TIME"
+      },
+      "reasons": []
+     },
+     {
+      "key": "DOLL_ROOM.pages.INITIAL.options.EXAMINE",
+      "text_key": "DOLL_ROOM.pages.INITIAL.options.EXAMINE",
+      "page": "INITIAL",
+      "on_chosen": "Examine",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "ExamineHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "(DamageVar)base.DynamicVars[\"ExamineHpLoss\"]"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "EXAMINE"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "TAKE_SOME_TIME": {
+    "from": "TakeSomeTime() 内联",
+    "options": [],
+    "inline_in": "TakeSomeTime"
+   },
+   "EXAMINE": {
+    "from": "Examine() 内联",
+    "options": [],
+    "inline_in": "Examine"
+   }
+  },
+  "vars": [
+   {
+    "name": "TakeTimeHpLoss",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": true,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ExamineHpLoss",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": true,
+    "base": 15,
+    "raw": "15m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.CurrentActIndex == 1;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "doors_of_light_and_dark",
+  "class": "DoorsOfLightAndDark",
+  "act": "Underdocks",
+  "name": "Doors of Light and Dark",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "DOORS_OF_LIGHT_AND_DARK.pages.INITIAL.options.LIGHT",
+      "text_key": "DOORS_OF_LIGHT_AND_DARK.pages.INITIAL.options.LIGHT",
+      "page": "INITIAL",
+      "on_chosen": "Light",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "random_deck_cards",
+        "amount": null,
+        "amount_var": "Cards",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Cards.IntValue",
+        "purpose": "upgrade",
+        "rng": "event",
+        "pick": "shuffle",
+        "filter": [
+         [
+          "upgradable",
+          true
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "LIGHT"
+      },
+      "reasons": []
+     },
+     {
+      "key": "DOORS_OF_LIGHT_AND_DARK.pages.INITIAL.options.DARK",
+      "text_key": "DOORS_OF_LIGHT_AND_DARK.pages.INITIAL.options.DARK",
+      "page": "INITIAL",
+      "on_chosen": "Dark",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DARK"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "drowning_beacon",
+  "class": "DrowningBeacon",
+  "act": "Underdocks",
+  "name": "Drowning Beacon",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "DROWNING_BEACON.pages.INITIAL.options.BOTTLE",
+      "text_key": "DROWNING_BEACON.pages.INITIAL.options.BOTTLE",
+      "page": "INITIAL",
+      "on_chosen": "BottleOption",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "potion",
+          "glowwater_potion"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BOTTLE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "DROWNING_BEACON.pages.INITIAL.options.CLIMB",
+      "text_key": "DROWNING_BEACON.pages.INITIAL.options.CLIMB",
+      "page": "INITIAL",
+      "on_chosen": "ClimbOption",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_max_hp",
+        "amount": null,
+        "amount_var": "HpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.HpLoss.BaseValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "fresnel_lens",
+        "filter": []
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "CLIMB"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "HpLoss",
+    "var_type": "HpLossVar",
+    "type_param": null,
+    "named": false,
+    "base": 13,
+    "raw": "13m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Potion",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Potion<GlowwaterPotion>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Relic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<FresnelLens>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "endless_conveyor",
+  "class": "EndlessConveyor",
+  "act": "Underdocks",
+  "name": "Endless Conveyor",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "ENDLESS_CONVEYOR.pages.INITIAL.options.OBSERVE_CHEF",
+      "text_key": "ENDLESS_CONVEYOR.pages.INITIAL.options.OBSERVE_CHEF",
+      "page": "INITIAL",
+      "on_chosen": "ObserveChef",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "random_deck_cards",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "1",
+        "purpose": "upgrade",
+        "rng": "event",
+        "pick": "item",
+        "filter": [
+         [
+          "upgradable",
+          true
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "OBSERVE_CHEF"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "GRAB_SOMETHING_OFF_THE_BELT": {
+    "from": "GrabSomethingOffTheBelt() 内联",
+    "options": [
+     {
+      "key": "ENDLESS_CONVEYOR.pages.GRAB_SOMETHING_OFF_THE_BELT.options.LEAVE",
+      "text_key": "ENDLESS_CONVEYOR.pages.GRAB_SOMETHING_OFF_THE_BELT.options.LEAVE",
+      "page": "GRAB_SOMETHING_OFF_THE_BELT",
+      "on_chosen": "Leave",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "LEAVE"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "GrabSomethingOffTheBelt"
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 40,
+    "raw": "40",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "GoldenFyshGold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": true,
+    "base": 75,
+    "raw": "75",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ClamRollHeal",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": true,
+    "base": 10,
+    "raw": "10m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "CaviarMaxHp",
+    "var_type": "MaxHpVar",
+    "type_param": null,
+    "named": true,
+    "base": 4,
+    "raw": "4m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "CurrentDishTitle",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "LastDishTitle",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Gold >= 120);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "fake_merchant",
+  "class": "FakeMerchant",
+  "act": null,
+  "name": "The Merchant???",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex < 1)\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\tif (runState.Players.Count > 1)\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\treturn runState.Players.All((Player player) => player.Gold >= 100 || player.Potions.Any((PotionModel potion) => potion is FoulPotion));"
+  },
+  "combat_encounter": "FakeMerchantEventEncounter",
+  "reasons": [
+   "需要事件战斗交接"
+  ]
+ },
+ {
+  "eid": "field_of_man_sized_holes",
+  "class": "FieldOfManSizedHoles",
+  "act": "Act 2 - Hive",
+  "name": "Field of Man-Sized Holes",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "FIELD_OF_MAN_SIZED_HOLES.pages.INITIAL.options.RESIST",
+      "text_key": "FIELD_OF_MAN_SIZED_HOLES.pages.INITIAL.options.RESIST",
+      "page": "INITIAL",
+      "on_chosen": "Resist",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": null,
+        "target": "self",
+        "amount": null,
+        "amount_var": "Cards"
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "normality",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "RESIST"
+      },
+      "reasons": []
+     },
+     {
+      "key": "FIELD_OF_MAN_SIZED_HOLES.pages.INITIAL.options.ENTER_YOUR_HOLE",
+      "text_key": "FIELD_OF_MAN_SIZED_HOLES.pages.INITIAL.options.ENTER_YOUR_HOLE",
+      "page": "INITIAL",
+      "on_chosen": "EnterYourHole",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "ENTER_YOUR_HOLE"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 75,
+    "raw": "75",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ResistCurse",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Normality>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<PerfectFit>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => CardPile.Get(PileType.Deck, p).Cards.Any(ModelDb.Enchantment<PerfectFit>().CanEnchant));"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "grave_of_the_forgotten",
+  "class": "GraveOfTheForgotten",
+  "act": "Act 3 - Glory",
+  "name": "Grave of the Forgotten",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "GRAVE_OF_THE_FORGOTTEN.pages.INITIAL.options.CONFRONT_LOCKED",
+      "text_key": "GRAVE_OF_THE_FORGOTTEN.pages.INITIAL.options.CONFRONT_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "GRAVE_OF_THE_FORGOTTEN.pages.INITIAL.options.CONFRONT",
+      "text_key": "GRAVE_OF_THE_FORGOTTEN.pages.INITIAL.options.CONFRONT",
+      "page": "INITIAL",
+      "on_chosen": "Confront",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "decay",
+        "pile": "deck"
+       },
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "CONFRONT"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "GRAVE_OF_THE_FORGOTTEN.pages.INITIAL.options.ACCEPT",
+      "text_key": "GRAVE_OF_THE_FORGOTTEN.pages.INITIAL.options.ACCEPT",
+      "page": "INITIAL",
+      "on_chosen": "Accept",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "forgotten_soul"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "ACCEPT"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Relic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<ForgottenSoul>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<SoulsPower>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Curse",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Decay>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All(HasEnchantableCards);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "hungry_for_mushrooms",
+  "class": "HungryForMushrooms",
+  "act": "Act 3 - Glory",
+  "name": "Hungry for Mushrooms",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "HUNGRY_FOR_MUSHROOMS.pages.INITIAL.options.BIG_MUSHROOM",
+      "text_key": "HUNGRY_FOR_MUSHROOMS.pages.INITIAL.options.BIG_MUSHROOM",
+      "page": "INITIAL",
+      "on_chosen": "BigMushroom",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "big_mushroom"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BIG_MUSHROOM"
+      },
+      "reasons": []
+     },
+     {
+      "key": "HUNGRY_FOR_MUSHROOMS.pages.INITIAL.options.FRAGRANT_MUSHROOM",
+      "text_key": "HUNGRY_FOR_MUSHROOMS.pages.INITIAL.options.FRAGRANT_MUSHROOM",
+      "page": "INITIAL",
+      "on_chosen": "FragrantMushroom",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "fragrant_mushroom"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "FRAGRANT_MUSHROOM"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "infested_automaton",
+  "class": "InfestedAutomaton",
+  "act": "Act 2 - Hive",
+  "name": "Infested Automaton",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "INFESTED_AUTOMATON.pages.INITIAL.options.STUDY",
+      "text_key": "INFESTED_AUTOMATON.pages.INITIAL.options.STUDY",
+      "page": "INITIAL",
+      "on_chosen": "Study",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "CardPileCmd.Add(集合，谓词认不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "STUDY"
+      },
+      "reasons": []
+     },
+     {
+      "key": "INFESTED_AUTOMATON.pages.INITIAL.options.TOUCH_CORE",
+      "text_key": "INFESTED_AUTOMATON.pages.INITIAL.options.TOUCH_CORE",
+      "page": "INITIAL",
+      "on_chosen": "TouchCore",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "CardPileCmd.Add(集合，谓词认不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TOUCH_CORE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "jungle_maze_adventure",
+  "class": "JungleMazeAdventure",
+  "act": "Act 1 - Overgrowth",
+  "name": "Jungle Maze Adventure",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "JUNGLE_MAZE_ADVENTURE.pages.INITIAL.options.SOLO_QUEST",
+      "text_key": "JUNGLE_MAZE_ADVENTURE.pages.INITIAL.options.SOLO_QUEST",
+      "page": "INITIAL",
+      "on_chosen": "DontNeedHelp",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "SoloHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"SoloHp\"].BaseValue"
+       },
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "SoloGold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"SoloGold\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SOLO_QUEST"
+      },
+      "reasons": []
+     },
+     {
+      "key": "JUNGLE_MAZE_ADVENTURE.pages.INITIAL.options.JOIN_FORCES",
+      "text_key": "JUNGLE_MAZE_ADVENTURE.pages.INITIAL.options.JOIN_FORCES",
+      "page": "INITIAL",
+      "on_chosen": "SafetyInNumbers",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "JoinForcesGold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"JoinForcesGold\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "JOIN_FORCES"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "SoloGold",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 150,
+    "raw": "150m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "SoloHp",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": true,
+    "base": 18,
+    "raw": "18m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "JoinForcesGold",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 50,
+    "raw": "50m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.Players.Count == 1)\n\t\t{\n\t\t\treturn true;\n\t\t}\n\t\tforeach (Player player in runState.Players)\n\t\t{\n\t\t\tif ((decimal)player.Creature.CurrentHp <= base.DynamicVars[\"SoloHp\"].BaseValue)\n\t\t\t{\n\t\t\t\treturn false;\n\t\t\t}\n\t\t}\n\t\treturn true;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "lost_wisp",
+  "class": "LostWisp",
+  "act": "Act 2 - Hive",
+  "name": "The Lost Wisp",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "LOST_WISP.pages.INITIAL.options.CLAIM",
+      "text_key": "LOST_WISP.pages.INITIAL.options.CLAIM",
+      "page": "INITIAL",
+      "on_chosen": "onChosen",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项体抽不出（写法未识别）"
+      ]
+     },
+     {
+      "key": "LOST_WISP.pages.INITIAL.options.SEARCH",
+      "text_key": "LOST_WISP.pages.INITIAL.options.SEARCH",
+      "page": "INITIAL",
+      "on_chosen": "Search",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.IntValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SEARCH"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 60,
+    "raw": "60",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Relic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<MegaCrit.Sts2.Core.Models.Relics.LostWisp>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Curse",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Decay>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "luminous_choir",
+  "class": "LuminousChoir",
+  "act": "Act 1 - Overgrowth",
+  "name": "Luminous Choir",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "LUMINOUS_CHOIR.pages.INITIAL.options.REACH_INTO_THE_FLESH",
+      "text_key": "LUMINOUS_CHOIR.pages.INITIAL.options.REACH_INTO_THE_FLESH",
+      "page": "INITIAL",
+      "on_chosen": "ReachIntoTheFlesh",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 2,
+        "target": "self",
+        "amount": 2
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "spore_mind",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "REACH_INTO_THE_FLESH"
+      },
+      "reasons": []
+     },
+     {
+      "key": "LUMINOUS_CHOIR.pages.INITIAL.options.OFFER_TRIBUTE",
+      "text_key": "LUMINOUS_CHOIR.pages.INITIAL.options.OFFER_TRIBUTE",
+      "page": "INITIAL",
+      "on_chosen": "OfferTribute",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.IntValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "OFFER_TRIBUTE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "LUMINOUS_CHOIR.pages.INITIAL.options.OFFER_TRIBUTE_LOCKED",
+      "text_key": "LUMINOUS_CHOIR.pages.INITIAL.options.OFFER_TRIBUTE_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 149,
+    "raw": "149",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => (decimal)p.Gold >= base.DynamicVars.Gold.BaseValue && p.RelicGrabBag.HasAvailableRelics(runState));"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "morphic_grove",
+  "class": "MorphicGrove",
+  "act": "Act 1 - Overgrowth",
+  "name": "Morphic Grove",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "MORPHIC_GROVE.pages.INITIAL.options.GROUP",
+      "text_key": "MORPHIC_GROVE.pages.INITIAL.options.GROUP",
+      "page": "INITIAL",
+      "on_chosen": "Group",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_all_gold",
+        "amount": 0,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.Owner.Gold",
+        "needs_runtime": false
+       },
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "transform",
+        "count": 2,
+        "target": "self",
+        "amount": 2
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GROUP"
+      },
+      "reasons": []
+     },
+     {
+      "key": "MORPHIC_GROVE.pages.INITIAL.options.LONER",
+      "text_key": "MORPHIC_GROVE.pages.INITIAL.options.LONER",
+      "page": "INITIAL",
+      "on_chosen": "Loner",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "LONER"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "MaxHp",
+    "var_type": "MaxHpVar",
+    "type_param": null,
+    "named": false,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Gold >= 100 && p.Deck.Cards.Count((CardModel c) => c.IsTransformable) >= 2);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "neow",
+  "class": "Neow",
+  "act": "Act 1 - Overgrowth / Underdocks",
+  "name": "Neow",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "",
+      "text_key": "",
+      "page": null,
+      "on_chosen": "() => OnModifierOptionSelected(neowOption",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": "OnModifierOptionSelected(neowOption",
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项 lambda 带参数：OnModifierOptionSelected(neowOption"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "nonupeipe",
+  "class": "Nonupeipe",
+  "act": "Act 3 - Glory",
+  "name": "Nonupeipe",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "orobas",
+  "class": "Orobas",
+  "act": "Act 2 - Hive",
+  "name": "Orobas",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "pael",
+  "class": "Pael",
+  "act": "Act 2 - Hive",
+  "name": "Pael",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "potion_courier",
+  "class": "PotionCourier",
+  "act": null,
+  "name": "Potion Courier",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "POTION_COURIER.pages.INITIAL.options.GRAB_POTIONS",
+      "text_key": "POTION_COURIER.pages.INITIAL.options.GRAB_POTIONS",
+      "page": "INITIAL",
+      "on_chosen": "GrabPotions",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "offer_rewards",
+        "amount": 3,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "potion",
+          "foul_potion"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GRAB_POTIONS"
+      },
+      "reasons": []
+     },
+     {
+      "key": "POTION_COURIER.pages.INITIAL.options.RANSACK",
+      "text_key": "POTION_COURIER.pages.INITIAL.options.RANSACK",
+      "page": "INITIAL",
+      "on_chosen": "Ransack",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "pool"
+         ],
+         [
+          "rarity",
+          "uncommon"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "RANSACK"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "FoulPotions",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.CurrentActIndex > 0;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "punch_off",
+  "class": "PunchOff",
+  "act": "Underdocks",
+  "name": "Punch Off",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "PUNCH_OFF.pages.INITIAL.options.NAB",
+      "text_key": "PUNCH_OFF.pages.INITIAL.options.NAB",
+      "page": "INITIAL",
+      "on_chosen": "Nab",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "injury",
+        "pile": "deck"
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "relic"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "NAB"
+      },
+      "reasons": []
+     },
+     {
+      "key": "PUNCH_OFF.pages.INITIAL.options.I_CAN_TAKE_THEM",
+      "text_key": "PUNCH_OFF.pages.INITIAL.options.I_CAN_TAKE_THEM",
+      "page": "INITIAL",
+      "on_chosen": "TakeThem",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "I_CAN_TAKE_THEM"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "I_CAN_TAKE_THEM": {
+    "from": "TakeThem() 内联",
+    "options": [
+     {
+      "key": "PUNCH_OFF.pages.I_CAN_TAKE_THEM.options.FIGHT",
+      "text_key": "PUNCH_OFF.pages.I_CAN_TAKE_THEM.options.FIGHT",
+      "page": "I_CAN_TAKE_THEM",
+      "on_chosen": "Fight",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "需要事件战斗交接"
+      ]
+     }
+    ],
+    "inline_in": "TakeThem"
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 0,
+    "raw": "0",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "Gold",
+    "raw": "base.Rng.NextInt(91, 99)",
+    "uses_event_rng": true
+   }
+  ],
+  "gate": {
+   "body": "return runState.TotalFloor >= 6;"
+  },
+  "combat_encounter": "PunchOffEventEncounter",
+  "reasons": [
+   "需要事件战斗交接"
+  ]
+ },
+ {
+  "eid": "ranwid_the_elder",
+  "class": "RanwidTheElder",
+  "act": null,
+  "name": "Ranwid the Elder",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "RANWID_THE_ELDER.pages.INITIAL.options.POTION",
+      "text_key": "RANWID_THE_ELDER.pages.INITIAL.options.POTION",
+      "page": "INITIAL",
+      "on_chosen": "async delegate\n\t\t\t{\n\t\t\t\tawait GivePotion(potion);\n\t\t\t}",
+      "locked": false,
+      "inline_body": "\n\t\t\t\tawait GivePotion(potion);\n\t\t\t",
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       }
+      ],
+      "unsupported": [
+       "PotionCmd.Discard"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "POTION"
+      },
+      "reasons": []
+     },
+     {
+      "key": "RANWID_THE_ELDER.pages.INITIAL.options.POTION_LOCKED",
+      "text_key": "RANWID_THE_ELDER.pages.INITIAL.options.POTION_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "RANWID_THE_ELDER.pages.INITIAL.options.GOLD",
+      "text_key": "RANWID_THE_ELDER.pages.INITIAL.options.GOLD",
+      "page": "INITIAL",
+      "on_chosen": "GiveGold",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.IntValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GOLD"
+      },
+      "reasons": []
+     },
+     {
+      "key": "RANWID_THE_ELDER.pages.INITIAL.options.RELIC",
+      "text_key": "RANWID_THE_ELDER.pages.INITIAL.options.RELIC",
+      "page": "INITIAL",
+      "on_chosen": "async delegate\n\t\t\t{\n\t\t\t\tawait GiveRelic(relic);\n\t\t\t}",
+      "locked": false,
+      "inline_body": "\n\t\t\t\tawait GiveRelic(relic);\n\t\t\t",
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 2,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       }
+      ],
+      "unsupported": [
+       "RelicCmd.Remove"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "RELIC"
+      },
+      "reasons": []
+     },
+     {
+      "key": "RANWID_THE_ELDER.pages.INITIAL.options.RELIC_LOCKED",
+      "text_key": "RANWID_THE_ELDER.pages.INITIAL.options.RELIC_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 100,
+    "raw": "100",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Potion",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "\"Potion\"",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Relic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "\"Relic\"",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex == 0)\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\tif (runState.Players.Any((Player p) => !GetValidRelics(p).Any()))\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\tif (runState.Players.Any((Player p) => p.Gold < 100))\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\tif (runState.Players.Any((Player p) => !p.Potions.Any()))\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\treturn true;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "reflections",
+  "class": "Reflections",
+  "act": "Act 3 - Glory",
+  "name": "Reflections snoitcelfeR",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "REFLECTIONS.pages.INITIAL.options.TOUCH_A_MIRROR",
+      "text_key": "REFLECTIONS.pages.INITIAL.options.TOUCH_A_MIRROR",
+      "page": "INITIAL",
+      "on_chosen": "TouchAMirror",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "random_deck_cards",
+        "amount": 2,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "2",
+        "purpose": "downgrade",
+        "rng": "event",
+        "pick": "item",
+        "filter": [
+         [
+          "upgraded",
+          true
+         ]
+        ]
+       },
+       {
+        "op": "random_deck_cards",
+        "amount": 4,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "4",
+        "purpose": "upgrade",
+        "rng": "event",
+        "pick": "item",
+        "filter": [
+         [
+          "upgradable",
+          true
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TOUCH_A_MIRROR"
+      },
+      "reasons": []
+     },
+     {
+      "key": "REFLECTIONS.pages.INITIAL.options.SHATTER",
+      "text_key": "REFLECTIONS.pages.INITIAL.options.SHATTER",
+      "page": "INITIAL",
+      "on_chosen": "Shatter",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "clone_deck",
+        "amount": 0,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": ""
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "bad_luck",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SHATTER"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "relic_trader",
+  "class": "RelicTrader",
+  "act": null,
+  "name": "Relic Trader",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "RELIC_TRADER.pages.INITIAL.options.TOP",
+      "text_key": "RELIC_TRADER.pages.INITIAL.options.TOP",
+      "page": "INITIAL",
+      "on_chosen": "Top",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "Obtain(遗物 id 解析不出)",
+       "RelicCmd.Remove"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "RELIC_TRADER.pages.INITIAL.options.MIDDLE",
+      "text_key": "RELIC_TRADER.pages.INITIAL.options.MIDDLE",
+      "page": "INITIAL",
+      "on_chosen": "Middle",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "Obtain(遗物 id 解析不出)",
+       "RelicCmd.Remove"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "RELIC_TRADER.pages.INITIAL.options.BOTTOM",
+      "text_key": "RELIC_TRADER.pages.INITIAL.options.BOTTOM",
+      "page": "INITIAL",
+      "on_chosen": "Bottom",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "Obtain(遗物 id 解析不出)",
+       "RelicCmd.Remove"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "PROCEED",
+      "text_key": "PROCEED",
+      "page": null,
+      "on_chosen": "Done",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "TopRelicOwned",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "TopRelicNew",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "MiddleRelicOwned",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "MiddleRelicNew",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "BottomRelicOwned",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "BottomRelicNew",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex == 0)\n\t\t{\n\t\t\treturn false;\n\t\t}\n\t\treturn runState.Players.All((Player p) => GetValidRelics(p).Count() >= 5);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "room_full_of_cheese",
+  "class": "RoomFullOfCheese",
+  "act": null,
+  "name": "Room Full of Cheese",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "ROOM_FULL_OF_CHEESE.pages.INITIAL.options.GORGE",
+      "text_key": "ROOM_FULL_OF_CHEESE.pages.INITIAL.options.GORGE",
+      "page": "INITIAL",
+      "on_chosen": "Gorge",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "未识别的效果写法：CardFactory.CreateForReward"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GORGE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "ROOM_FULL_OF_CHEESE.pages.INITIAL.options.SEARCH",
+      "text_key": "ROOM_FULL_OF_CHEESE.pages.INITIAL.options.SEARCH",
+      "page": "INITIAL",
+      "on_chosen": "Search",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "chosen_cheese"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SEARCH"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 14,
+    "raw": "14m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.CurrentActIndex < 2;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "round_tea_party",
+  "class": "RoundTeaParty",
+  "act": "Act 3 - Glory",
+  "name": "The Round Tea Party",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "ROUND_TEA_PARTY.pages.INITIAL.options.ENJOY_TEA",
+      "text_key": "ROUND_TEA_PARTY.pages.INITIAL.options.ENJOY_TEA",
+      "page": "INITIAL",
+      "on_chosen": "EnjoyTea",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "royal_poison"
+       },
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.Owner.Creature.MaxHp - targetCreature.CurrentHp",
+        "needs_runtime": false
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "ENJOY_TEA"
+      },
+      "reasons": []
+     },
+     {
+      "key": "ROUND_TEA_PARTY.pages.INITIAL.options.PICK_FIGHT",
+      "text_key": "ROUND_TEA_PARTY.pages.INITIAL.options.PICK_FIGHT",
+      "page": "INITIAL",
+      "on_chosen": "PickFight",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "PICK_FIGHT"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "PICK_FIGHT": {
+    "from": "PickFight() 内联",
+    "options": [
+     {
+      "key": "ROUND_TEA_PARTY.pages.PICK_FIGHT.options.CONTINUE_FIGHT",
+      "text_key": "ROUND_TEA_PARTY.pages.PICK_FIGHT.options.CONTINUE_FIGHT",
+      "page": "PICK_FIGHT",
+      "on_chosen": "ContinueFight",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "CONTINUE_FIGHT"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "PickFight"
+   }
+  },
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 11,
+    "raw": "11m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Relic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<RoyalPoison>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Creature.CurrentHp >= 12);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "sapphire_seed",
+  "class": "SapphireSeed",
+  "act": "Act 1 - Overgrowth",
+  "name": "Sapphire Seed",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SAPPHIRE_SEED.pages.INITIAL.options.EAT",
+      "text_key": "SAPPHIRE_SEED.pages.INITIAL.options.EAT",
+      "page": "INITIAL",
+      "on_chosen": "Eat",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": "Heal",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Heal.IntValue"
+       },
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "upgrade",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EAT"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SAPPHIRE_SEED.pages.INITIAL.options.PLANT",
+      "text_key": "SAPPHIRE_SEED.pages.INITIAL.options.PLANT",
+      "page": "INITIAL",
+      "on_chosen": "Plant",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "PLANT"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Enchantment",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<Sown>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Heal",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": false,
+    "base": 9,
+    "raw": "9m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "self_help_book",
+  "class": "SelfHelpBook",
+  "act": null,
+  "name": "Self-Help Book",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_THE_BACK",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_THE_BACK",
+      "page": "INITIAL",
+      "on_chosen": "ReadTheBack",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "READ_THE_BACK"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_THE_BACK_LOCKED",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_THE_BACK_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_PASSAGE",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_PASSAGE",
+      "page": "INITIAL",
+      "on_chosen": "ReadPassage",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "READ_PASSAGE"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_PASSAGE_LOCKED",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_PASSAGE_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_ENTIRE_BOOK",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_ENTIRE_BOOK",
+      "page": "INITIAL",
+      "on_chosen": "ReadEntireBook",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "READ_ENTIRE_BOOK"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_ENTIRE_BOOK_LOCKED",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.READ_ENTIRE_BOOK_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SELF_HELP_BOOK.pages.INITIAL.options.NO_OPTIONS",
+      "text_key": "SELF_HELP_BOOK.pages.INITIAL.options.NO_OPTIONS",
+      "page": "INITIAL",
+      "on_chosen": "SkipBook",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "NO_OPTIONS"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Enchantment1",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<Sharp>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment2",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<Nimble>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment3",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<Swift>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment1Amount",
+    "var_type": "IntVar",
+    "type_param": null,
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment2Amount",
+    "var_type": "IntVar",
+    "type_param": null,
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Enchantment3Amount",
+    "var_type": "IntVar",
+    "type_param": null,
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "slippery_bridge",
+  "class": "SlipperyBridge",
+  "act": null,
+  "name": "Slippery Bridge",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SLIPPERY_BRIDGE.pages.INITIAL.options.OVERCOME",
+      "text_key": "SLIPPERY_BRIDGE.pages.INITIAL.options.OVERCOME",
+      "page": "INITIAL",
+      "on_chosen": "Overcome",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "OVERCOME"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SLIPPERY_BRIDGE.pages.INITIAL.options.HOLD_ON_0",
+      "text_key": "SLIPPERY_BRIDGE.pages.INITIAL.options.HOLD_ON_0",
+      "page": "INITIAL",
+      "on_chosen": "HoldOn",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "CurrentHpLoss",
+        "needs_runtime": false
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": ""
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "RandomCard",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "HpLoss",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "CurrentHpLoss",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.TotalFloor > 6)\n\t\t{\n\t\t\treturn runState.Players.All((Player p) => p.Deck.Cards.Any((CardModel c) => c.IsRemovable));\n\t\t}\n\t\treturn false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "spiraling_whirlpool",
+  "class": "SpiralingWhirlpool",
+  "act": "Underdocks",
+  "name": "Spiraling Whirlpool",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SPIRALING_WHIRLPOOL.pages.INITIAL.options.OBSERVE",
+      "text_key": "SPIRALING_WHIRLPOOL.pages.INITIAL.options.OBSERVE",
+      "page": "INITIAL",
+      "on_chosen": "ObserveTheSpiral",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "OBSERVE"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "SPIRALING_WHIRLPOOL.pages.INITIAL.options.DRINK",
+      "text_key": "SPIRALING_WHIRLPOOL.pages.INITIAL.options.DRINK",
+      "page": "INITIAL",
+      "on_chosen": "Drink",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": "Heal",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Heal.IntValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DRINK"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Heal",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": false,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "Heal",
+    "raw": "((base.Owner != null) ? ((decimal)base.Owner.Creature.MaxHp * 0.33m) : 0m)",
+    "uses_event_rng": false
+   }
+  ],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Deck.Cards.Any(ModelDb.Enchantment<Spiral>().CanEnchant));"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "spirit_grafter",
+  "class": "SpiritGrafter",
+  "act": "Act 2 - Hive",
+  "name": "Spirit Grafter",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SPIRIT_GRAFTER.pages.INITIAL.options.LET_IT_IN",
+      "text_key": "SPIRIT_GRAFTER.pages.INITIAL.options.LET_IT_IN",
+      "page": "INITIAL",
+      "on_chosen": "LetItIn",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": "LetItInHealAmount",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"LetItInHealAmount\"].BaseValue"
+       },
+       {
+        "op": "add_card",
+        "card": "metamorphosis",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "LET_IT_IN"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SPIRIT_GRAFTER.pages.INITIAL.options.REJECTION",
+      "text_key": "SPIRIT_GRAFTER.pages.INITIAL.options.REJECTION",
+      "page": "INITIAL",
+      "on_chosen": "Rejection",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "upgrade",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       },
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "RejectionHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"RejectionHpLoss\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "REJECTION"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "RejectionHpLoss",
+    "var_type": "HpLossVar",
+    "type_param": null,
+    "named": true,
+    "base": 10,
+    "raw": "10m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "LetItInHealAmount",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": true,
+    "base": 25,
+    "raw": "25m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "stone_of_all_time",
+  "class": "StoneOfAllTime",
+  "act": null,
+  "name": "Stone of All Time",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "STONE_OF_ALL_TIME.pages.INITIAL.options.LIFT",
+      "text_key": "STONE_OF_ALL_TIME.pages.INITIAL.options.LIFT",
+      "page": "INITIAL",
+      "on_chosen": "Lift",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "DrinkMaxHpGain",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"DrinkMaxHpGain\"].BaseValue"
+       }
+      ],
+      "unsupported": [
+       "PotionCmd.Discard"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "STONE_OF_ALL_TIME.pages.INITIAL.options.LIFT_LOCKED",
+      "text_key": "STONE_OF_ALL_TIME.pages.INITIAL.options.LIFT_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "STONE_OF_ALL_TIME.pages.INITIAL.options.PUSH_LOCKED",
+      "text_key": "STONE_OF_ALL_TIME.pages.INITIAL.options.PUSH_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "PushVigorousAmount",
+      "text_key": "PushVigorousAmount",
+      "page": null,
+      "on_chosen": "Push",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "PushHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"PushHpLoss\"].BaseValue"
+       },
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [
+       "Enchant(附魔解析不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "PUSH"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "DrinkRandomPotion",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "DrinkMaxHpGain",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 10,
+    "raw": "10m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "PushHpLoss",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 6,
+    "raw": "6m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "PushVigorousAmount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 8,
+    "raw": "8m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex == 1)\n\t\t{\n\t\t\treturn runState.Players.All((Player player) => player.Potions.Any());\n\t\t}\n\t\treturn false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "sunken_statue",
+  "class": "SunkenStatue",
+  "act": "Act 1 - Overgrowth / Underdocks",
+  "name": "The Sunken Statue",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SUNKEN_STATUE.pages.INITIAL.options.GRAB_SWORD",
+      "text_key": "SUNKEN_STATUE.pages.INITIAL.options.GRAB_SWORD",
+      "page": "INITIAL",
+      "on_chosen": "GrabSword",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "sword_of_stone"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GRAB_SWORD"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SUNKEN_STATUE.pages.INITIAL.options.DIVE_INTO_WATER",
+      "text_key": "SUNKEN_STATUE.pages.INITIAL.options.DIVE_INTO_WATER",
+      "page": "INITIAL",
+      "on_chosen": "DiveIntoWater",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.BaseValue"
+       },
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "HpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"HpLoss\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DIVE_INTO_WATER"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Relic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<SwordOfStone>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 111,
+    "raw": "111",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "HpLoss",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 7,
+    "raw": "7m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "sunken_treasury",
+  "class": "SunkenTreasury",
+  "act": "Underdocks",
+  "name": "Sunken Treasury",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SUNKEN_TREASURY.pages.INITIAL.options.FIRST_CHEST",
+      "text_key": "SUNKEN_TREASURY.pages.INITIAL.options.FIRST_CHEST",
+      "page": "INITIAL",
+      "on_chosen": "FirstChest",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "SmallChestGold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"SmallChestGold\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "FIRST_CHEST"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SUNKEN_TREASURY.pages.INITIAL.options.SECOND_CHEST",
+      "text_key": "SUNKEN_TREASURY.pages.INITIAL.options.SECOND_CHEST",
+      "page": "INITIAL",
+      "on_chosen": "SecondChest",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "LargeChestGold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"LargeChestGold\"].BaseValue"
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "greed",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "SmallChestGold",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 60,
+    "raw": "60m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "LargeChestGold",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 333,
+    "raw": "333m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "symbiote",
+  "class": "Symbiote",
+  "act": null,
+  "name": "Symbiote",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "SYMBIOTE.pages.INITIAL.options.APPROACH_LOCKED",
+      "text_key": "SYMBIOTE.pages.INITIAL.options.APPROACH_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "SYMBIOTE.pages.INITIAL.options.APPROACH",
+      "text_key": "SYMBIOTE.pages.INITIAL.options.APPROACH",
+      "page": "INITIAL",
+      "on_chosen": "Approach",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "APPROACH"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "SYMBIOTE.pages.INITIAL.options.KILL_WITH_FIRE",
+      "text_key": "SYMBIOTE.pages.INITIAL.options.KILL_WITH_FIRE",
+      "page": "INITIAL",
+      "on_chosen": "KillWithFire",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "transform",
+        "count": null,
+        "target": "self",
+        "amount": null,
+        "amount_var": "Cards"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "KILL_WITH_FIRE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Enchantment",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<Corrupted>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 1,
+    "raw": "1",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.CurrentActIndex > 0;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "tablet_of_truth",
+  "class": "TabletOfTruth",
+  "act": "Act 1 - Overgrowth",
+  "name": "Tablet of Truth",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "TABLET_OF_TRUTH.pages.INITIAL.options.DECIPHER_1",
+      "text_key": "TABLET_OF_TRUTH.pages.INITIAL.options.DECIPHER_1",
+      "page": "INITIAL",
+      "on_chosen": "Decipher",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_max_hp",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.Owner.Creature.MaxHp - 1",
+        "needs_runtime": false
+       },
+       {
+        "op": "lose_max_hp",
+        "amount": null,
+        "amount_var": "DecipherMaxHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"DecipherMaxHpLoss\"].BaseValue"
+       },
+       {
+        "op": "upgrade_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": ""
+       },
+       {
+        "op": "upgrade_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": ""
+       }
+      ],
+      "unsupported": [
+       "CreatureCmd.Kill"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     },
+     {
+      "key": "TABLET_OF_TRUTH.pages.INITIAL.options.SMASH",
+      "text_key": "TABLET_OF_TRUTH.pages.INITIAL.options.SMASH",
+      "page": "INITIAL",
+      "on_chosen": "Smash",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": "SmashHPGain",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"SmashHPGain\"].BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SMASH"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "DECIPHER": {
+    "from": "Decipher() 内联",
+    "options": [
+     {
+      "key": "TABLET_OF_TRUTH.pages.DECIPHER_{DecipherCount}.options.DECIPHER",
+      "text_key": "TABLET_OF_TRUTH.pages.DECIPHER_{DecipherCount}.options.DECIPHER",
+      "page": null,
+      "on_chosen": "Decipher",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_max_hp",
+        "amount": null,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.Owner.Creature.MaxHp - 1",
+        "needs_runtime": false
+       },
+       {
+        "op": "lose_max_hp",
+        "amount": null,
+        "amount_var": "DecipherMaxHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"DecipherMaxHpLoss\"].BaseValue"
+       },
+       {
+        "op": "upgrade_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": ""
+       },
+       {
+        "op": "upgrade_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": ""
+       }
+      ],
+      "unsupported": [
+       "CreatureCmd.Kill"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项体改写动态变量（跨页累计），引擎不支持"
+      ]
+     },
+     {
+      "key": "TABLET_OF_TRUTH.pages.DECIPHER.options.GIVE_UP",
+      "text_key": "TABLET_OF_TRUTH.pages.DECIPHER.options.GIVE_UP",
+      "page": "DECIPHER",
+      "on_chosen": "GiveUp",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GIVE_UP"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "Decipher"
+   }
+  },
+  "vars": [
+   {
+    "name": "SmashHPGain",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 20,
+    "raw": "20m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "DecipherMaxHpLoss",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "tanx",
+  "class": "Tanx",
+  "act": "Act 3 - Glory",
+  "name": "Tanx",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "tea_master",
+  "class": "TeaMaster",
+  "act": null,
+  "name": "Tea Master",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "TEA_MASTER.pages.INITIAL.options.BONE_TEA",
+      "text_key": "TEA_MASTER.pages.INITIAL.options.BONE_TEA",
+      "page": "INITIAL",
+      "on_chosen": "BoneTea",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "BoneTeaCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"BoneTeaCost\"].BaseValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "bone_tea"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "TEA_MASTER.pages.INITIAL.options.BONE_TEA_LOCKED",
+      "text_key": "TEA_MASTER.pages.INITIAL.options.BONE_TEA_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "TEA_MASTER.pages.INITIAL.options.EMBER_TEA",
+      "text_key": "TEA_MASTER.pages.INITIAL.options.EMBER_TEA",
+      "page": "INITIAL",
+      "on_chosen": "EmberTea",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "EmberTeaCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"EmberTeaCost\"].BaseValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "ember_tea"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "TEA_MASTER.pages.INITIAL.options.EMBER_TEA_LOCKED",
+      "text_key": "TEA_MASTER.pages.INITIAL.options.EMBER_TEA_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "TEA_MASTER.pages.INITIAL.options.TEA_OF_DISCOURTESY",
+      "text_key": "TEA_MASTER.pages.INITIAL.options.TEA_OF_DISCOURTESY",
+      "page": "INITIAL",
+      "on_chosen": "TeaOfDiscourtesy",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "tea_of_discourtesy"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TEA_OF_DISCOURTESY"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "BoneTeaCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 50,
+    "raw": "50m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "EmberTeaCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 150,
+    "raw": "150m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "BoneTeaDescription",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<BoneTea>().DynamicDescription.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "EmberTeaDescription",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<EmberTea>().DynamicDescription.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "TeaOfDiscourtesyDescription",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Relic<TeaOfDiscourtesy>().DynamicDescription.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex < 2)\n\t\t{\n\t\t\treturn runState.Players.All((Player p) => p.Gold >= 150);\n\t\t}\n\t\treturn false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "tezcatara",
+  "class": "Tezcatara",
+  "act": "Act 2 - Hive",
+  "name": "Tezcatara",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "the_architect",
+  "class": "TheArchitect",
+  "act": null,
+  "name": "The Architect",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "the_future_of_potions",
+  "class": "TheFutureOfPotions",
+  "act": null,
+  "name": "The Future of Potions?",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "THE_FUTURE_OF_POTIONS.pages.INITIAL.options.POTION",
+      "text_key": "THE_FUTURE_OF_POTIONS.pages.INITIAL.options.POTION",
+      "page": "INITIAL",
+      "on_chosen": "async delegate\n\t\t\t{\n\t\t\t\tawait Trade(potion);\n\t\t\t}",
+      "locked": false,
+      "inline_body": "\n\t\t\t\tawait Trade(potion);\n\t\t\t",
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "upgrade_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": ""
+       }
+      ],
+      "unsupported": [
+       "PotionCmd.Discard",
+       "RewardsCmd.OfferCustom(OfferCustom 之后还有效果，顺序无法保证)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Potions.Count() >= 2);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "the_lantern_key",
+  "class": "TheLanternKey",
+  "act": "Act 2 - Hive",
+  "name": "The Lantern Key",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "THE_LANTERN_KEY.pages.INITIAL.options.RETURN_THE_KEY",
+      "text_key": "THE_LANTERN_KEY.pages.INITIAL.options.RETURN_THE_KEY",
+      "page": "INITIAL",
+      "on_chosen": "ReturnTheKey",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DONE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "THE_LANTERN_KEY.pages.INITIAL.options.KEEP_THE_KEY",
+      "text_key": "THE_LANTERN_KEY.pages.INITIAL.options.KEEP_THE_KEY",
+      "page": "INITIAL",
+      "on_chosen": "KeepTheKey",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "KEEP_THE_KEY"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "KEEP_THE_KEY": {
+    "from": "KeepTheKey() 内联",
+    "options": [
+     {
+      "key": "THE_LANTERN_KEY.pages.KEEP_THE_KEY.options.FIGHT",
+      "text_key": "THE_LANTERN_KEY.pages.KEEP_THE_KEY.options.FIGHT",
+      "page": "KEEP_THE_KEY",
+      "on_chosen": "Fight",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "需要事件战斗交接"
+      ]
+     }
+    ],
+    "inline_in": "KeepTheKey"
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 100,
+    "raw": "100",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": "MysteriousKnightEventEncounter",
+  "reasons": [
+   "需要事件战斗交接"
+  ]
+ },
+ {
+  "eid": "the_legends_were_true",
+  "class": "TheLegendsWereTrue",
+  "act": null,
+  "name": "The Legends Were True",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "THE_LEGENDS_WERE_TRUE.pages.INITIAL.options.NAB_THE_MAP",
+      "text_key": "THE_LEGENDS_WERE_TRUE.pages.INITIAL.options.NAB_THE_MAP",
+      "page": "INITIAL",
+      "on_chosen": "NabTheMap",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "add_card",
+        "card": "spoils_map",
+        "pile": "deck",
+        "position": "",
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "NAB_THE_MAP"
+      },
+      "reasons": []
+     },
+     {
+      "key": "THE_LEGENDS_WERE_TRUE.pages.INITIAL.options.SLOWLY_FIND_AN_EXIT",
+      "text_key": "THE_LEGENDS_WERE_TRUE.pages.INITIAL.options.SLOWLY_FIND_AN_EXIT",
+      "page": "INITIAL",
+      "on_chosen": "SlowlyFindAnExit",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "damage",
+        "amount": null,
+        "amount_var": "Damage",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Damage"
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "pool"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SLOWLY_FIND_AN_EXIT"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 8,
+    "raw": "8m",
+    "value_prop": "Unblockable",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex == 0 && runState.Players.All((Player p) => p.Deck.Cards.Count > 0))\n\t\t{\n\t\t\treturn runState.Players.All((Player p) => p.Creature.CurrentHp >= 10);\n\t\t}\n\t\treturn false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "this_or_that",
+  "class": "ThisOrThat",
+  "act": null,
+  "name": "This or That?",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "THIS_OR_THAT.pages.INITIAL.options.PLAIN",
+      "text_key": "THIS_OR_THAT.pages.INITIAL.options.PLAIN",
+      "page": "INITIAL",
+      "on_chosen": "Plain",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "HpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.HpLoss.IntValue"
+       },
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.IntValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "PLAIN"
+      },
+      "reasons": []
+     },
+     {
+      "key": "THIS_OR_THAT.pages.INITIAL.options.ORNATE",
+      "text_key": "THIS_OR_THAT.pages.INITIAL.options.ORNATE",
+      "page": "INITIAL",
+      "on_chosen": "Ornate",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "clumsy",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "ORNATE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "HpLoss",
+    "var_type": "HpLossVar",
+    "type_param": null,
+    "named": false,
+    "base": 6,
+    "raw": "6m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 0,
+    "raw": "0",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Curse",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Clumsy>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "Gold",
+    "raw": "base.Rng.NextInt(41, 69)",
+    "uses_event_rng": true
+   }
+  ],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "tinker_time",
+  "class": "TinkerTime",
+  "act": "Act 3 - Glory",
+  "name": "Tinker Time",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "TINKER_TIME.pages.INITIAL.options.CHOOSE_CARD_TYPE",
+      "text_key": "TINKER_TIME.pages.INITIAL.options.CHOOSE_CARD_TYPE",
+      "page": "INITIAL",
+      "on_chosen": "ChooseCardType",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "goto",
+       "page": "CHOOSE_CARD_TYPE"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "CHOOSE_CARD_TYPE": {
+    "from": "ChooseCardType() 内联",
+    "options": [],
+    "inline_in": "ChooseCardType"
+   },
+   "CHOOSE_RIDER": {
+    "from": "ChooseRiderEffect() 内联",
+    "options": [
+     {
+      "key": "",
+      "text_key": "",
+      "page": null,
+      "on_chosen": "() => RiderChosen(riders[0])",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": "RiderChosen(riders[0])",
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项 lambda 带参数：RiderChosen(riders[0])"
+      ]
+     },
+     {
+      "key": "",
+      "text_key": "",
+      "page": null,
+      "on_chosen": "() => RiderChosen(riders[1])",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": "RiderChosen(riders[1])",
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": [
+       "选项 lambda 带参数：RiderChosen(riders[1])"
+      ]
+     }
+    ],
+    "inline_in": "ChooseRiderEffect"
+   }
+  },
+  "vars": [
+   {
+    "name": "Damage",
+    "var_type": "DamageVar",
+    "type_param": null,
+    "named": false,
+    "base": 12,
+    "raw": "12m",
+    "value_prop": "Move",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Block",
+    "var_type": "BlockVar",
+    "type_param": null,
+    "named": false,
+    "base": 8,
+    "raw": "8m",
+    "value_prop": "Move",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "SappingWeak",
+    "var_type": "PowerVar",
+    "type_param": "WeakPower",
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "SappingVulnerable",
+    "var_type": "PowerVar",
+    "type_param": "VulnerablePower",
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ViolenceHits",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ChokingDamage",
+    "var_type": "PowerVar",
+    "type_param": "StranglePower",
+    "named": true,
+    "base": 6,
+    "raw": "6m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "EnergizedEnergy",
+    "var_type": "EnergyVar",
+    "type_param": null,
+    "named": true,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "WisdomCards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": true,
+    "base": 3,
+    "raw": "3",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ExpertiseStrength",
+    "var_type": "PowerVar",
+    "type_param": "StrengthPower",
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ExpertiseDexterity",
+    "var_type": "PowerVar",
+    "type_param": "DexterityPower",
+    "named": true,
+    "base": 2,
+    "raw": "2m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "CuriousReduction",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "energyPrefix",
+    "var_type": "EnergyVar",
+    "type_param": null,
+    "named": true,
+    "base": 1,
+    "raw": "1",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "trash_heap",
+  "class": "TrashHeap",
+  "act": "Underdocks",
+  "name": "Trash Heap",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "TRASH_HEAP.pages.INITIAL.options.DIVE_IN",
+      "text_key": "TRASH_HEAP.pages.INITIAL.options.DIVE_IN",
+      "page": "INITIAL",
+      "on_chosen": "DiveIn",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "HpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.HpLoss.IntValue"
+       }
+      ],
+      "unsupported": [
+       "Obtain(遗物 id 解析不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "DIVE_IN"
+      },
+      "reasons": []
+     },
+     {
+      "key": "TRASH_HEAP.pages.INITIAL.options.GRAB",
+      "text_key": "TRASH_HEAP.pages.INITIAL.options.GRAB",
+      "page": "INITIAL",
+      "on_chosen": "Grab",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.BaseValue"
+       }
+      ],
+      "unsupported": [
+       "CardPileCmd.Add(集合，谓词认不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GRAB"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "HpLoss",
+    "var_type": "HpLossVar",
+    "type_param": null,
+    "named": false,
+    "base": 8,
+    "raw": "8m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 100,
+    "raw": "100",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player player) => player.Creature.CurrentHp > 5);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "trial",
+  "class": "Trial",
+  "act": "Act 3 - Glory",
+  "name": "The Trial",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "TRIAL.pages.INITIAL.options.ACCEPT",
+      "text_key": "TRIAL.pages.INITIAL.options.ACCEPT",
+      "page": "INITIAL",
+      "on_chosen": "Accept",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [
+       "未识别的效果写法：Instance.Layout.RemoveNodesOnPortrait",
+       "未识别的效果写法：NEventRoom.Instance.SetPortrait"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "TRIAL.pages.INITIAL.options.REJECT",
+      "text_key": "TRIAL.pages.INITIAL.options.REJECT",
+      "page": "INITIAL",
+      "on_chosen": "Reject",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "EntrantNumber",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": -1,
+    "raw": "-1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "EntrantNumber",
+    "raw": "= -1m)\n\t\t{\n\t\t\tbase.DynamicVars[\"EntrantNumber\"].BaseValue = MegaCrit.Sts2.Core.Random.Rng.Chaotic.NextInt(101, 999)",
+    "uses_event_rng": true
+   }
+  ],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "unrest_site",
+  "class": "UnrestSite",
+  "act": "Act 1 - Overgrowth",
+  "name": "Unrest Site",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "UNREST_SITE.pages.INITIAL.options.REST",
+      "text_key": "UNREST_SITE.pages.INITIAL.options.REST",
+      "page": "INITIAL",
+      "on_chosen": "Rest",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "heal",
+        "amount": null,
+        "amount_var": "Heal",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Heal.BaseValue"
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "poor_sleep",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "REST"
+      },
+      "reasons": []
+     },
+     {
+      "key": "UNREST_SITE.pages.INITIAL.options.KILL",
+      "text_key": "UNREST_SITE.pages.INITIAL.options.KILL",
+      "page": "INITIAL",
+      "on_chosen": "Kill",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_max_hp",
+        "amount": null,
+        "amount_var": "MaxHpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"MaxHpLoss\"].BaseValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": []
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "KILL"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Heal",
+    "var_type": "HealVar",
+    "type_param": null,
+    "named": false,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "MaxHpLoss",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 8,
+    "raw": "8m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "Heal",
+    "raw": "base.Owner.Creature.MaxHp - base.Owner.Creature.CurrentHp",
+    "uses_event_rng": false
+   }
+  ],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => (decimal)p.Creature.CurrentHp <= (decimal)p.Creature.MaxHp * 0.70m);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "vakuu",
+  "class": "Vakuu",
+  "act": "Act 3 - Glory",
+  "name": "Vakuu",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": []
+   }
+  },
+  "vars": [
+   {
+    "name": "Visits",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [
+   {
+    "var": "Visits",
+    "raw": "num + 1",
+    "uses_event_rng": false
+   }
+  ],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "war_historian_repy",
+  "class": "WarHistorianRepy",
+  "act": null,
+  "name": "War Historian, Repy",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CAGE",
+      "text_key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CAGE",
+      "page": "INITIAL",
+      "on_chosen": "InitialUnlockCage",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       },
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "history_course"
+       }
+      ],
+      "unsupported": [
+       "PlayerCmd.CompleteQuest"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "UNLOCK_CAGE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CHEST",
+      "text_key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CHEST",
+      "page": "INITIAL",
+      "on_chosen": "InitialUnlockChest",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       },
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "factory"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "factory"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "relic"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "relic"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [
+       "PlayerCmd.CompleteQuest"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "UNLOCK_CHEST"
+      },
+      "reasons": []
+     }
+    ]
+   },
+   "UNLOCK_CAGE": {
+    "from": "InitialUnlockCage() 内联",
+    "options": [
+     {
+      "key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CHEST",
+      "text_key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CHEST",
+      "page": "INITIAL",
+      "on_chosen": "SecondUnlockChest",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "factory"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "factory"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "relic"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "relic"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [
+       "PlayerCmd.CompleteQuest"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXTRA_UNLOCK_CHEST"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "InitialUnlockCage"
+   },
+   "UNLOCK_CHEST": {
+    "from": "InitialUnlockChest() 内联",
+    "options": [
+     {
+      "key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CAGE",
+      "text_key": "WAR_HISTORIAN_REPY.pages.INITIAL.options.UNLOCK_CAGE",
+      "page": "INITIAL",
+      "on_chosen": "SecondUnlockCage",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "remove_card_from_deck",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "history_course"
+       }
+      ],
+      "unsupported": [
+       "PlayerCmd.CompleteQuest"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EXTRA_UNLOCK_CAGE"
+      },
+      "reasons": []
+     }
+    ],
+    "inline_in": "InitialUnlockChest"
+   }
+  },
+  "vars": [],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "waterlogged_scriptorium",
+  "class": "WaterloggedScriptorium",
+  "act": "Underdocks",
+  "name": "Waterlogged Scriptorium",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.BLOODY_INK",
+      "text_key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.BLOODY_INK",
+      "page": "INITIAL",
+      "on_chosen": "BloodyInk",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "gain_max_hp",
+        "amount": null,
+        "amount_var": "MaxHp",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.MaxHp.BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BLOODY_INK"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.TENTACLE_QUILL",
+      "text_key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.TENTACLE_QUILL",
+      "page": "INITIAL",
+      "on_chosen": "TentacleQuill",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.BaseValue"
+       },
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TENTACLE_QUILL"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.TENTACLE_QUILL_LOCKED",
+      "text_key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.TENTACLE_QUILL_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.PRICKLY_SPONGE",
+      "text_key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.PRICKLY_SPONGE",
+      "page": "INITIAL",
+      "on_chosen": "PricklySponge",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "PricklySpongeGold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"PricklySpongeGold\"].BaseValue"
+       },
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "PRICKLY_SPONGE"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.PRICKLY_SPONGE_LOCKED",
+      "text_key": "WATERLOGGED_SCRIPTORIUM.pages.INITIAL.options.PRICKLY_SPONGE_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "MaxHp",
+    "var_type": "MaxHpVar",
+    "type_param": null,
+    "named": false,
+    "base": 6,
+    "raw": "6m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 55,
+    "raw": "55",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "PricklySpongeGold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": true,
+    "base": 99,
+    "raw": "99",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "Cards",
+    "var_type": "CardsVar",
+    "type_param": null,
+    "named": false,
+    "base": 2,
+    "raw": "2",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Gold >= 55);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "welcome_to_wongos",
+  "class": "WelcomeToWongos",
+  "act": null,
+  "name": "Welcome to Wongo's",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.BARGAIN_BIN",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.BARGAIN_BIN",
+      "page": "INITIAL",
+      "on_chosen": "BuyBargainBin",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "BargainBinCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"BargainBinCost\"].BaseValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "",
+        "filter": [
+         [
+          "rarity",
+          "common"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.BARGAIN_BIN_LOCKED",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.BARGAIN_BIN_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.FEATURED_ITEM",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.FEATURED_ITEM",
+      "page": "INITIAL",
+      "on_chosen": "BuyFeaturedItem",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "FeaturedItemCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"FeaturedItemCost\"].BaseValue"
+       }
+      ],
+      "unsupported": [
+       "Obtain(遗物 id 解析不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.FEATURED_ITEM_LOCKED",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.FEATURED_ITEM_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.MYSTERY_BOX",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.MYSTERY_BOX",
+      "page": "INITIAL",
+      "on_chosen": "BuyMysteryBox",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "MysteryBoxCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"MysteryBoxCost\"].BaseValue"
+       },
+       {
+        "op": "obtain_relic",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "relic": "wongos_mystery_ticket"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.MYSTERY_BOX_LOCKED",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.MYSTERY_BOX_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELCOME_TO_WONGOS.pages.INITIAL.options.LEAVE",
+      "text_key": "WELCOME_TO_WONGOS.pages.INITIAL.options.LEAVE",
+      "page": "INITIAL",
+      "on_chosen": "Leave",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "downgrade_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": ""
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "LEAVE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "BargainBinCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 100,
+    "raw": "100m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "MysteryBoxCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 300,
+    "raw": "300m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "FeaturedItemCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 200,
+    "raw": "200m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "MysteryBoxRelicCount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 3,
+    "raw": "3m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "MysteryBoxCombatCount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 5,
+    "raw": "5m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "WongoPointAmount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "RemainingWongoPointAmount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "TotalWongoBadgeAmount",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 0,
+    "raw": "0m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "RandomRelic",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "if (runState.CurrentActIndex == 1)\n\t\t{\n\t\t\treturn runState.Players.All((Player p) => p.Gold >= 100);\n\t\t}\n\t\treturn false;"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "wellspring",
+  "class": "Wellspring",
+  "act": "Act 1 - Overgrowth",
+  "name": "Wellspring",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "WELLSPRING.pages.INITIAL.options.BOTTLE",
+      "text_key": "WELLSPRING.pages.INITIAL.options.BOTTLE",
+      "page": "INITIAL",
+      "on_chosen": "Bottle",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "pool"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BOTTLE"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WELLSPRING.pages.INITIAL.options.BATHE",
+      "text_key": "WELLSPRING.pages.INITIAL.options.BATHE",
+      "page": "INITIAL",
+      "on_chosen": "Bathe",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       },
+       {
+        "op": "add_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "guilty",
+        "pile": "deck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BATHE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "BatheCurses",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 1,
+    "raw": "1m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": null,
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "whispering_hollow",
+  "class": "WhisperingHollow",
+  "act": "Act 1 - Overgrowth",
+  "name": "Whispering Hollow",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "WHISPERING_HOLLOW.pages.INITIAL.options.GOLD",
+      "text_key": "WHISPERING_HOLLOW.pages.INITIAL.options.GOLD",
+      "page": "INITIAL",
+      "on_chosen": "Gold",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "Gold",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.Gold.IntValue"
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "factory"
+         ]
+        ]
+       },
+       {
+        "op": "offer_rewards",
+        "amount": 1,
+        "target": "self",
+        "times": 1,
+        "filter": [
+         [
+          "kind",
+          "potion"
+         ],
+         [
+          "mode",
+          "factory"
+         ]
+        ]
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "GOLD"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WHISPERING_HOLLOW.pages.INITIAL.options.HUG",
+      "text_key": "WHISPERING_HOLLOW.pages.INITIAL.options.HUG",
+      "page": "INITIAL",
+      "on_chosen": "Hug",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "transform",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       },
+       {
+        "op": "lose_hp",
+        "amount": null,
+        "amount_var": "HpLoss",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars.HpLoss.BaseValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "HUG"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "Gold",
+    "var_type": "GoldVar",
+    "type_param": null,
+    "named": false,
+    "base": 35,
+    "raw": "35",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "HpLoss",
+    "var_type": "HpLossVar",
+    "type_param": null,
+    "named": false,
+    "base": 9,
+    "raw": "9m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => p.Gold >= 44);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "wood_carvings",
+  "class": "WoodCarvings",
+  "act": "Act 1 - Overgrowth",
+  "name": "Wood Carvings",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "WOOD_CARVINGS.pages.INITIAL.options.SNAKE_LOCKED",
+      "text_key": "WOOD_CARVINGS.pages.INITIAL.options.SNAKE_LOCKED",
+      "page": "INITIAL",
+      "on_chosen": "null",
+      "locked": true,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "none"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WOOD_CARVINGS.pages.INITIAL.options.SNAKE",
+      "text_key": "WOOD_CARVINGS.pages.INITIAL.options.SNAKE",
+      "page": "INITIAL",
+      "on_chosen": "Snake",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "enchant",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "SNAKE"
+      },
+      "reasons": [
+       "需要附魔系统"
+      ]
+     },
+     {
+      "key": "WOOD_CARVINGS.pages.INITIAL.options.BIRD",
+      "text_key": "WOOD_CARVINGS.pages.INITIAL.options.BIRD",
+      "page": "INITIAL",
+      "on_chosen": "Bird",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "transform",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       },
+       {
+        "op": "transform_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "peck"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BIRD"
+      },
+      "reasons": []
+     },
+     {
+      "key": "WOOD_CARVINGS.pages.INITIAL.options.TORUS",
+      "text_key": "WOOD_CARVINGS.pages.INITIAL.options.TORUS",
+      "page": "INITIAL",
+      "on_chosen": "Torus",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "transform",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       },
+       {
+        "op": "transform_card",
+        "amount": 1,
+        "amount_var": null,
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "",
+        "card": "toric_toughness"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "TORUS"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "BirdCard",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<Peck>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "SnakeEnchantment",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Enchantment<Slither>().Title.GetFormattedText()",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ToricCard",
+    "var_type": "StringVar",
+    "type_param": null,
+    "named": true,
+    "base": null,
+    "raw": "ModelDb.Card<ToricToughness>().Title",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => CardPile.Get(PileType.Deck, p).Cards.Any((CardModel c) => c != null && c.Rarity == CardRarity.Basic && c.IsRemovable));"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ },
+ {
+  "eid": "zen_weaver",
+  "class": "ZenWeaver",
+  "act": "Act 2 - Hive",
+  "name": "Zen Weaver",
+  "pages": {
+   "INITIAL": {
+    "from": "GenerateInitialOptions",
+    "options": [
+     {
+      "key": "ZEN_WEAVER.pages.INITIAL.options.BREATHING_TECHNIQUES",
+      "text_key": "ZEN_WEAVER.pages.INITIAL.options.BREATHING_TECHNIQUES",
+      "page": "INITIAL",
+      "on_chosen": "BreathingTechniques",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "BreathingTechniquesCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"BreathingTechniquesCost\"].IntValue"
+       }
+      ],
+      "unsupported": [
+       "CardPileCmd.Add(集合，谓词认不出)"
+      ],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "BREATHING_TECHNIQUES"
+      },
+      "reasons": []
+     },
+     {
+      "key": "ZEN_WEAVER.pages.INITIAL.options.EMOTIONAL_AWARENESS",
+      "text_key": "ZEN_WEAVER.pages.INITIAL.options.EMOTIONAL_AWARENESS",
+      "page": "INITIAL",
+      "on_chosen": "EmotionalAwareness",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 1,
+        "target": "self",
+        "amount": 1
+       },
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "EmotionalAwarenessCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"EmotionalAwarenessCost\"].IntValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "EMOTIONAL_AWARENESS"
+      },
+      "reasons": []
+     },
+     {
+      "key": "ZEN_WEAVER.pages.INITIAL.options.ARACHNID_ACUPUNCTURE",
+      "text_key": "ZEN_WEAVER.pages.INITIAL.options.ARACHNID_ACUPUNCTURE",
+      "page": "INITIAL",
+      "on_chosen": "ArachnidAcupuncture",
+      "locked": false,
+      "inline_body": null,
+      "lambda_expr": null,
+      "effects": [
+       {
+        "op": "select_card",
+        "from": "deck",
+        "purpose": "removal",
+        "count": 2,
+        "target": "self",
+        "amount": 2
+       },
+       {
+        "op": "lose_gold",
+        "amount": null,
+        "amount_var": "ArachnidAcupunctureCost",
+        "power": null,
+        "target": "self",
+        "times": 1,
+        "amount_raw": "base.DynamicVars[\"ArachnidAcupunctureCost\"].IntValue"
+       }
+      ],
+      "unsupported": [],
+      "choices": 0,
+      "outcome": {
+       "kind": "finished",
+       "page": "ARACHNID_ACUPUNCTURE"
+      },
+      "reasons": []
+     }
+    ]
+   }
+  },
+  "vars": [
+   {
+    "name": "BreathingTechniquesCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 50,
+    "raw": "50m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "EmotionalAwarenessCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 125,
+    "raw": "125m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   },
+   {
+    "name": "ArachnidAcupunctureCost",
+    "var_type": "DynamicVar",
+    "type_param": null,
+    "named": true,
+    "base": 250,
+    "raw": "250m",
+    "value_prop": "",
+    "upgrade_delta": 0
+   }
+  ],
+  "rng_rolls": [],
+  "gate": {
+   "body": "return runState.Players.All((Player p) => (decimal)p.Gold >= base.DynamicVars[\"EmotionalAwarenessCost\"].BaseValue);"
+  },
+  "combat_encounter": null,
+  "reasons": []
+ }
+]

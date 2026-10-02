@@ -1,0 +1,7589 @@
+[
+ {
+  "eid": "aeonglass",
+  "class": "Aeonglass",
+  "moves": {
+   "EbbMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 33,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "33m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EbbBlock",
+     "EbbDamage"
+    ],
+    "ascension_varying": [
+     "EbbDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 33,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "33m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "EyeLasersMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EyeLasersDamage",
+     "EyeLasersRepeat"
+    ],
+    "ascension_varying": [
+     "EyeLasersDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "IncreasingIntensityMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m",
+      "card": "wither",
+      "pile": "discard",
+      "position": ""
+     },
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "IncreasingIntensityTotalStrength",
+      "needs_runtime": false
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WitherAmount"
+    ],
+    "ascension_varying": [
+     "WitherAmount"
+    ],
+    "ascension_effects": [
+     {
+      "op": "add_card",
+      "amount": 2,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m",
+      "card": "wither",
+      "pile": "discard",
+      "position": ""
+     },
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "IncreasingIntensityTotalStrength",
+      "needs_runtime": false
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "assassin_ruby_raider",
+  "class": "AssassinRubyRaider",
+  "moves": {
+   "KillshotMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "KillshotDamage"
+    ],
+    "ascension_varying": [
+     "KillshotDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "axebot",
+  "class": "Axebot",
+  "moves": {
+   "BootUpMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 10,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "10m"
+     },
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m * RespawnCount",
+      "needs_runtime": false
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BootUpBlock",
+     "BootUpStrGain"
+    ],
+    "ascension_varying": [
+     "BootUpBlock",
+     "BootUpStrGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 15,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "15m"
+     },
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4m * RespawnCount",
+      "needs_runtime": false
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "HammerUppercutMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HammerUppercutDamage"
+    ],
+    "ascension_varying": [
+     "HammerUppercutDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "OneTwoMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "OneTwoDamage"
+    ],
+    "ascension_varying": [
+     "OneTwoDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "axe_ruby_raider",
+  "class": "AxeRubyRaider",
+  "moves": {
+   "BigSwingMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BigSwingDamage"
+    ],
+    "ascension_varying": [
+     "BigSwingDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SwingMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SwingBlock",
+     "SwingDamage"
+    ],
+    "ascension_varying": [
+     "SwingBlock",
+     "SwingDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 6,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "6m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "big_dummy",
+  "class": "BigDummy",
+  "moves": {
+   "NothingMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "bowlbug_egg",
+  "class": "BowlbugEgg",
+  "moves": {
+   "BiteMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 7,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "7m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage",
+     "ProtectBlock"
+    ],
+    "ascension_varying": [
+     "BiteDamage",
+     "ProtectBlock"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 8,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "8m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "bowlbug_nectar",
+  "class": "BowlbugNectar",
+  "moves": {
+   "BuffMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 15,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "15m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BuffStrengthGain"
+    ],
+    "ascension_varying": [
+     "BuffStrengthGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 16,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "16m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThrashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThrashDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "bowlbug_rock",
+  "class": "BowlbugRock",
+  "moves": {
+   "DizzyMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "HeadbuttMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HeadbuttDamage"
+    ],
+    "ascension_varying": [
+     "HeadbuttDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "bowlbug_silk",
+  "class": "BowlbugSilk",
+  "moves": {
+   "SpitMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThrashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThrashDamage"
+    ],
+    "ascension_varying": [
+     "ThrashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "brute_ruby_raider",
+  "class": "BruteRubyRaider",
+  "moves": {
+   "BeatMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BeatDamage"
+    ],
+    "ascension_varying": [
+     "BeatDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RoarMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "bygone_effigy",
+  "class": "BygoneEffigy",
+  "moves": {
+   "InitialSleepMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SlashMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "SlashDamage"
+    ],
+    "ascension_varying": [
+     "SlashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SleepMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WakeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 10,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "10m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "byrdonis",
+  "class": "Byrdonis",
+  "moves": {
+   "PeckMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PeckDamage",
+     "PeckRepeat"
+    ],
+    "ascension_varying": [
+     "PeckDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SwoopMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SwoopDamage"
+    ],
+    "ascension_varying": [
+     "SwoopDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "calcified_cultist",
+  "class": "CalcifiedCultist",
+  "moves": {
+   "DarkStrikeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DarkStrikeDamage"
+    ],
+    "ascension_varying": [
+     "DarkStrikeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "IncantationMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "ritual",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "IncantationAmount"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "ceremonial_beast",
+  "class": "CeremonialBeast",
+  "moves": {
+   "BeastCryMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "ringing",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "CrushMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "CrushDamage",
+     "CrushStrength"
+    ],
+    "ascension_varying": [
+     "CrushDamage",
+     "CrushStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PlowMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PlowDamage",
+     "PlowStrength"
+    ],
+    "ascension_varying": [
+     "PlowDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StampMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 150,
+      "amount_var": null,
+      "power": "plow",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "150m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PlowAmount"
+    ],
+    "ascension_varying": [
+     "PlowAmount"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 160,
+      "amount_var": null,
+      "power": "plow",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "160m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StompMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "StompDamage"
+    ],
+    "ascension_varying": [
+     "StompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StunnedMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "chomper",
+  "class": "Chomper",
+  "moves": {
+   "ClampMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ClampDamage"
+    ],
+    "ascension_varying": [
+     "ClampDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ScreechMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3",
+      "card": "dazed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "corpse_slug",
+  "class": "CorpseSlug",
+  "moves": {
+   "GlompMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "GlompDamage"
+    ],
+    "ascension_varying": [
+     "GlompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "GoopMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "GoopFrailAmt"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WhipSlapMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WhipSlapDamage",
+     "WhipSlapRepeat"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "crossbow_ruby_raider",
+  "class": "CrossbowRubyRaider",
+  "moves": {
+   "FireMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FireDamage"
+    ],
+    "ascension_varying": [
+     "FireDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ReloadMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "crusher",
+  "class": "Crusher",
+  "moves": {
+   "AdaptMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "AdaptStrengthGain"
+    ],
+    "ascension_varying": [
+     "AdaptStrengthGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BugStingMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BugStingDamage",
+     "BugStingTimes"
+    ],
+    "ascension_varying": [
+     "BugStingDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "EnlargingStrikeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EnlargingStrikeDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "GuardedStrikeMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 18,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "18m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "GuardedStrikeDamage"
+    ],
+    "ascension_varying": [
+     "GuardedStrikeDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 18,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "18m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThrashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThrashDamage"
+    ],
+    "ascension_varying": [
+     "ThrashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "cubex_construct",
+  "class": "CubexConstruct",
+  "moves": {
+   "ChargeUpMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ExpelBlastMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ExpelDamage"
+    ],
+    "ascension_varying": [
+     "ExpelDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RepeaterBlastMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BlastDamage"
+    ],
+    "ascension_varying": [
+     "BlastDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "damp_cultist",
+  "class": "DampCultist",
+  "moves": {
+   "DarkStrikeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DarkStrikeDamage"
+    ],
+    "ascension_varying": [
+     "DarkStrikeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "IncantationMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "amount_var": null,
+      "power": "ritual",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "IncantationAmount"
+    ],
+    "ascension_varying": [
+     "IncantationAmount"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 6,
+      "amount_var": null,
+      "power": "ritual",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "6m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "decimillipede_segment",
+  "class": "DecimillipedeSegment",
+  "moves": {
+   "BulkMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BulkDamage",
+     "BulkStrength"
+    ],
+    "ascension_varying": [
+     "BulkDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ConstrictMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ConstrictDamage"
+    ],
+    "ascension_varying": [
+     "ConstrictDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "DeadMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ReattachMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WritheMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WritheDamage"
+    ],
+    "ascension_varying": [
+     "WritheDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "devoted_sculptor",
+  "class": "DevotedSculptor",
+  "moves": {
+   "ForbiddenIncantationMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "ritual",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "_ritualGain",
+      "needs_runtime": false
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SavageMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SavageDamage"
+    ],
+    "ascension_varying": [
+     "SavageDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "entomancer",
+  "class": "Entomancer",
+  "moves": {
+   "BeesMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BeesDamage",
+     "BeesRepeat"
+    ],
+    "ascension_varying": [
+     "BeesRepeat"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpearMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SpearMoveDamage"
+    ],
+    "ascension_varying": [
+     "SpearMoveDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpitMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "personal_hive",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "exoskeleton",
+  "class": "Exoskeleton",
+  "moves": {
+   "EnrageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MandiblesMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "MandiblesDamage"
+    ],
+    "ascension_varying": [
+     "MandiblesDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SkitterMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SkitterDamage",
+     "SkitterRepeats"
+    ],
+    "ascension_varying": [
+     "SkitterRepeats"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "eye_with_teeth",
+  "class": "EyeWithTeeth",
+  "moves": {
+   "DistractMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3",
+      "card": "dazed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "fabricator",
+  "class": "Fabricator",
+  "moves": {
+   "DisintegrateMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DisintegrateDamage"
+    ],
+    "ascension_varying": [
+     "DisintegrateDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FabricateMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FabricatingStrikeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FabricatingStrikeDamage"
+    ],
+    "ascension_varying": [
+     "FabricatingStrikeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "fake_merchant_monster",
+  "class": "FakeMerchantMonster",
+  "moves": {
+   "EnrageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpewCoinsMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SwipeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SwipeDamage"
+    ],
+    "ascension_varying": [
+     "SwipeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThrowRelicMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThrowRelicDamage"
+    ],
+    "ascension_varying": [
+     "ThrowRelicDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "fat_gremlin",
+  "class": "FatGremlin",
+  "moves": {
+   "FleeMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Escape"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": true
+   },
+   "SpawnedMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "flail_knight",
+  "class": "FlailKnight",
+  "moves": {
+   "FlailMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FlailDamage"
+    ],
+    "ascension_varying": [
+     "FlailDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RamDamage"
+    ],
+    "ascension_varying": [
+     "RamDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WarChantMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "flyconid",
+  "class": "Flyconid",
+  "moves": {
+   "FrailSporesMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SporeDamage"
+    ],
+    "ascension_varying": [
+     "SporeDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SmashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SmashDamage"
+    ],
+    "ascension_varying": [
+     "SmashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "VulnerableSporesMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "fogmog",
+  "class": "Fogmog",
+  "moves": {
+   "HeadbuttMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HeadbuttDamage"
+    ],
+    "ascension_varying": [
+     "HeadbuttDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "IllusionMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Add"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SwipeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SwipeDamage"
+    ],
+    "ascension_varying": [
+     "SwipeDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "fossil_stalker",
+  "class": "FossilStalker",
+  "moves": {
+   "LashAttack": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LashDamage",
+     "LashRepeat"
+    ],
+    "ascension_varying": [
+     "LashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LatchMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LatchDamage"
+    ],
+    "ascension_varying": [
+     "LatchDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TackleMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TackleDamage"
+    ],
+    "ascension_varying": [
+     "TackleDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "frog_knight",
+  "class": "FrogKnight",
+  "moves": {
+   "BeetleChargeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BeetleChargeDamage"
+    ],
+    "ascension_varying": [
+     "BeetleChargeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ForTheQueenMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StrikeDownEvilMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StrikeDownEvilDamage"
+    ],
+    "ascension_varying": [
+     "StrikeDownEvilDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TongueLashMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TongueLashDamage"
+    ],
+    "ascension_varying": [
+     "TongueLashDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "fuzzy_wurm_crawler",
+  "class": "FuzzyWurmCrawler",
+  "moves": {
+   "AcidGoop": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "AcidGoopDamage"
+    ],
+    "ascension_varying": [
+     "AcidGoopDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "Inhale": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 7,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "7m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "gas_bomb",
+  "class": "GasBomb",
+  "moves": {
+   "ExplodeMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Kill"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "ExplodeDamage"
+    ],
+    "ascension_varying": [
+     "ExplodeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": true,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "globe_head",
+  "class": "GlobeHead",
+  "moves": {
+   "GalvanicBurstMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "GalvanicBurstDamage"
+    ],
+    "ascension_varying": [
+     "GalvanicBurstDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ShockingSlap": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ShockingSlapDamage"
+    ],
+    "ascension_varying": [
+     "ShockingSlapDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThunderStrike": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThunderStrikeDamage"
+    ],
+    "ascension_varying": [
+     "ThunderStrikeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "gremlin_merc",
+  "class": "GremlinMerc",
+  "moves": {
+   "DoubleSmashMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [
+     "ThieveryPower.Steal()（Run 侧金币）引擎未实现"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "DoubleSmashDamage",
+     "DoubleSmashRepeat"
+    ],
+    "ascension_varying": [
+     "DoubleSmashDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "GimmeMove": {
+    "effects": [],
+    "unsupported": [
+     "ThieveryPower.Steal()（Run 侧金币）引擎未实现"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "GimmeDamage",
+     "GimmeRepeat"
+    ],
+    "ascension_varying": [
+     "GimmeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "HeheMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [
+     "ThieveryPower.Steal()（Run 侧金币）引擎未实现"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "HeheDamage"
+    ],
+    "ascension_varying": [
+     "HeheDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "guardbot",
+  "class": "Guardbot",
+  "moves": {
+   "GuardMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 15,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "15m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "haunted_ship",
+  "class": "HauntedShip",
+  "moves": {
+   "HauntMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     },
+     {
+      "op": "add_card",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m",
+      "card": "dazed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HauntDazed"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StompMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StompDamage",
+     "StompRepeat"
+    ],
+    "ascension_varying": [
+     "StompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SwipeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SwipeDamage"
+    ],
+    "ascension_varying": [
+     "SwipeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "hunter_killer",
+  "class": "HunterKiller",
+  "moves": {
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [
+     "BiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "GoopMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "tender",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PunctureMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PunctureDamage"
+    ],
+    "ascension_varying": [
+     "PunctureDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "infested_prism",
+  "class": "InfestedPrism",
+  "moves": {
+   "JabMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "JabDamage"
+    ],
+    "ascension_varying": [
+     "JabDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PulsateMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 20,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "20m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "vital_spark",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PulsateBlock",
+     "PulsateDamage",
+     "VitalSparkAmount"
+    ],
+    "ascension_varying": [
+     "PulsateBlock",
+     "PulsateDamage",
+     "VitalSparkAmount"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 22,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "22m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "vital_spark",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RadiateMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 11,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "11m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RadiateBlock",
+     "RadiateDamage"
+    ],
+    "ascension_varying": [
+     "RadiateBlock",
+     "RadiateDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 13,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "13m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WhirlwindMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WhirlwindDamage",
+     "WhirlwindRepeat"
+    ],
+    "ascension_varying": [
+     "WhirlwindDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "inklet",
+  "class": "Inklet",
+  "moves": {
+   "JabMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "JabDamage"
+    ],
+    "ascension_varying": [
+     "JabDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PiercingGazeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PiercingGazeDamage"
+    ],
+    "ascension_varying": [
+     "PiercingGazeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WhirlwindMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WhirlwindDamage"
+    ],
+    "ascension_varying": [
+     "WhirlwindDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "kin_follower",
+  "class": "KinFollower",
+  "moves": {
+   "BoomerangMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "BoomerangDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PowerDanceMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DanceStrength"
+    ],
+    "ascension_varying": [
+     "DanceStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "QuickSlashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "QuickSlashDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "kin_priest",
+  "class": "KinPriest",
+  "moves": {
+   "BeamMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "BeamDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "OrbOfFrailtyMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "OrbOfFrailtyDamage"
+    ],
+    "ascension_varying": [
+     "OrbOfFrailtyDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "OrbOfWeaknessMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "OrbOfWeaknessDamage"
+    ],
+    "ascension_varying": [
+     "OrbOfWeaknessDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RitualMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RitualStrength"
+    ],
+    "ascension_varying": [
+     "RitualStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "knowledge_demon",
+  "class": "KnowledgeDemon",
+  "moves": {
+   "CurseOfKnowledgeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false,
+    "effects_by_counter": {
+     "counter": "_curseOfKnowledgeCounter",
+     "groups": [
+      {
+       "value": 0,
+       "effects": [
+        {
+         "op": "choose_one",
+         "choices": [
+          {
+           "card": "disintegration",
+           "effects": [
+            {
+             "op": "apply_power",
+             "power": "disintegration",
+             "amount": 6,
+             "target": "enemy"
+            }
+           ]
+          },
+          {
+           "card": "mind_rot",
+           "effects": [
+            {
+             "op": "apply_power",
+             "power": "mind_rot",
+             "amount": 1,
+             "target": "enemy"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "value": 1,
+       "effects": [
+        {
+         "op": "choose_one",
+         "choices": [
+          {
+           "card": "disintegration",
+           "effects": [
+            {
+             "op": "apply_power",
+             "power": "disintegration",
+             "amount": 7,
+             "target": "enemy"
+            }
+           ]
+          },
+          {
+           "card": "sloth",
+           "effects": [
+            {
+             "op": "apply_power",
+             "power": "sloth",
+             "amount": 3,
+             "target": "enemy"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "value": 2,
+       "effects": [
+        {
+         "op": "choose_one",
+         "choices": [
+          {
+           "card": "disintegration",
+           "effects": [
+            {
+             "op": "apply_power",
+             "power": "disintegration",
+             "amount": 8,
+             "target": "enemy"
+            }
+           ]
+          },
+          {
+           "card": "waste_away",
+           "effects": [
+            {
+             "op": "apply_power",
+             "power": "waste_away",
+             "amount": 1,
+             "target": "enemy"
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "counter_increment": "_curseOfKnowledgeCounter",
+    "counter_increment_live_only": true
+   },
+   "KnowledgeOverwhelmingMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "KnowledgeOverwhelmingDamage"
+    ],
+    "ascension_varying": [
+     "KnowledgeOverwhelmingDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PonderMove": {
+    "effects": [
+     {
+      "op": "heal",
+      "amount": null,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "30 * base.CombatState.Players.Count",
+      "needs_runtime": false
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PonderDamage",
+     "PonderStrength"
+    ],
+    "ascension_varying": [
+     "PonderDamage",
+     "PonderStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "heal",
+      "amount": null,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "30 * base.CombatState.Players.Count",
+      "needs_runtime": false
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SlapMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SlapDamage"
+    ],
+    "ascension_varying": [
+     "SlapDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "lagavulin_matriarch",
+  "class": "LagavulinMatriarch",
+  "moves": {
+   "DisembowelMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DisembowelDamage",
+     "DisembowelRepeat"
+    ],
+    "ascension_varying": [
+     "DisembowelDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "Slash2Move": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 12,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "12m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "Slash2Block",
+     "Slash2Damage"
+    ],
+    "ascension_varying": [
+     "Slash2Block",
+     "Slash2Damage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 14,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "14m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SlashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SlashDamage"
+    ],
+    "ascension_varying": [
+     "SlashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SleepMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SoulSiphonMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": -2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "-2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": -2,
+      "amount_var": null,
+      "power": "dexterity",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "-2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "leaf_slime_m",
+  "class": "LeafSlimeM",
+  "moves": {
+   "ClumpShotMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ClumpDamage"
+    ],
+    "ascension_varying": [
+     "ClumpDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StickyShotMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 2,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2",
+      "card": "slimed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "leaf_slime_s",
+  "class": "LeafSlimeS",
+  "moves": {
+   "GoopMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1",
+      "card": "slimed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TackleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TackleDamage"
+    ],
+    "ascension_varying": [
+     "TackleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "living_fog",
+  "class": "LivingFog",
+  "moves": {
+   "AdvancedGasMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "smoggy",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "AdvancedGasDamage"
+    ],
+    "ascension_varying": [
+     "AdvancedGasDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "smoggy",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BloatMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Add",
+     "循环次数取决于运行期状态（球数/牌数/条件）引擎未实现"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "BloatDamage"
+    ],
+    "ascension_varying": [
+     "BloatDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SuperGasBlastMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SuperGasBlastDamage"
+    ],
+    "ascension_varying": [
+     "SuperGasBlastDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "living_shield",
+  "class": "LivingShield",
+  "moves": {
+   "ShieldSlamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ShieldSlamDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SmashMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EnrageStr",
+     "SmashDamage"
+    ],
+    "ascension_varying": [
+     "SmashDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "louse_progenitor",
+  "class": "LouseProgenitor",
+  "moves": {
+   "CurlAndGrowMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 14,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "14m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "CurlBlock",
+     "GrowStrength"
+    ],
+    "ascension_varying": [
+     "CurlBlock",
+     "GrowStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 18,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "18m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 7,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "7m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PounceMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PounceDamage"
+    ],
+    "ascension_varying": [
+     "PounceDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WebMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WebDamage"
+    ],
+    "ascension_varying": [
+     "WebDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "magi_knight",
+  "class": "MagiKnight",
+  "moves": {
+   "DampenMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "target",
+      "needs_runtime": false
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MagicBombMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "BombDamage"
+    ],
+    "ascension_varying": [
+     "BombDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PowerShieldMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PowerShieldBlock",
+     "PowerShieldDamage"
+    ],
+    "ascension_varying": [
+     "PowerShieldBlock",
+     "PowerShieldDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 9,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "9m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PrepMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PowerShieldBlock"
+    ],
+    "ascension_varying": [
+     "PowerShieldBlock"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 9,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "9m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpearMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SpearDamage"
+    ],
+    "ascension_varying": [
+     "SpearDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "mawler",
+  "class": "Mawler",
+  "moves": {
+   "ClawMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ClawDamage"
+    ],
+    "ascension_varying": [
+     "ClawDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RipAndTearMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RipAndTearDamage"
+    ],
+    "ascension_varying": [
+     "RipAndTearDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RoarMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "mecha_knight",
+  "class": "MechaKnight",
+  "moves": {
+   "ChargeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ChargeDamage"
+    ],
+    "ascension_varying": [
+     "ChargeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FlamethrowerMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 4,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4",
+      "card": "burn",
+      "pile": "hand",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FlamethrowerDamage"
+    ],
+    "ascension_varying": [
+     "FlamethrowerDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "add_card",
+      "amount": 4,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4",
+      "card": "burn",
+      "pile": "hand",
+      "position": ""
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "HeavyCleaveMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "HeavyCleaveDamage"
+    ],
+    "ascension_varying": [
+     "HeavyCleaveDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WindupMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 15,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "15m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "multi_attack_move_monster",
+  "class": "MultiAttackMoveMonster",
+  "moves": {
+   "PokeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "myte",
+  "class": "Myte",
+  "moves": {
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [
+     "BiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SuckMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SuckDamage",
+     "SuckStrength"
+    ],
+    "ascension_varying": [
+     "SuckDamage",
+     "SuckStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ToxicMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 2,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2",
+      "card": "toxic",
+      "pile": "hand",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "nibbit",
+  "class": "Nibbit",
+  "moves": {
+   "ButtMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ButtDamage"
+    ],
+    "ascension_varying": [
+     "ButtDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "HissMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HissStrengthGain"
+    ],
+    "ascension_varying": [
+     "HissStrengthGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SliceMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SliceBlock",
+     "SliceDamage"
+    ],
+    "ascension_varying": [
+     "SliceBlock",
+     "SliceDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 6,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "6m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "noisebot",
+  "class": "Noisebot",
+  "moves": {
+   "NoiseMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "",
+      "card": "dazed",
+      "pile": "discard",
+      "position": ""
+     },
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "",
+      "card": "dazed",
+      "pile": "draw",
+      "position": "random"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "one_hp_monster",
+  "class": "OneHpMonster",
+  "moves": {
+   "NothingMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "ovicopter",
+  "class": "Ovicopter",
+  "moves": {
+   "LayEggsMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "minion",
+      "target": "unknown",
+      "times": 3,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [
+     "CreatureCmd.Add"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "NutritionalPasteMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "NutritionalPasteStrengthAmount"
+    ],
+    "ascension_varying": [
+     "NutritionalPasteStrengthAmount"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SmashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SmashDamage"
+    ],
+    "ascension_varying": [
+     "SmashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TenderizerMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TenderizerDamage"
+    ],
+    "ascension_varying": [
+     "TenderizerDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "owl_magistrate",
+  "class": "OwlMagistrate",
+  "moves": {
+   "JudicialFlightMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "soar",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MagistrateScrutinyMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ScrutinyDamage"
+    ],
+    "ascension_varying": [
+     "ScrutinyDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PeckAssaultMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PeckAssaultDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "VerdictMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "unsupported": [
+     "PowerCmd.Remove"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "VerdictDamage"
+    ],
+    "ascension_varying": [
+     "VerdictDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "parafright",
+  "class": "Parafright",
+  "moves": {
+   "SlamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SlamDamage"
+    ],
+    "ascension_varying": [
+     "SlamDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "phantasmal_gardener",
+  "class": "PhantasmalGardener",
+  "moves": {
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "EnlargeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EnlargeStr"
+    ],
+    "ascension_varying": [
+     "EnlargeStr"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FlailMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FlailDamage",
+     "FlailRepeat"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LashDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "phrog_parasite",
+  "class": "PhrogParasite",
+  "moves": {
+   "InfectMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3",
+      "card": "infection",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LashDamage"
+    ],
+    "ascension_varying": [
+     "LashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "punch_construct",
+  "class": "PunchConstruct",
+  "moves": {
+   "FastPunchMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FastPunchDamage",
+     "FastPunchRepeat"
+    ],
+    "ascension_varying": [
+     "FastPunchDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ReadyMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 10,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "10m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StrongPunchMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StrongPunchDamage"
+    ],
+    "ascension_varying": [
+     "StrongPunchDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "queen",
+  "class": "Queen",
+  "moves": {
+   "BurnBrightForMeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "strength",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "AscensionHelper.GetValueIfAscension(AscensionLevel.DeadlyEnemies, 1, 1)",
+      "needs_runtime": false
+     },
+     {
+      "op": "block",
+      "amount": 20,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "20m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "EnrageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ExecutionMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ExecutionDamage"
+    ],
+    "ascension_varying": [
+     "ExecutionDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "OffWithYourHeadMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "OffWithYourHeadDamage"
+    ],
+    "ascension_varying": [
+     "OffWithYourHeadDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PuppetStringsMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "chains_of_binding",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "YoureMineMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "99m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "99m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "99m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "rocket",
+  "class": "Rocket",
+  "moves": {
+   "ChargeUpMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ChargeUpStrengthGain"
+    ],
+    "ascension_varying": [
+     "ChargeUpStrengthGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LaserMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LaserDamage"
+    ],
+    "ascension_varying": [
+     "LaserDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PrecisionBeamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PrecisionBeamDamage"
+    ],
+    "ascension_varying": [
+     "PrecisionBeamDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RechargeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TargetingReticleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TargetingReticleDamage"
+    ],
+    "ascension_varying": [
+     "TargetingReticleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "scroll_of_biting",
+  "class": "ScrollOfBiting",
+  "moves": {
+   "ChewState": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ChewDamage"
+    ],
+    "ascension_varying": [
+     "ChewDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ChompMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ChompDamage"
+    ],
+    "ascension_varying": [
+     "ChompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MoreTeethMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "seapunk",
+  "class": "Seapunk",
+  "moves": {
+   "BubbleBurpMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 7,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "7m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BubbleBlock",
+     "BubbleStr"
+    ],
+    "ascension_varying": [
+     "BubbleBlock",
+     "BubbleStr"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 8,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "8m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SeaKickMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SeaKickDamage"
+    ],
+    "ascension_varying": [
+     "SeaKickDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpinningKickMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SpinningKickDamage",
+     "SpinningKickRepeat"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "sewer_clam",
+  "class": "SewerClam",
+  "moves": {
+   "JetMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "JetDamage"
+    ],
+    "ascension_varying": [
+     "JetDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PressurizeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "shrinker_beetle",
+  "class": "ShrinkerBeetle",
+  "moves": {
+   "ChompMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ChompDamage"
+    ],
+    "ascension_varying": [
+     "ChompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ShrinkMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": -1,
+      "amount_var": null,
+      "power": "shrink",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "-1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StompMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StompDamage"
+    ],
+    "ascension_varying": [
+     "StompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "single_attack_move_monster",
+  "class": "SingleAttackMoveMonster",
+  "moves": {
+   "PokeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "skulking_colony",
+  "class": "SkulkingColony",
+  "moves": {
+   "InertiaMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "InertiaDamage",
+     "InertiaStrengthGain"
+    ],
+    "ascension_varying": [
+     "InertiaDamage",
+     "InertiaStrengthGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PiercingStabsMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PiercingStabsDamage",
+     "PiercingStabsRepeat"
+    ],
+    "ascension_varying": [
+     "PiercingStabsDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ZoomMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ZoomDamage"
+    ],
+    "ascension_varying": [
+     "ZoomDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "slimed_berserker",
+  "class": "SlimedBerserker",
+  "moves": {
+   "FuriousPummelingMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PummelingDamage"
+    ],
+    "ascension_varying": [
+     "PummelingDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LeechingHugMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SmotherMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SmotherDamage"
+    ],
+    "ascension_varying": [
+     "SmotherDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "VomitIchorMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 10,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "10",
+      "card": "slimed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "slithering_strangler",
+  "class": "SlitheringStrangler",
+  "moves": {
+   "ConstrictMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "constrict",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LashDamage"
+    ],
+    "ascension_varying": [
+     "LashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThwackMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThwackDamage"
+    ],
+    "ascension_varying": [
+     "ThwackDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "sludge_spinner",
+  "class": "SludgeSpinner",
+  "moves": {
+   "OilSprayMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "OilSprayDamage"
+    ],
+    "ascension_varying": [
+     "OilSprayDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RageDamage"
+    ],
+    "ascension_varying": [
+     "RageDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SlamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SlamDamage"
+    ],
+    "ascension_varying": [
+     "SlamDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "slumbering_beetle",
+  "class": "SlumberingBeetle",
+  "moves": {
+   "RolloutMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RolloutDamage"
+    ],
+    "ascension_varying": [
+     "RolloutDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SnoreMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "snapping_jaxfruit",
+  "class": "SnappingJaxfruit",
+  "moves": {
+   "EnergyOrb": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EnergyDamage"
+    ],
+    "ascension_varying": [
+     "EnergyDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "sneaky_gremlin",
+  "class": "SneakyGremlin",
+  "moves": {
+   "SpawnedMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TackleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TackleDamage"
+    ],
+    "ascension_varying": [
+     "TackleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "soul_fysh",
+  "class": "SoulFysh",
+  "moves": {
+   "BeckonMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "",
+      "card": "beckon",
+      "pile": "draw",
+      "position": "random"
+     },
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "",
+      "card": "beckon",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BeckonMoveAmount"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "DeGasMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DeGasDamage"
+    ],
+    "ascension_varying": [
+     "DeGasDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FadeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "intangible",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "GazeMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "",
+      "card": "beckon",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "GazeDamage"
+    ],
+    "ascension_varying": [
+     "GazeDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "",
+      "card": "beckon",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ScreamMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ScreamDamage",
+     "ScreamMoveAmount"
+    ],
+    "ascension_varying": [
+     "ScreamDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "soul_nexus",
+  "class": "SoulNexus",
+  "moves": {
+   "DrainLifeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DrainLifeDamage"
+    ],
+    "ascension_varying": [
+     "DrainLifeDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MaelstromMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "MaelstromDamage",
+     "MaelstromRepeat"
+    ],
+    "ascension_varying": [
+     "MaelstromDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SoulBurnMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SoulBurnDamage"
+    ],
+    "ascension_varying": [
+     "SoulBurnDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "spectral_knight",
+  "class": "SpectralKnight",
+  "moves": {
+   "HexMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "hex",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SoulFlameMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SoulFlameDamage"
+    ],
+    "ascension_varying": [
+     "SoulFlameDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SoulSlashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SoulSlashDamage"
+    ],
+    "ascension_varying": [
+     "SoulSlashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "spiny_toad",
+  "class": "SpinyToad",
+  "moves": {
+   "ExplosionMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": -5,
+      "amount_var": null,
+      "power": "thorns",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "-5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ExplosionDamage"
+    ],
+    "ascension_varying": [
+     "ExplosionDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": -5,
+      "amount_var": null,
+      "power": "thorns",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "-5m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "LashDamage"
+    ],
+    "ascension_varying": [
+     "LashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpikesMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "amount_var": null,
+      "power": "thorns",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "stabbot",
+  "class": "Stabbot",
+  "moves": {
+   "StabMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StabDamage"
+    ],
+    "ascension_varying": [
+     "StabDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "ten_hp_monster",
+  "class": "TenHpMonster",
+  "moves": {
+   "NothingMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "terror_eel",
+  "class": "TerrorEel",
+  "moves": {
+   "CrashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "CrashDamage"
+    ],
+    "ascension_varying": [
+     "CrashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StunMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TerrorMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 99,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "99m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThrashMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 6,
+      "amount_var": null,
+      "power": "vigor",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "6m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThrashDamage",
+     "ThrashRepeat"
+    ],
+    "ascension_varying": [
+     "ThrashDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 6,
+      "amount_var": null,
+      "power": "vigor",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "6m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "test_subject",
+  "class": "TestSubject",
+  "moves": {
+   "BigPounceMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BigPounceDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [
+     "BiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BurningGrowlMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m",
+      "card": "burn",
+      "pile": "discard",
+      "position": ""
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BurningGrowlBurnCount",
+     "BurningGrowlStrengthGain"
+    ],
+    "ascension_varying": [
+     "BurningGrowlBurnCount",
+     "BurningGrowlStrengthGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "add_card",
+      "amount": 5,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m",
+      "card": "burn",
+      "pile": "discard",
+      "position": ""
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MultiClawMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "MultiClawDamage"
+    ],
+    "ascension_varying": [
+     "MultiClawDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "Phase3LacerateMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "Phase3LacerateDamage"
+    ],
+    "ascension_varying": [
+     "Phase3LacerateDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RespawnMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "painful_stabs",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "nemesis",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [
+     "PowerCmd.Remove"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "SecondFormHp",
+     "ThirdFormHp"
+    ],
+    "ascension_varying": [
+     "SecondFormHp",
+     "ThirdFormHp"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "painful_stabs",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "nemesis",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false,
+    "counter_increment": "Respawns"
+   },
+   "SkullBashMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SkullBashDamage"
+    ],
+    "ascension_varying": [
+     "SkullBashDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "vulnerable",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_adversary_mk_one",
+  "class": "TheAdversaryMkOne",
+  "moves": {
+   "BarrageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BarrageDamage",
+     "BarrageRepeat"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BeamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BeamDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SmashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SmashDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_adversary_mk_three",
+  "class": "TheAdversaryMkThree",
+  "moves": {
+   "BarrageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 4,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "4m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BarrageDamage",
+     "BarrageRepeat"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "CrashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "CrashDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FlameBeamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FlameBeamDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_adversary_mk_two",
+  "class": "TheAdversaryMkTwo",
+  "moves": {
+   "BarrageMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BarrageDamage",
+     "BarrageRepeat"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BashDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "FlameBeamMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FlameBeamDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_forgotten",
+  "class": "TheForgotten",
+  "moves": {
+   "DreadMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "MiasmaMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": -2,
+      "amount_var": null,
+      "power": "dexterity",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "-2m"
+     },
+     {
+      "op": "block",
+      "amount": 8,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "8m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "dexterity",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DebilitatingSmogDexStealAmount"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_insatiable",
+  "class": "TheInsatiable",
+  "moves": {
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [
+     "BiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "LiquifyMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "base.Creature",
+      "needs_runtime": false
+     }
+    ],
+    "unsupported": [
+     "AddGeneratedCardToCombat(落点按条件分叉，引擎未实现)"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SalivateMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SalivateStrength"
+    ],
+    "ascension_varying": [
+     "SalivateStrength"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThrashMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ThrashDamage"
+    ],
+    "ascension_varying": [
+     "ThrashDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_lost",
+  "class": "TheLost",
+  "moves": {
+   "DebilitatingSmogMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": -2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "-2m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DebilitatingSmogStrengthStealAmount"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "EyeLasersMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "EyeLasersDamage"
+    ],
+    "ascension_varying": [
+     "EyeLasersDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "the_obscura",
+  "class": "TheObscura",
+  "moves": {
+   "HardeningStrikeMove": {
+    "effects": [
+     {
+      "op": "block",
+      "amount": 6,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "6m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HardeningStrikeBlock",
+     "HardeningStrikeDamage"
+    ],
+    "ascension_varying": [
+     "HardeningStrikeBlock",
+     "HardeningStrikeDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "block",
+      "amount": 7,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "7m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "IllusionMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Add"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PiercingGazeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PiercingGazeDamage"
+    ],
+    "ascension_varying": [
+     "PiercingGazeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WailMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "thieving_hopper",
+  "class": "ThievingHopper",
+  "moves": {
+   "EscapeMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Escape"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": true
+   },
+   "FlutterMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 5,
+      "amount_var": null,
+      "power": "flutter",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "5m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "HatTrickMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HatTrickDamage"
+    ],
+    "ascension_varying": [
+     "HatTrickDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "NabMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "NabDamage"
+    ],
+    "ascension_varying": [
+     "NabDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ThieveryMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "base.Creature",
+      "needs_runtime": false
+     }
+    ],
+    "unsupported": [
+     "CardPileCmd.RemoveFromCombat",
+     "SwipePower.Steal(牌)：偷牌 + 死亡归还引擎未实现"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "TheftDamage"
+    ],
+    "ascension_varying": [
+     "TheftDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": null,
+      "amount_var": null,
+      "power": "",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "base.Creature",
+      "needs_runtime": false
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "toadpole",
+  "class": "Toadpole",
+  "moves": {
+   "SpikeSpitMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": -2,
+      "amount_var": null,
+      "power": "thorns",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "-2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SpikeSpitDamage",
+     "SpikeSpitRepeat",
+     "SpikenAmount"
+    ],
+    "ascension_varying": [
+     "SpikeSpitDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": -2,
+      "amount_var": null,
+      "power": "thorns",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "-2m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpikenMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "thorns",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SpikenAmount"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WhirlMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WhirlDamage"
+    ],
+    "ascension_varying": [
+     "WhirlDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "torch_head_amalgam",
+  "class": "TorchHeadAmalgam",
+  "moves": {
+   "SoulBeamMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "SoulBeamDamage"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StrongTackleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StrongTackleDamage"
+    ],
+    "ascension_varying": [
+     "StrongTackleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TackleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TackleDamage"
+    ],
+    "ascension_varying": [
+     "TackleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WeakTackleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "WeakTackleDamage"
+    ],
+    "ascension_varying": [
+     "WeakTackleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "tough_egg",
+  "class": "ToughEgg",
+  "moves": {
+   "HatchMove": {
+    "effects": [],
+    "unsupported": [
+     "PowerCmd.Remove"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "NibbleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "NibbleDamage"
+    ],
+    "ascension_varying": [
+     "NibbleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "tracker_ruby_raider",
+  "class": "TrackerRubyRaider",
+  "moves": {
+   "HoundsMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "HoundsDamage",
+     "HoundsRepeat"
+    ],
+    "ascension_varying": [
+     "HoundsRepeat"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "TrackMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "tunneler",
+  "class": "Tunneler",
+  "moves": {
+   "BelowMove": {
+    "effects": [],
+    "unsupported": [
+     "未识别的效果写法（函数体非平凡，效果藏在 switch/delegate 里）"
+    ],
+    "choices": 0,
+    "constants_used": [
+     "BelowDamage"
+    ],
+    "ascension_varying": [
+     "BelowDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [
+     "BiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "BurrowMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "burrowed",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "block",
+      "amount": 32,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "32m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BlockGain"
+    ],
+    "ascension_varying": [
+     "BlockGain"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "burrowed",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "block",
+      "amount": 37,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "37m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StillDizzyMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "turret_operator",
+  "class": "TurretOperator",
+  "moves": {
+   "ReloadMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "UnloadMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "FireDamage"
+    ],
+    "ascension_varying": [
+     "FireDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "twig_slime_m",
+  "class": "TwigSlimeM",
+  "moves": {
+   "ClumpShotMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ClumpDamage"
+    ],
+    "ascension_varying": [
+     "ClumpDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StickyShotMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1",
+      "card": "slimed",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "twig_slime_s",
+  "class": "TwigSlimeS",
+  "moves": {
+   "TackleMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "TackleDamage"
+    ],
+    "ascension_varying": [
+     "TackleDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "two_tailed_rat",
+  "class": "TwoTailedRat",
+  "moves": {
+   "CallForBackup": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Add"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "DiseaseBiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DiseaseBiteDamage"
+    ],
+    "ascension_varying": [
+     "DiseaseBiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ScratchMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ScratchDamage"
+    ],
+    "ascension_varying": [
+     "ScratchDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ScreechMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "frail",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "vantom",
+  "class": "Vantom",
+  "moves": {
+   "DismemberMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3",
+      "card": "wound",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "DismemberDamage"
+    ],
+    "ascension_varying": [
+     "DismemberDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "add_card",
+      "amount": 3,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3",
+      "card": "wound",
+      "pile": "discard",
+      "position": ""
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "InkBlotMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "InkBlotDamage"
+    ],
+    "ascension_varying": [
+     "InkBlotDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "InkyLanceMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "InkyLanceDamage"
+    ],
+    "ascension_varying": [
+     "InkyLanceDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PrepareMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "vine_shambler",
+  "class": "VineShambler",
+  "moves": {
+   "ChompMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ChompDamage"
+    ],
+    "ascension_varying": [
+     "ChompDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "GraspingVinesMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "tangled",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "GraspingVinesDamage"
+    ],
+    "ascension_varying": [
+     "GraspingVinesDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "tangled",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SwipeMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SwipeDamage"
+    ],
+    "ascension_varying": [
+     "SwipeDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "waterfall_giant",
+  "class": "WaterfallGiant",
+  "moves": {
+   "AboutToBlowMove": {
+    "effects": [],
+    "unsupported": [
+     "PowerCmd.Remove"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "ExplodeMove": {
+    "effects": [],
+    "unsupported": [
+     "CreatureCmd.Kill"
+    ],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": true,
+    "escapes": false
+   },
+   "PressureGunMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PressureGunIncrease"
+    ],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PressureUpMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PressureUpDamage"
+    ],
+    "ascension_varying": [
+     "PressureUpDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "PressurizeMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 15,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "15m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "PressurizeAmount"
+    ],
+    "ascension_varying": [
+     "PressurizeAmount"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 20,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "20m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "RamMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "RamDamage"
+    ],
+    "ascension_varying": [
+     "RamDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SiphonMove": {
+    "effects": [
+     {
+      "op": "heal",
+      "amount": null,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "10m * base.CombatState.Players.Count",
+      "needs_runtime": false
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "SiphonHeal"
+    ],
+    "ascension_varying": [
+     "SiphonHeal"
+    ],
+    "ascension_effects": [
+     {
+      "op": "heal",
+      "amount": null,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "15m * base.CombatState.Players.Count",
+      "needs_runtime": false
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   },
+   "StompMove": {
+    "effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "StompDamage"
+    ],
+    "ascension_varying": [
+     "StompDamage"
+    ],
+    "ascension_effects": [
+     {
+      "op": "apply_power",
+      "amount": 1,
+      "amount_var": null,
+      "power": "weak",
+      "target": "unknown",
+      "times": 1,
+      "amount_raw": "1m"
+     },
+     {
+      "op": "apply_power",
+      "amount": 3,
+      "amount_var": null,
+      "power": "steam_eruption",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "3m"
+     }
+    ],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "wriggler",
+  "class": "Wriggler",
+  "moves": {
+   "BiteMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "BiteDamage"
+    ],
+    "ascension_varying": [
+     "BiteDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "SpawnedMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   },
+   "WriggleMove": {
+    "effects": [
+     {
+      "op": "add_card",
+      "amount": 1,
+      "amount_var": null,
+      "power": null,
+      "target": "self",
+      "times": 1,
+      "amount_raw": "1",
+      "card": "infection",
+      "pile": "discard",
+      "position": ""
+     },
+     {
+      "op": "apply_power",
+      "amount": 2,
+      "amount_var": null,
+      "power": "strength",
+      "target": "self",
+      "times": 1,
+      "amount_raw": "2m"
+     }
+    ],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [],
+    "ascension_varying": [],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ },
+ {
+  "eid": "zapbot",
+  "class": "Zapbot",
+  "moves": {
+   "ZapMove": {
+    "effects": [],
+    "unsupported": [],
+    "choices": 0,
+    "constants_used": [
+     "ZapDamage"
+    ],
+    "ascension_varying": [
+     "ZapDamage"
+    ],
+    "ascension_effects": [],
+    "kills_self": false,
+    "escapes": false
+   }
+  }
+ }
+]

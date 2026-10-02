@@ -1,0 +1,1007 @@
+[
+ {
+  "eid": "aeonglass_boss",
+  "name": "Aeonglass",
+  "room_type": "Boss",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "aeonglass"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "axebots_normal",
+  "name": "Axebot",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "axebot"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "battleworn_dummy_event_encounter",
+  "name": "Battleworn Dummy",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "battle_friend_v1",
+   "battle_friend_v2",
+   "battle_friend_v3"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "bowlbugs_normal",
+  "name": "Bowlbug Swarm",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "bowlbug_egg",
+   "bowlbug_nectar",
+   "bowlbug_rock",
+   "bowlbug_silk"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "bowlbugs_weak",
+  "name": "Bowlbugs",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": true,
+  "monsters": [
+   "bowlbug_egg",
+   "bowlbug_nectar",
+   "bowlbug_rock"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "bygone_effigy_elite",
+  "name": "Bygone Effigy",
+  "room_type": "Elite",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "bygone_effigy"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "byrdonis_elite",
+  "name": "Byrdonis",
+  "room_type": "Elite",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "byrdonis"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "ceremonial_beast_boss",
+  "name": "Ceremonial Beast",
+  "room_type": "Boss",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "ceremonial_beast"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "chompers_normal",
+  "name": "An Automaton Pair",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "chomper"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "construct_menagerie_normal",
+  "name": "Construct Menagerie",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "cubex_construct",
+   "punch_construct"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "corpse_slugs_normal",
+  "name": "Many Corpse Slugs",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "corpse_slug"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "corpse_slugs_weak",
+  "name": "Corpse Slugs",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": true,
+  "monsters": [
+   "corpse_slug"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "cubex_construct_normal",
+  "name": "Cubex Construct",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "cubex_construct"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "cultists_normal",
+  "name": "Cultists",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "calcified_cultist",
+   "damp_cultist"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "decimillipede_elite",
+  "name": "The Decimillipede",
+  "room_type": "Elite",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "decimillipede_segment_back",
+   "decimillipede_segment_front",
+   "decimillipede_segment_middle"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "dense_vegetation_event_encounter",
+  "name": "Wrigglers",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "wriggler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "devoted_sculptor_weak",
+  "name": "Devoted Sculptor",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": true,
+  "monsters": [
+   "devoted_sculptor"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "entomancer_elite",
+  "name": "Entomancer",
+  "room_type": "Elite",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "entomancer"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "exoskeletons_normal",
+  "name": "Many Exoskeletons",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "exoskeleton"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "exoskeletons_weak",
+  "name": "Exoskeletons",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": true,
+  "monsters": [
+   "exoskeleton"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fabricator_normal",
+  "name": "Fabricator",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "fabricator"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fake_merchant_event_encounter",
+  "name": "The Merchant???",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "fake_merchant_monster"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "flyconid_normal",
+  "name": "Shroom and Slime",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "flyconid",
+   "leaf_slime_m",
+   "twig_slime_m"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fogmog_normal",
+  "name": "Fogmog",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "eye_with_teeth",
+   "fogmog"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fossil_stalker_normal",
+  "name": "Fossil Stalker",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "fossil_stalker"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "frog_knight_normal",
+  "name": "Frog Knight",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "frog_knight"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "fuzzy_wurm_crawler_weak",
+  "name": "Fuzzy Wurm Crawler",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": true,
+  "monsters": [
+   "fuzzy_wurm_crawler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "globe_head_normal",
+  "name": "A Lone Globe Head",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "globe_head"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "gremlin_merc_normal",
+  "name": "Two Gremlins in a Trenchcoat",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "fat_gremlin",
+   "gremlin_merc",
+   "sneaky_gremlin"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "haunted_ship_normal",
+  "name": "Haunted Ship",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "haunted_ship"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "hunter_killer_normal",
+  "name": "Hunter Killer",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "hunter_killer"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "infested_prisms_elite",
+  "name": "Infested Prism",
+  "room_type": "Elite",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "infested_prism"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "inklets_normal",
+  "name": "Inklets",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "inklet"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "kaiser_crab_boss",
+  "name": "Kaiser Crab",
+  "room_type": "Boss",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "crusher",
+   "rocket"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "knights_elite",
+  "name": "Knight Gang",
+  "room_type": "Elite",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "flail_knight",
+   "magi_knight",
+   "spectral_knight"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "knowledge_demon_boss",
+  "name": "Knowledge Demon",
+  "room_type": "Boss",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "knowledge_demon"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "lagavulin_matriarch_boss",
+  "name": "Lagavulin Matriarch",
+  "room_type": "Boss",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "lagavulin_matriarch"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "living_fog_normal",
+  "name": "Living Fog",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "gas_bomb",
+   "living_fog"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "louse_progenitor_normal",
+  "name": "Louse Progenitor",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "louse_progenitor"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "mawler_normal",
+  "name": "Mawler",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "mawler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "mecha_knight_elite",
+  "name": "Mecha Knight",
+  "room_type": "Elite",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "mecha_knight"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "mysterious_knight_event_encounter",
+  "name": "Mysterious Knight",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "mysterious_knight"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "mytes_normal",
+  "name": "Mass of Mytes",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "myte"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "nibbits_normal",
+  "name": "A Pair of Nibbits",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "nibbit"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "nibbits_weak",
+  "name": "A Lone Nibbit",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": true,
+  "monsters": [
+   "nibbit"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "overgrowth_crawlers",
+  "name": "Overgrowth Crawlers",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "fuzzy_wurm_crawler",
+   "shrinker_beetle"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "ovicopter_normal",
+  "name": "Ovicopter",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "ovicopter",
+   "tough_egg"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "owl_magistrate_normal",
+  "name": "Owl Magistrate",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "owl_magistrate"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "phantasmal_gardeners_elite",
+  "name": "Phantasmal Gardeners",
+  "room_type": "Elite",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "phantasmal_gardener"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "phrog_parasite_elite",
+  "name": "Phrog Parasite",
+  "room_type": "Elite",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "phrog_parasite",
+   "wriggler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "punch_construct_normal",
+  "name": "Punch Construct",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "punch_construct"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "punch_off_event_encounter",
+  "name": "Punch Constructs",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "punch_construct"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "queen_boss",
+  "name": "Queen",
+  "room_type": "Boss",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "queen",
+   "torch_head_amalgam"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "ruby_raiders_normal",
+  "name": "Ruby Raiders",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "assassin_ruby_raider",
+   "axe_ruby_raider",
+   "brute_ruby_raider",
+   "crossbow_ruby_raider",
+   "tracker_ruby_raider"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "scrolls_of_biting_normal",
+  "name": "Many Scrolls of Biting",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "scroll_of_biting"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "scrolls_of_biting_weak",
+  "name": "Scrolls of Biting",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": true,
+  "monsters": [
+   "scroll_of_biting"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "seapunk_normal",
+  "name": "Underdocks Wildlife",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "calcified_cultist",
+   "seapunk"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "seapunk_weak",
+  "name": "Seapunk",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": true,
+  "monsters": [
+   "seapunk"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "sewer_clam_normal",
+  "name": "Sewer Clam",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "sewer_clam"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "shrinker_beetle_weak",
+  "name": "Shrinker Beetle",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": true,
+  "monsters": [
+   "shrinker_beetle"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "skulking_colony_elite",
+  "name": "Skulking Colony",
+  "room_type": "Elite",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "skulking_colony"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "slimed_berserker_normal",
+  "name": "Slimed Berserker",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "slimed_berserker"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "slimes_normal",
+  "name": "Swarm of Slimes",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "leaf_slime_m",
+   "leaf_slime_s",
+   "twig_slime_m",
+   "twig_slime_s"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "slimes_weak",
+  "name": "Group of Slimes",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": true,
+  "monsters": [
+   "leaf_slime_m",
+   "leaf_slime_s",
+   "twig_slime_m",
+   "twig_slime_s"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "slithering_strangler_normal",
+  "name": "Strangler and Friend",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "leaf_slime_m",
+   "leaf_slime_s",
+   "slithering_strangler",
+   "snapping_jaxfruit",
+   "twig_slime_m",
+   "twig_slime_s"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "sludge_spinner_weak",
+  "name": "Sludge Spinner",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": true,
+  "monsters": [
+   "sludge_spinner"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "slumbering_beetle_normal",
+  "name": "Slumber Party",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "bowlbug_rock",
+   "bowlbug_silk",
+   "slumbering_beetle"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "snapping_jaxfruit_normal",
+  "name": "Overgrowth Flora",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "flyconid",
+   "snapping_jaxfruit"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "soul_fysh_boss",
+  "name": "Soul Fysh",
+  "room_type": "Boss",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "soul_fysh"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "soul_nexus_elite",
+  "name": "Soul Nexus",
+  "room_type": "Elite",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "soul_nexus"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "spiny_toad_normal",
+  "name": "Spiny Toad",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "spiny_toad"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "terror_eel_elite",
+  "name": "Terror Eel",
+  "room_type": "Elite",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "terror_eel"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "test_subject_boss",
+  "name": "Test Subject",
+  "room_type": "Boss",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "test_subject"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_architect_event_encounter",
+  "name": "The Architect",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "architect"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_insatiable_boss",
+  "name": "The Insatiable",
+  "room_type": "Boss",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "the_insatiable"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_kin_boss",
+  "name": "The Kin",
+  "room_type": "Boss",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "kin_follower",
+   "kin_priest"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_lost_and_forgotten_normal",
+  "name": "Lost and Forgotten",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": false,
+  "monsters": [
+   "the_forgotten",
+   "the_lost"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "the_obscura_normal",
+  "name": "The Obscura",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": false,
+  "monsters": [
+   "parafright",
+   "the_obscura"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "thieving_hopper_weak",
+  "name": "Thieving Hopper",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": true,
+  "monsters": [
+   "thieving_hopper"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "toadpoles_weak",
+  "name": "Toadpoles",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": true,
+  "monsters": [
+   "toadpole"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "tunneler_normal",
+  "name": "Tunneling Twosome",
+  "room_type": "Monster",
+  "act": "",
+  "is_weak": false,
+  "monsters": [
+   "chomper",
+   "tunneler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "tunneler_weak",
+  "name": "Tunneler",
+  "room_type": "Monster",
+  "act": "Act 2 - Hive",
+  "is_weak": true,
+  "monsters": [
+   "tunneler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "turret_operator_weak",
+  "name": "Turret Operator",
+  "room_type": "Monster",
+  "act": "Act 3 - Glory",
+  "is_weak": true,
+  "monsters": [
+   "living_shield",
+   "turret_operator"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "two_tailed_rats_normal",
+  "name": "Two-Tailed Rats",
+  "room_type": "Monster",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "two_tailed_rat"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "vantom_boss",
+  "name": "Vantom",
+  "room_type": "Boss",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "vantom"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "vine_shambler_normal",
+  "name": "Vine Shambler",
+  "room_type": "Monster",
+  "act": "Act 1 - Overgrowth",
+  "is_weak": false,
+  "monsters": [
+   "vine_shambler"
+  ],
+  "verified": false
+ },
+ {
+  "eid": "waterfall_giant_boss",
+  "name": "Waterfall Giant",
+  "room_type": "Boss",
+  "act": "Act 1 - Underdocks",
+  "is_weak": false,
+  "monsters": [
+   "waterfall_giant"
+  ],
+  "verified": false
+ }
+]

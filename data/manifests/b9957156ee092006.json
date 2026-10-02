@@ -1,0 +1,109 @@
+{
+  "schema": "sts2-training-manifest/1",
+  "created_at": "2026-09-21T06:04:59+00:00",
+  "game_build": {
+    "assembly_info": "0.1.0+41cef1ea4657c524aa50e870df009e56337e8c32",
+    "target_framework": "netcoreapp9.0"
+  },
+  "source": {
+    "path": "data\\decompiled\\sts2",
+    "hash": "95b53c580e4cff31601a4a4e0c2fb9d735cf1b7049dcd31f04ddbc5d7c895a94",
+    "files": 3538
+  },
+  "content": {
+    "path": "data\\content\\repo",
+    "loaded_from": "D:\\桌面\\尖塔模型\\data\\content\\repo",
+    "files_hash": "56097c49e811af717c0930d6bf89c2435e64cc311821e04ff70807dee3aa4f40",
+    "files": 27,
+    "content_fingerprint": {
+      "cards": 597,
+      "cards_admitted": 335,
+      "enemies": 115,
+      "content_hash": 5549339914467973970,
+      "admission_hash": 447650295530265832
+    },
+    "vocab_fingerprint": {
+      "n_cards": 597,
+      "n_enemies": 115,
+      "n_relics": 299,
+      "n_potions": 65,
+      "vocab_hash": 10683457069667809257
+    }
+  },
+  "engine": {
+    "hash": "db68ae40c5cd84a5034140244594ff26f0ea6b73a2e5168568a5411145da65eb",
+    "files": [
+      "core.py",
+      "powers.py",
+      "monster_ai.py",
+      "hooks.py",
+      "orbs.py",
+      "relics.py",
+      "runeffects.py",
+      "events.py",
+      "keywords.py",
+      "mapgen.py",
+      "rng.py",
+      "content.py",
+      "observe.py",
+      "featurize.py",
+      "eligibility.py",
+      "run.py",
+      "env.py",
+      "relicbag.py",
+      "acts.py",
+      "pointodds.py"
+    ]
+  },
+  "protocol": {
+    "observation": "obs-v2",
+    "sl": "sl-v1"
+  },
+  "scope": {
+    "character": "ironclad",
+    "ascension": 0,
+    "act_range": "act1",
+    "sl_budget_max_sim": 50,
+    "unlocks": "unknown",
+    "curriculum": "restricted-simulation-curriculum",
+    "curriculum_note": "受限模拟课程：允许内容少于目标配置的全部可达内容，因此**不能**用它声称完成了真实分布（docs/13 §7）"
+  },
+  "allowed_content": {
+    "draft_pool": 58,
+    "draft_pool_by_rarity": {
+      "rare": 19,
+      "common": 14,
+      "uncommon": 25
+    },
+    "draftable_cards_in_content": 491,
+    "draft_pool_coverage": 0.1181,
+    "cards_admitted": 335,
+    "encounters": {
+      "monster": 55,
+      "elite": 12,
+      "boss": 12
+    },
+    "encounters_total": {
+      "monster": 55,
+      "elite": 12,
+      "boss": 12
+    }
+  },
+  "reject_reasons": {
+    "effects_incomplete": 251,
+    "effects_from_community_text": 165,
+    "unimplemented_power": 98,
+    "no_effects": 90,
+    "closure_gap": 4,
+    "triggers_incomplete": 3,
+    "unsupported_op": 1
+  },
+  "unknown_mechanic_policy": "未知机制作为**环境故障**单独计数并保存复现，不当作玩家死亡/胜利/空房；最终真实分布评测要求未知机制为零（docs/13 §7）",
+  "tools": {
+    "python": "3.11.4",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "torch": "2.5.1+cu121",
+    "cuda_available": true
+  }
+}

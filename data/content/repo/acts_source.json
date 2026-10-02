@@ -1,0 +1,2147 @@
+[
+ {
+  "id": "overgrowth",
+  "csharp_class": "Overgrowth",
+  "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs",
+  "index": 0,
+  "index_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:49",
+  "is_default": true,
+  "is_default_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:51",
+  "base_number_of_rooms": 15,
+  "base_number_of_rooms_raw": "15",
+  "base_number_of_rooms_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:47",
+  "number_of_weak_encounters": 3,
+  "number_of_weak_encounters_raw": "3",
+  "number_of_weak_encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:45",
+  "is_unlocked": true,
+  "is_unlocked_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:130",
+  "map_point_counts": {
+   "rest": {
+    "kind": "gaussian_int",
+    "mean": 7,
+    "stddev": 1,
+    "min": 6,
+    "max": 7,
+    "bounds": "inclusive",
+    "raw": "NextGaussianInt(7, 1, 6, 7)"
+   },
+   "rest_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:136",
+   "unknown": {
+    "base": {
+     "kind": "gaussian_int",
+     "mean": 12,
+     "stddev": 1,
+     "min": 10,
+     "max": 14,
+     "bounds": "inclusive",
+     "raw": "NextGaussianInt(12, 1, 10, 14)",
+     "call": "MapPointTypeCounts.StandardRandomUnknownCount",
+     "call_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:30-33"
+    },
+    "offset": 0,
+    "base_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:137",
+    "min": 10,
+    "max": 14
+   },
+   "unknown_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:137",
+   "elites": {
+    "raw": "NumOfElites { get; init; } = (int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "initializer": "(int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "base": 5.0,
+    "ascension_level": "SwarmingElites",
+    "ascension_multiplier": 1.6,
+    "default_multiplier": 1.0,
+    "value_default": 5,
+    "value_with_ascension": 8,
+    "formula": "round(base * (SwarmingElites ? ascension_multiplier : default_multiplier))"
+   },
+   "shops": {
+    "raw": "NumOfShops { get; } = 3",
+    "initializer": "3",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "value": 3
+   },
+   "point_types_that_ignore_rules": [],
+   "point_types_that_ignore_rules_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+   "inherited_from_base_source": {
+    "elites": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "shops": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "point_types_that_ignore_rules": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+    "constructor": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:35-39"
+   },
+   "constructor_args": "unknownCount, restCount",
+   "constructor_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:138"
+  },
+  "ancients": [
+   {
+    "id": "neow",
+    "class": "Neow",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Neow.cs"
+   }
+  ],
+  "ancients_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:26",
+  "events": [
+   {
+    "id": "aroma_of_chaos",
+    "class": "AromaOfChaos",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/AromaOfChaos.cs"
+   },
+   {
+    "id": "byrdonis_nest",
+    "class": "ByrdonisNest",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/ByrdonisNest.cs"
+   },
+   {
+    "id": "dense_vegetation",
+    "class": "DenseVegetation",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/DenseVegetation.cs"
+   },
+   {
+    "id": "jungle_maze_adventure",
+    "class": "JungleMazeAdventure",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/JungleMazeAdventure.cs"
+   },
+   {
+    "id": "luminous_choir",
+    "class": "LuminousChoir",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/LuminousChoir.cs"
+   },
+   {
+    "id": "morphic_grove",
+    "class": "MorphicGrove",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/MorphicGrove.cs"
+   },
+   {
+    "id": "sapphire_seed",
+    "class": "SapphireSeed",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/SapphireSeed.cs"
+   },
+   {
+    "id": "sunken_statue",
+    "class": "SunkenStatue",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/SunkenStatue.cs"
+   },
+   {
+    "id": "tablet_of_truth",
+    "class": "TabletOfTruth",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/TabletOfTruth.cs"
+   },
+   {
+    "id": "unrest_site",
+    "class": "UnrestSite",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/UnrestSite.cs"
+   },
+   {
+    "id": "wellspring",
+    "class": "Wellspring",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Wellspring.cs"
+   },
+   {
+    "id": "whispering_hollow",
+    "class": "WhisperingHollow",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/WhisperingHollow.cs"
+   },
+   {
+    "id": "wood_carvings",
+    "class": "WoodCarvings",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/WoodCarvings.cs"
+   }
+  ],
+  "events_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:28",
+  "all_encounters": [
+   {
+    "id": "bygone_effigy_elite",
+    "class": "BygoneEffigyElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BygoneEffigyElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BygoneEffigyElite.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:75"
+   },
+   {
+    "id": "byrdonis_elite",
+    "class": "ByrdonisElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ByrdonisElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ByrdonisElite.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:76"
+   },
+   {
+    "id": "ceremonial_beast_boss",
+    "class": "CeremonialBeastBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CeremonialBeastBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CeremonialBeastBoss.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:77"
+   },
+   {
+    "id": "cubex_construct_normal",
+    "class": "CubexConstructNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CubexConstructNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CubexConstructNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:78"
+   },
+   {
+    "id": "flyconid_normal",
+    "class": "FlyconidNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Mushroom",
+     "Slimes"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FlyconidNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FlyconidNormal.cs:17",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FlyconidNormal.cs:19",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:79"
+   },
+   {
+    "id": "fogmog_normal",
+    "class": "FogmogNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FogmogNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FogmogNormal.cs:13",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:80"
+   },
+   {
+    "id": "fuzzy_wurm_crawler_weak",
+    "class": "FuzzyWurmCrawlerWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Crawler"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FuzzyWurmCrawlerWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FuzzyWurmCrawlerWeak.cs:12",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FuzzyWurmCrawlerWeak.cs:14",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FuzzyWurmCrawlerWeak.cs:10",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:81"
+   },
+   {
+    "id": "inklets_normal",
+    "class": "InkletsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/InkletsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/InkletsNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:82"
+   },
+   {
+    "id": "mawler_normal",
+    "class": "MawlerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/MawlerNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/MawlerNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:83"
+   },
+   {
+    "id": "nibbits_normal",
+    "class": "NibbitsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/NibbitsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/NibbitsNormal.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:84"
+   },
+   {
+    "id": "nibbits_weak",
+    "class": "NibbitsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Nibbit"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/NibbitsWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/NibbitsWeak.cs:12",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/NibbitsWeak.cs:14",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/NibbitsWeak.cs:10",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:85"
+   },
+   {
+    "id": "overgrowth_crawlers",
+    "class": "OvergrowthCrawlers",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Crawler",
+     "Shrinker"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OvergrowthCrawlers.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OvergrowthCrawlers.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OvergrowthCrawlers.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:86"
+   },
+   {
+    "id": "phrog_parasite_elite",
+    "class": "PhrogParasiteElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/PhrogParasiteElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/PhrogParasiteElite.cs:14",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:87"
+   },
+   {
+    "id": "ruby_raiders_normal",
+    "class": "RubyRaidersNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/RubyRaidersNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/RubyRaidersNormal.cs:34",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:88"
+   },
+   {
+    "id": "shrinker_beetle_weak",
+    "class": "ShrinkerBeetleWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Shrinker"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ShrinkerBeetleWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ShrinkerBeetleWeak.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ShrinkerBeetleWeak.cs:14",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ShrinkerBeetleWeak.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:89"
+   },
+   {
+    "id": "slimes_normal",
+    "class": "SlimesNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Slimes"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesNormal.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesNormal.cs:13",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:90"
+   },
+   {
+    "id": "slimes_weak",
+    "class": "SlimesWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Slimes"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesWeak.cs:24",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesWeak.cs:28",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimesWeak.cs:26",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:91"
+   },
+   {
+    "id": "slithering_strangler_normal",
+    "class": "SlitheringStranglerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Jaxfruit",
+     "Slimes"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlitheringStranglerNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlitheringStranglerNormal.cs:32",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlitheringStranglerNormal.cs:34",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:92"
+   },
+   {
+    "id": "snapping_jaxfruit_normal",
+    "class": "SnappingJaxfruitNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Jaxfruit",
+     "Mushroom"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SnappingJaxfruitNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SnappingJaxfruitNormal.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SnappingJaxfruitNormal.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:93"
+   },
+   {
+    "id": "the_kin_boss",
+    "class": "TheKinBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheKinBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheKinBoss.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:94"
+   },
+   {
+    "id": "vantom_boss",
+    "class": "VantomBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/VantomBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/VantomBoss.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:95"
+   },
+   {
+    "id": "vine_shambler_normal",
+    "class": "VineShamblerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/VineShamblerNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/VineShamblerNormal.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:96"
+   }
+  ],
+  "encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:72",
+  "normal_encounters": [
+   "cubex_construct_normal",
+   "flyconid_normal",
+   "fogmog_normal",
+   "fuzzy_wurm_crawler_weak",
+   "inklets_normal",
+   "mawler_normal",
+   "nibbits_normal",
+   "nibbits_weak",
+   "overgrowth_crawlers",
+   "ruby_raiders_normal",
+   "shrinker_beetle_weak",
+   "slimes_normal",
+   "slimes_weak",
+   "slithering_strangler_normal",
+   "snapping_jaxfruit_normal",
+   "vine_shambler_normal"
+  ],
+  "weak_encounters": [
+   "fuzzy_wurm_crawler_weak",
+   "nibbits_weak",
+   "shrinker_beetle_weak",
+   "slimes_weak"
+  ],
+  "regular_encounters": [
+   "cubex_construct_normal",
+   "flyconid_normal",
+   "fogmog_normal",
+   "inklets_normal",
+   "mawler_normal",
+   "nibbits_normal",
+   "overgrowth_crawlers",
+   "ruby_raiders_normal",
+   "slimes_normal",
+   "slithering_strangler_normal",
+   "snapping_jaxfruit_normal",
+   "vine_shambler_normal"
+  ],
+  "elite_encounters": [
+   "bygone_effigy_elite",
+   "byrdonis_elite",
+   "phrog_parasite_elite"
+  ],
+  "boss_encounters": [
+   "ceremonial_beast_boss",
+   "the_kin_boss",
+   "vantom_boss"
+  ],
+  "pool_refill": {
+   "normal_slots": 15,
+   "weak_slots": 3,
+   "regular_slots": 12,
+   "weak_pool_size": 4,
+   "regular_pool_size": 12,
+   "weak_pool_refills": false,
+   "regular_pool_refills": false,
+   "note": "GrabBag 每次被取空就按 AllWeakEncounters / AllRegularEncounters 重新装满（ActModel.cs:351-357 / :363-369），因此``*_pool_refills=true`` 时同一场遭遇会在同一幕里重复出现",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:349-371"
+  },
+  "pool_cycles": {
+   "normal": "RoomSet.NextNormalEncounter = normalEncounters[visited % Count]（RoomSet.cs:72）",
+   "elite": "RoomSet.NextEliteEncounter = eliteEncounters[visited % Count]（RoomSet.cs:74）",
+   "event": "RoomSet.NextEvent = events[visited % Count]（RoomSet.cs:70）",
+   "boss": "RoomSet.NextBossEncounter：第一次给 Boss，第二次起给 SecondBoss（若设置）（RoomSet.cs:76-86）",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Rooms/RoomSet.cs:70-86"
+  },
+  "boss_discovery_order": [
+   {
+    "id": "vantom_boss",
+    "class": "VantomBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/VantomBoss.cs"
+   },
+   {
+    "id": "ceremonial_beast_boss",
+    "class": "CeremonialBeastBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CeremonialBeastBoss.cs"
+   },
+   {
+    "id": "the_kin_boss",
+    "class": "TheKinBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheKinBoss.cs"
+   }
+  ],
+  "boss_discovery_order_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:19",
+  "discovery_order_swaps": [
+   {
+    "collection": "normal_encounters",
+    "index": 0,
+    "model": "nibbits_weak",
+    "class": "NibbitsWeak",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:115",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "normal_encounters",
+    "index": 1,
+    "model": "slimes_weak",
+    "class": "SlimesWeak",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:116",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "normal_encounters",
+    "index": 2,
+    "model": "shrinker_beetle_weak",
+    "class": "ShrinkerBeetleWeak",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:117",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "normal_encounters",
+    "index": 3,
+    "model": "inklets_normal",
+    "class": "InkletsNormal",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:118",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "normal_encounters",
+    "index": 4,
+    "model": "mawler_normal",
+    "class": "MawlerNormal",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:119",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "normal_encounters",
+    "index": 5,
+    "model": "ruby_raiders_normal",
+    "class": "RubyRaidersNormal",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:120",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "normal_encounters",
+    "index": 6,
+    "model": "nibbits_normal",
+    "class": "NibbitsNormal",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:121",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "events",
+    "index": 0,
+    "model": "byrdonis_nest",
+    "class": "ByrdonisNest",
+    "base_type": "EventModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:122",
+    "kind": "event",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "events",
+    "index": 1,
+    "model": "sapphire_seed",
+    "class": "SapphireSeed",
+    "base_type": "EventModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:123",
+    "kind": "event",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "elite_encounters",
+    "index": 0,
+    "model": "byrdonis_elite",
+    "class": "ByrdonisElite",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:124",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   },
+   {
+    "collection": "elite_encounters",
+    "index": 1,
+    "model": "phrog_parasite_elite",
+    "class": "PhrogParasiteElite",
+    "base_type": "EncounterModel",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:125",
+    "kind": "encounter",
+    "semantics": "RoomSet.SwapToOrCreateAtIndex：列表里已有该模型 → 与 index 处的元素互换；没有 → 把 index 处替换成该模型的新实例（RoomSet.cs:177-192）"
+   }
+  ],
+  "discovery_order_swaps_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:111",
+  "discovery_order_swaps_note": "",
+  "discovery_order_guard": {
+   "condition": "unlockState.NumberOfRuns == 0",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Overgrowth.cs:112"
+  },
+  "encounter_classification": {
+   "weak_encounters": {
+    "predicate": "_allWeakEncounters ?? (_allWeakEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && e.IsWeak))",
+    "human": "monster + is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:149",
+    "is_null_checked": true
+   },
+   "regular_encounters": {
+    "predicate": "_allRegularEncounters ?? (_allRegularEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && !e.IsWeak))",
+    "human": "monster + not is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:154",
+    "is_null_checked": true
+   },
+   "elite_encounters": {
+    "predicate": "_allEliteEncounters ?? (_allEliteEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Elite))",
+    "human": "elite",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:159",
+    "is_null_checked": false
+   },
+   "boss_encounters": {
+    "predicate": "_allBossEncounters ?? (_allBossEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Boss))",
+    "human": "boss",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:164",
+    "is_null_checked": false
+   }
+  },
+  "unsupported": []
+ },
+ {
+  "id": "underdocks",
+  "csharp_class": "Underdocks",
+  "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs",
+  "index": 0,
+  "index_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:44",
+  "is_default": false,
+  "is_default_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:46",
+  "base_number_of_rooms": 15,
+  "base_number_of_rooms_raw": "15",
+  "base_number_of_rooms_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:42",
+  "number_of_weak_encounters": 3,
+  "number_of_weak_encounters_raw": "3",
+  "number_of_weak_encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:40",
+  "is_unlocked": "UnderdocksEpoch",
+  "is_unlocked_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:109",
+  "map_point_counts": {
+   "rest": {
+    "kind": "gaussian_int",
+    "mean": 7,
+    "stddev": 1,
+    "min": 6,
+    "max": 7,
+    "bounds": "inclusive",
+    "raw": "NextGaussianInt(7, 1, 6, 7)"
+   },
+   "rest_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:114",
+   "unknown": {
+    "base": {
+     "kind": "gaussian_int",
+     "mean": 12,
+     "stddev": 1,
+     "min": 10,
+     "max": 14,
+     "bounds": "inclusive",
+     "raw": "NextGaussianInt(12, 1, 10, 14)",
+     "call": "MapPointTypeCounts.StandardRandomUnknownCount",
+     "call_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:30-33"
+    },
+    "offset": 0,
+    "base_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:115",
+    "min": 10,
+    "max": 14
+   },
+   "unknown_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:115",
+   "elites": {
+    "raw": "NumOfElites { get; init; } = (int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "initializer": "(int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "base": 5.0,
+    "ascension_level": "SwarmingElites",
+    "ascension_multiplier": 1.6,
+    "default_multiplier": 1.0,
+    "value_default": 5,
+    "value_with_ascension": 8,
+    "formula": "round(base * (SwarmingElites ? ascension_multiplier : default_multiplier))"
+   },
+   "shops": {
+    "raw": "NumOfShops { get; } = 3",
+    "initializer": "3",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "value": 3
+   },
+   "point_types_that_ignore_rules": [],
+   "point_types_that_ignore_rules_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+   "inherited_from_base_source": {
+    "elites": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "shops": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "point_types_that_ignore_rules": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+    "constructor": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:35-39"
+   },
+   "constructor_args": "unknownCount, restCount",
+   "constructor_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:116"
+  },
+  "ancients": [
+   {
+    "id": "neow",
+    "class": "Neow",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Neow.cs"
+   }
+  ],
+  "ancients_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:22",
+  "events": [
+   {
+    "id": "abyssal_baths",
+    "class": "AbyssalBaths",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/AbyssalBaths.cs"
+   },
+   {
+    "id": "drowning_beacon",
+    "class": "DrowningBeacon",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/DrowningBeacon.cs"
+   },
+   {
+    "id": "endless_conveyor",
+    "class": "EndlessConveyor",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/EndlessConveyor.cs"
+   },
+   {
+    "id": "punch_off",
+    "class": "PunchOff",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/PunchOff.cs"
+   },
+   {
+    "id": "spiraling_whirlpool",
+    "class": "SpiralingWhirlpool",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/SpiralingWhirlpool.cs"
+   },
+   {
+    "id": "sunken_statue",
+    "class": "SunkenStatue",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/SunkenStatue.cs"
+   },
+   {
+    "id": "sunken_treasury",
+    "class": "SunkenTreasury",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/SunkenTreasury.cs"
+   },
+   {
+    "id": "doors_of_light_and_dark",
+    "class": "DoorsOfLightAndDark",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/DoorsOfLightAndDark.cs"
+   },
+   {
+    "id": "trash_heap",
+    "class": "TrashHeap",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/TrashHeap.cs"
+   },
+   {
+    "id": "waterlogged_scriptorium",
+    "class": "WaterloggedScriptorium",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/WaterloggedScriptorium.cs"
+   }
+  ],
+  "events_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:26",
+  "all_encounters": [
+   {
+    "id": "corpse_slugs_normal",
+    "class": "CorpseSlugsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Slugs"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsNormal.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsNormal.cs:13",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:70"
+   },
+   {
+    "id": "corpse_slugs_weak",
+    "class": "CorpseSlugsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Slugs"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsWeak.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsWeak.cs:17",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CorpseSlugsWeak.cs:13",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:71"
+   },
+   {
+    "id": "cultists_normal",
+    "class": "CultistsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CultistsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/CultistsNormal.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:72"
+   },
+   {
+    "id": "fossil_stalker_normal",
+    "class": "FossilStalkerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FossilStalkerNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FossilStalkerNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:73"
+   },
+   {
+    "id": "gremlin_merc_normal",
+    "class": "GremlinMercNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/GremlinMercNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/GremlinMercNormal.cs:20",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:74"
+   },
+   {
+    "id": "haunted_ship_normal",
+    "class": "HauntedShipNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/HauntedShipNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/HauntedShipNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:75"
+   },
+   {
+    "id": "lagavulin_matriarch_boss",
+    "class": "LagavulinMatriarchBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LagavulinMatriarchBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LagavulinMatriarchBoss.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:76"
+   },
+   {
+    "id": "living_fog_normal",
+    "class": "LivingFogNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LivingFogNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LivingFogNormal.cs:14",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:77"
+   },
+   {
+    "id": "phantasmal_gardeners_elite",
+    "class": "PhantasmalGardenersElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/PhantasmalGardenersElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/PhantasmalGardenersElite.cs:20",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:78"
+   },
+   {
+    "id": "punch_construct_normal",
+    "class": "PunchConstructNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/PunchConstructNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/PunchConstructNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:79"
+   },
+   {
+    "id": "seapunk_normal",
+    "class": "SeapunkNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Seapunk"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkNormal.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkNormal.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:80"
+   },
+   {
+    "id": "seapunk_weak",
+    "class": "SeapunkWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Seapunk"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkWeak.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkWeak.cs:14",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SeapunkWeak.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:81"
+   },
+   {
+    "id": "sewer_clam_normal",
+    "class": "SewerClamNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SewerClamNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SewerClamNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:82"
+   },
+   {
+    "id": "skulking_colony_elite",
+    "class": "SkulkingColonyElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SkulkingColonyElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SkulkingColonyElite.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:83"
+   },
+   {
+    "id": "sludge_spinner_weak",
+    "class": "SludgeSpinnerWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SludgeSpinnerWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SludgeSpinnerWeak.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SludgeSpinnerWeak.cs:11",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:84"
+   },
+   {
+    "id": "soul_fysh_boss",
+    "class": "SoulFyshBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SoulFyshBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SoulFyshBoss.cs:18",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:85"
+   },
+   {
+    "id": "terror_eel_elite",
+    "class": "TerrorEelElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TerrorEelElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TerrorEelElite.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:86"
+   },
+   {
+    "id": "toadpoles_weak",
+    "class": "ToadpolesWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ToadpolesWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ToadpolesWeak.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ToadpolesWeak.cs:11",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:87"
+   },
+   {
+    "id": "two_tailed_rats_normal",
+    "class": "TwoTailedRatsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TwoTailedRatsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TwoTailedRatsNormal.cs:14",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:88"
+   },
+   {
+    "id": "waterfall_giant_boss",
+    "class": "WaterfallGiantBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/WaterfallGiantBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/WaterfallGiantBoss.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:89"
+   }
+  ],
+  "encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:67",
+  "normal_encounters": [
+   "corpse_slugs_normal",
+   "corpse_slugs_weak",
+   "cultists_normal",
+   "fossil_stalker_normal",
+   "gremlin_merc_normal",
+   "haunted_ship_normal",
+   "living_fog_normal",
+   "punch_construct_normal",
+   "seapunk_normal",
+   "seapunk_weak",
+   "sewer_clam_normal",
+   "sludge_spinner_weak",
+   "toadpoles_weak",
+   "two_tailed_rats_normal"
+  ],
+  "weak_encounters": [
+   "corpse_slugs_weak",
+   "seapunk_weak",
+   "sludge_spinner_weak",
+   "toadpoles_weak"
+  ],
+  "regular_encounters": [
+   "corpse_slugs_normal",
+   "cultists_normal",
+   "fossil_stalker_normal",
+   "gremlin_merc_normal",
+   "haunted_ship_normal",
+   "living_fog_normal",
+   "punch_construct_normal",
+   "seapunk_normal",
+   "sewer_clam_normal",
+   "two_tailed_rats_normal"
+  ],
+  "elite_encounters": [
+   "phantasmal_gardeners_elite",
+   "skulking_colony_elite",
+   "terror_eel_elite"
+  ],
+  "boss_encounters": [
+   "lagavulin_matriarch_boss",
+   "soul_fysh_boss",
+   "waterfall_giant_boss"
+  ],
+  "pool_refill": {
+   "normal_slots": 15,
+   "weak_slots": 3,
+   "regular_slots": 12,
+   "weak_pool_size": 4,
+   "regular_pool_size": 10,
+   "weak_pool_refills": false,
+   "regular_pool_refills": true,
+   "note": "GrabBag 每次被取空就按 AllWeakEncounters / AllRegularEncounters 重新装满（ActModel.cs:351-357 / :363-369），因此``*_pool_refills=true`` 时同一场遭遇会在同一幕里重复出现",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:349-371"
+  },
+  "pool_cycles": {
+   "normal": "RoomSet.NextNormalEncounter = normalEncounters[visited % Count]（RoomSet.cs:72）",
+   "elite": "RoomSet.NextEliteEncounter = eliteEncounters[visited % Count]（RoomSet.cs:74）",
+   "event": "RoomSet.NextEvent = events[visited % Count]（RoomSet.cs:70）",
+   "boss": "RoomSet.NextBossEncounter：第一次给 Boss，第二次起给 SecondBoss（若设置）（RoomSet.cs:76-86）",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Rooms/RoomSet.cs:70-86"
+  },
+  "boss_discovery_order": [
+   {
+    "id": "waterfall_giant_boss",
+    "class": "WaterfallGiantBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/WaterfallGiantBoss.cs"
+   },
+   {
+    "id": "soul_fysh_boss",
+    "class": "SoulFyshBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SoulFyshBoss.cs"
+   },
+   {
+    "id": "lagavulin_matriarch_boss",
+    "class": "LagavulinMatriarchBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LagavulinMatriarchBoss.cs"
+   }
+  ],
+  "boss_discovery_order_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:15",
+  "discovery_order_swaps": [],
+  "discovery_order_swaps_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Underdocks.cs:104",
+  "discovery_order_swaps_note": "该方法为空实现：本幕没有首局固定顺序",
+  "discovery_order_guard": null,
+  "encounter_classification": {
+   "weak_encounters": {
+    "predicate": "_allWeakEncounters ?? (_allWeakEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && e.IsWeak))",
+    "human": "monster + is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:149",
+    "is_null_checked": true
+   },
+   "regular_encounters": {
+    "predicate": "_allRegularEncounters ?? (_allRegularEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && !e.IsWeak))",
+    "human": "monster + not is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:154",
+    "is_null_checked": true
+   },
+   "elite_encounters": {
+    "predicate": "_allEliteEncounters ?? (_allEliteEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Elite))",
+    "human": "elite",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:159",
+    "is_null_checked": false
+   },
+   "boss_encounters": {
+    "predicate": "_allBossEncounters ?? (_allBossEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Boss))",
+    "human": "boss",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:164",
+    "is_null_checked": false
+   }
+  },
+  "unsupported": []
+ },
+ {
+  "id": "hive",
+  "csharp_class": "Hive",
+  "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs",
+  "index": 1,
+  "index_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:49",
+  "is_default": true,
+  "is_default_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:51",
+  "base_number_of_rooms": 14,
+  "base_number_of_rooms_raw": "14",
+  "base_number_of_rooms_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:47",
+  "number_of_weak_encounters": 2,
+  "number_of_weak_encounters_raw": "2",
+  "number_of_weak_encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:45",
+  "is_unlocked": true,
+  "is_unlocked_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:113",
+  "map_point_counts": {
+   "rest": {
+    "kind": "gaussian_int",
+    "mean": 6,
+    "stddev": 1,
+    "min": 6,
+    "max": 7,
+    "bounds": "inclusive",
+    "raw": "NextGaussianInt(6, 1, 6, 7)"
+   },
+   "rest_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:119",
+   "unknown": {
+    "base": {
+     "kind": "gaussian_int",
+     "mean": 12,
+     "stddev": 1,
+     "min": 10,
+     "max": 14,
+     "bounds": "inclusive",
+     "raw": "NextGaussianInt(12, 1, 10, 14)",
+     "call": "MapPointTypeCounts.StandardRandomUnknownCount",
+     "call_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:30-33"
+    },
+    "offset": -1,
+    "base_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:120",
+    "min": 9,
+    "max": 13
+   },
+   "unknown_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:120",
+   "elites": {
+    "raw": "NumOfElites { get; init; } = (int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "initializer": "(int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "base": 5.0,
+    "ascension_level": "SwarmingElites",
+    "ascension_multiplier": 1.6,
+    "default_multiplier": 1.0,
+    "value_default": 5,
+    "value_with_ascension": 8,
+    "formula": "round(base * (SwarmingElites ? ascension_multiplier : default_multiplier))"
+   },
+   "shops": {
+    "raw": "NumOfShops { get; } = 3",
+    "initializer": "3",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "value": 3
+   },
+   "point_types_that_ignore_rules": [],
+   "point_types_that_ignore_rules_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+   "inherited_from_base_source": {
+    "elites": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "shops": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "point_types_that_ignore_rules": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+    "constructor": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:35-39"
+   },
+   "constructor_args": "unknownCount, restCount",
+   "constructor_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:121"
+  },
+  "ancients": [
+   {
+    "id": "orobas",
+    "class": "Orobas",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Orobas.cs"
+   },
+   {
+    "id": "pael",
+    "class": "Pael",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Pael.cs"
+   },
+   {
+    "id": "tezcatara",
+    "class": "Tezcatara",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Tezcatara.cs"
+   }
+  ],
+  "ancients_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:24",
+  "events": [
+   {
+    "id": "amalgamator",
+    "class": "Amalgamator",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Amalgamator.cs"
+   },
+   {
+    "id": "bugslayer",
+    "class": "Bugslayer",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Bugslayer.cs"
+   },
+   {
+    "id": "colorful_philosophers",
+    "class": "ColorfulPhilosophers",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/ColorfulPhilosophers.cs"
+   },
+   {
+    "id": "colossal_flower",
+    "class": "ColossalFlower",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/ColossalFlower.cs"
+   },
+   {
+    "id": "field_of_man_sized_holes",
+    "class": "FieldOfManSizedHoles",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/FieldOfManSizedHoles.cs"
+   },
+   {
+    "id": "infested_automaton",
+    "class": "InfestedAutomaton",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/InfestedAutomaton.cs"
+   },
+   {
+    "id": "lost_wisp",
+    "class": "LostWisp",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/LostWisp.cs"
+   },
+   {
+    "id": "spirit_grafter",
+    "class": "SpiritGrafter",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/SpiritGrafter.cs"
+   },
+   {
+    "id": "the_lantern_key",
+    "class": "TheLanternKey",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/TheLanternKey.cs"
+   },
+   {
+    "id": "zen_weaver",
+    "class": "ZenWeaver",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/ZenWeaver.cs"
+   }
+  ],
+  "events_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:31",
+  "all_encounters": [
+   {
+    "id": "bowlbugs_normal",
+    "class": "BowlbugsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Workers"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsNormal.cs:33",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsNormal.cs:31",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:75"
+   },
+   {
+    "id": "bowlbugs_weak",
+    "class": "BowlbugsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Workers"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsWeak.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsWeak.cs:15",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/BowlbugsWeak.cs:13",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:76"
+   },
+   {
+    "id": "chompers_normal",
+    "class": "ChompersNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Chomper"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ChompersNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ChompersNormal.cs:12",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ChompersNormal.cs:10",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:77"
+   },
+   {
+    "id": "decimillipede_elite",
+    "class": "DecimillipedeElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/DecimillipedeElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/DecimillipedeElite.cs:16",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:78"
+   },
+   {
+    "id": "entomancer_elite",
+    "class": "EntomancerElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/EntomancerElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/EntomancerElite.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:79"
+   },
+   {
+    "id": "exoskeletons_normal",
+    "class": "ExoskeletonsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Exoskeletons"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsNormal.cs:22",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsNormal.cs:18",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:80"
+   },
+   {
+    "id": "exoskeletons_weak",
+    "class": "ExoskeletonsWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Exoskeletons"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsWeak.cs:18",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsWeak.cs:10",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ExoskeletonsWeak.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:81"
+   },
+   {
+    "id": "hunter_killer_normal",
+    "class": "HunterKillerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/HunterKillerNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/HunterKillerNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:82"
+   },
+   {
+    "id": "kaiser_crab_boss",
+    "class": "KaiserCrabBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KaiserCrabBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KaiserCrabBoss.cs:25",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:83"
+   },
+   {
+    "id": "infested_prisms_elite",
+    "class": "InfestedPrismsElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/InfestedPrismsElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/InfestedPrismsElite.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:84"
+   },
+   {
+    "id": "knowledge_demon_boss",
+    "class": "KnowledgeDemonBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KnowledgeDemonBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KnowledgeDemonBoss.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:85"
+   },
+   {
+    "id": "louse_progenitor_normal",
+    "class": "LouseProgenitorNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LouseProgenitorNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/LouseProgenitorNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:86"
+   },
+   {
+    "id": "mytes_normal",
+    "class": "MytesNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/MytesNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/MytesNormal.cs:16",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:87"
+   },
+   {
+    "id": "ovicopter_normal",
+    "class": "OvicopterNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OvicopterNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OvicopterNormal.cs:18",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:88"
+   },
+   {
+    "id": "slumbering_beetle_normal",
+    "class": "SlumberingBeetleNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Workers"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlumberingBeetleNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlumberingBeetleNormal.cs:13",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlumberingBeetleNormal.cs:11",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:89"
+   },
+   {
+    "id": "spiny_toad_normal",
+    "class": "SpinyToadNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SpinyToadNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SpinyToadNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:90"
+   },
+   {
+    "id": "the_insatiable_boss",
+    "class": "TheInsatiableBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheInsatiableBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheInsatiableBoss.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:91"
+   },
+   {
+    "id": "the_obscura_normal",
+    "class": "TheObscuraNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheObscuraNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheObscuraNormal.cs:13",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:92"
+   },
+   {
+    "id": "thieving_hopper_weak",
+    "class": "ThievingHopperWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Thieves"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ThievingHopperWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ThievingHopperWeak.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ThievingHopperWeak.cs:14",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ThievingHopperWeak.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:93"
+   },
+   {
+    "id": "tunneler_weak",
+    "class": "TunnelerWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Burrower"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TunnelerWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TunnelerWeak.cs:12",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TunnelerWeak.cs:14",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TunnelerWeak.cs:10",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:94"
+   }
+  ],
+  "encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:72",
+  "normal_encounters": [
+   "bowlbugs_normal",
+   "bowlbugs_weak",
+   "chompers_normal",
+   "exoskeletons_normal",
+   "exoskeletons_weak",
+   "hunter_killer_normal",
+   "louse_progenitor_normal",
+   "mytes_normal",
+   "ovicopter_normal",
+   "slumbering_beetle_normal",
+   "spiny_toad_normal",
+   "the_obscura_normal",
+   "thieving_hopper_weak",
+   "tunneler_weak"
+  ],
+  "weak_encounters": [
+   "bowlbugs_weak",
+   "exoskeletons_weak",
+   "thieving_hopper_weak",
+   "tunneler_weak"
+  ],
+  "regular_encounters": [
+   "bowlbugs_normal",
+   "chompers_normal",
+   "exoskeletons_normal",
+   "hunter_killer_normal",
+   "louse_progenitor_normal",
+   "mytes_normal",
+   "ovicopter_normal",
+   "slumbering_beetle_normal",
+   "spiny_toad_normal",
+   "the_obscura_normal"
+  ],
+  "elite_encounters": [
+   "decimillipede_elite",
+   "entomancer_elite",
+   "infested_prisms_elite"
+  ],
+  "boss_encounters": [
+   "kaiser_crab_boss",
+   "knowledge_demon_boss",
+   "the_insatiable_boss"
+  ],
+  "pool_refill": {
+   "normal_slots": 14,
+   "weak_slots": 2,
+   "regular_slots": 12,
+   "weak_pool_size": 4,
+   "regular_pool_size": 10,
+   "weak_pool_refills": false,
+   "regular_pool_refills": true,
+   "note": "GrabBag 每次被取空就按 AllWeakEncounters / AllRegularEncounters 重新装满（ActModel.cs:351-357 / :363-369），因此``*_pool_refills=true`` 时同一场遭遇会在同一幕里重复出现",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:349-371"
+  },
+  "pool_cycles": {
+   "normal": "RoomSet.NextNormalEncounter = normalEncounters[visited % Count]（RoomSet.cs:72）",
+   "elite": "RoomSet.NextEliteEncounter = eliteEncounters[visited % Count]（RoomSet.cs:74）",
+   "event": "RoomSet.NextEvent = events[visited % Count]（RoomSet.cs:70）",
+   "boss": "RoomSet.NextBossEncounter：第一次给 Boss，第二次起给 SecondBoss（若设置）（RoomSet.cs:76-86）",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Rooms/RoomSet.cs:70-86"
+  },
+  "boss_discovery_order": [
+   {
+    "id": "the_insatiable_boss",
+    "class": "TheInsatiableBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheInsatiableBoss.cs"
+   },
+   {
+    "id": "knowledge_demon_boss",
+    "class": "KnowledgeDemonBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KnowledgeDemonBoss.cs"
+   },
+   {
+    "id": "kaiser_crab_boss",
+    "class": "KaiserCrabBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KaiserCrabBoss.cs"
+   }
+  ],
+  "boss_discovery_order_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:17",
+  "discovery_order_swaps": [],
+  "discovery_order_swaps_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Hive.cs:109",
+  "discovery_order_swaps_note": "该方法为空实现：本幕没有首局固定顺序",
+  "discovery_order_guard": null,
+  "encounter_classification": {
+   "weak_encounters": {
+    "predicate": "_allWeakEncounters ?? (_allWeakEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && e.IsWeak))",
+    "human": "monster + is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:149",
+    "is_null_checked": true
+   },
+   "regular_encounters": {
+    "predicate": "_allRegularEncounters ?? (_allRegularEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && !e.IsWeak))",
+    "human": "monster + not is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:154",
+    "is_null_checked": true
+   },
+   "elite_encounters": {
+    "predicate": "_allEliteEncounters ?? (_allEliteEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Elite))",
+    "human": "elite",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:159",
+    "is_null_checked": false
+   },
+   "boss_encounters": {
+    "predicate": "_allBossEncounters ?? (_allBossEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Boss))",
+    "human": "boss",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:164",
+    "is_null_checked": false
+   }
+  },
+  "unsupported": []
+ },
+ {
+  "id": "glory",
+  "csharp_class": "Glory",
+  "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs",
+  "index": 2,
+  "index_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:45",
+  "is_default": true,
+  "is_default_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:47",
+  "base_number_of_rooms": 13,
+  "base_number_of_rooms_raw": "13",
+  "base_number_of_rooms_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:43",
+  "number_of_weak_encounters": 2,
+  "number_of_weak_encounters_raw": "2",
+  "number_of_weak_encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:41",
+  "is_unlocked": true,
+  "is_unlocked_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:102",
+  "map_point_counts": {
+   "rest": {
+    "kind": "next_int",
+    "min": 5,
+    "max": 7,
+    "max_exclusive": true,
+    "bounds": "min_inclusive_max_exclusive",
+    "raw": "NextInt(5, 7)"
+   },
+   "rest_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:108",
+   "unknown": {
+    "base": {
+     "kind": "gaussian_int",
+     "mean": 12,
+     "stddev": 1,
+     "min": 10,
+     "max": 14,
+     "bounds": "inclusive",
+     "raw": "NextGaussianInt(12, 1, 10, 14)",
+     "call": "MapPointTypeCounts.StandardRandomUnknownCount",
+     "call_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:30-33"
+    },
+    "offset": -1,
+    "base_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:109",
+    "min": 9,
+    "max": 13
+   },
+   "unknown_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:109",
+   "elites": {
+    "raw": "NumOfElites { get; init; } = (int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "initializer": "(int)Math.Round(5f * (AscensionHelper.HasAscension(AscensionLevel.SwarmingElites) ? 1.6f : 1f))",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "base": 5.0,
+    "ascension_level": "SwarmingElites",
+    "ascension_multiplier": 1.6,
+    "default_multiplier": 1.0,
+    "value_default": 5,
+    "value_with_ascension": 8,
+    "formula": "round(base * (SwarmingElites ? ascension_multiplier : default_multiplier))"
+   },
+   "shops": {
+    "raw": "NumOfShops { get; } = 3",
+    "initializer": "3",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "value": 3
+   },
+   "point_types_that_ignore_rules": [],
+   "point_types_that_ignore_rules_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+   "inherited_from_base_source": {
+    "elites": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:14",
+    "shops": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:16",
+    "point_types_that_ignore_rules": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:12",
+    "constructor": "data/decompiled/sts2/MegaCrit.Sts2.Core.Map/MapPointTypeCounts.cs:35-39"
+   },
+   "constructor_args": "unknownCount, restCount",
+   "constructor_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:110"
+  },
+  "ancients": [
+   {
+    "id": "nonupeipe",
+    "class": "Nonupeipe",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Nonupeipe.cs"
+   },
+   {
+    "id": "tanx",
+    "class": "Tanx",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Tanx.cs"
+   },
+   {
+    "id": "vakuu",
+    "class": "Vakuu",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Vakuu.cs"
+   }
+  ],
+  "ancients_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:23",
+  "events": [
+   {
+    "id": "battleworn_dummy",
+    "class": "BattlewornDummy",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/BattlewornDummy.cs"
+   },
+   {
+    "id": "grave_of_the_forgotten",
+    "class": "GraveOfTheForgotten",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/GraveOfTheForgotten.cs"
+   },
+   {
+    "id": "hungry_for_mushrooms",
+    "class": "HungryForMushrooms",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/HungryForMushrooms.cs"
+   },
+   {
+    "id": "reflections",
+    "class": "Reflections",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Reflections.cs"
+   },
+   {
+    "id": "round_tea_party",
+    "class": "RoundTeaParty",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/RoundTeaParty.cs"
+   },
+   {
+    "id": "trial",
+    "class": "Trial",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/Trial.cs"
+   },
+   {
+    "id": "tinker_time",
+    "class": "TinkerTime",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Events/TinkerTime.cs"
+   }
+  ],
+  "events_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:30",
+  "all_encounters": [
+   {
+    "id": "axebots_normal",
+    "class": "AxebotsNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/AxebotsNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/AxebotsNormal.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:71"
+   },
+   {
+    "id": "construct_menagerie_normal",
+    "class": "ConstructMenagerieNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ConstructMenagerieNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ConstructMenagerieNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:72"
+   },
+   {
+    "id": "devoted_sculptor_weak",
+    "class": "DevotedSculptorWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/DevotedSculptorWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/DevotedSculptorWeak.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/DevotedSculptorWeak.cs:11",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:73"
+   },
+   {
+    "id": "aeonglass_boss",
+    "class": "AeonglassBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/AeonglassBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/AeonglassBoss.cs:11",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:74"
+   },
+   {
+    "id": "fabricator_normal",
+    "class": "FabricatorNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FabricatorNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FabricatorNormal.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:75"
+   },
+   {
+    "id": "frog_knight_normal",
+    "class": "FrogKnightNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FrogKnightNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/FrogKnightNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:76"
+   },
+   {
+    "id": "globe_head_normal",
+    "class": "GlobeHeadNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/GlobeHeadNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/GlobeHeadNormal.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:77"
+   },
+   {
+    "id": "knights_elite",
+    "class": "KnightsElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [
+     "Knights"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KnightsElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KnightsElite.cs:12",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/KnightsElite.cs:14",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:78"
+   },
+   {
+    "id": "mecha_knight_elite",
+    "class": "MechaKnightElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/MechaKnightElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/MechaKnightElite.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:79"
+   },
+   {
+    "id": "owl_magistrate_normal",
+    "class": "OwlMagistrateNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OwlMagistrateNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/OwlMagistrateNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:80"
+   },
+   {
+    "id": "queen_boss",
+    "class": "QueenBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/QueenBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/QueenBoss.cs:15",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:81"
+   },
+   {
+    "id": "scrolls_of_biting_normal",
+    "class": "ScrollsOfBitingNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [
+     "Scrolls"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingNormal.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingNormal.cs:12",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:82"
+   },
+   {
+    "id": "scrolls_of_biting_weak",
+    "class": "ScrollsOfBitingWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [
+     "Scrolls"
+    ],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingWeak.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingWeak.cs:12",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/ScrollsOfBitingWeak.cs:14",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:83"
+   },
+   {
+    "id": "slimed_berserker_normal",
+    "class": "SlimedBerserkerNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimedBerserkerNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SlimedBerserkerNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:84"
+   },
+   {
+    "id": "soul_nexus_elite",
+    "class": "SoulNexusElite",
+    "room_type": "Elite",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SoulNexusElite.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/SoulNexusElite.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:85"
+   },
+   {
+    "id": "test_subject_boss",
+    "class": "TestSubjectBoss",
+    "room_type": "Boss",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TestSubjectBoss.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TestSubjectBoss.cs:10",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:86"
+   },
+   {
+    "id": "the_lost_and_forgotten_normal",
+    "class": "TheLostAndForgottenNormal",
+    "room_type": "Monster",
+    "is_weak": false,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheLostAndForgottenNormal.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TheLostAndForgottenNormal.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:56",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:87"
+   },
+   {
+    "id": "turret_operator_weak",
+    "class": "TurretOperatorWeak",
+    "room_type": "Monster",
+    "is_weak": true,
+    "tags": [],
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TurretOperatorWeak.cs",
+    "room_type_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TurretOperatorWeak.cs:9",
+    "is_weak_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TurretOperatorWeak.cs:11",
+    "tags_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/EncounterModel.cs:109",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:88"
+   }
+  ],
+  "encounters_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:68",
+  "normal_encounters": [
+   "axebots_normal",
+   "construct_menagerie_normal",
+   "devoted_sculptor_weak",
+   "fabricator_normal",
+   "frog_knight_normal",
+   "globe_head_normal",
+   "owl_magistrate_normal",
+   "scrolls_of_biting_normal",
+   "scrolls_of_biting_weak",
+   "slimed_berserker_normal",
+   "the_lost_and_forgotten_normal",
+   "turret_operator_weak"
+  ],
+  "weak_encounters": [
+   "devoted_sculptor_weak",
+   "scrolls_of_biting_weak",
+   "turret_operator_weak"
+  ],
+  "regular_encounters": [
+   "axebots_normal",
+   "construct_menagerie_normal",
+   "fabricator_normal",
+   "frog_knight_normal",
+   "globe_head_normal",
+   "owl_magistrate_normal",
+   "scrolls_of_biting_normal",
+   "slimed_berserker_normal",
+   "the_lost_and_forgotten_normal"
+  ],
+  "elite_encounters": [
+   "knights_elite",
+   "mecha_knight_elite",
+   "soul_nexus_elite"
+  ],
+  "boss_encounters": [
+   "aeonglass_boss",
+   "queen_boss",
+   "test_subject_boss"
+  ],
+  "pool_refill": {
+   "normal_slots": 13,
+   "weak_slots": 2,
+   "regular_slots": 11,
+   "weak_pool_size": 3,
+   "regular_pool_size": 9,
+   "weak_pool_refills": false,
+   "regular_pool_refills": true,
+   "note": "GrabBag 每次被取空就按 AllWeakEncounters / AllRegularEncounters 重新装满（ActModel.cs:351-357 / :363-369），因此``*_pool_refills=true`` 时同一场遭遇会在同一幕里重复出现",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:349-371"
+  },
+  "pool_cycles": {
+   "normal": "RoomSet.NextNormalEncounter = normalEncounters[visited % Count]（RoomSet.cs:72）",
+   "elite": "RoomSet.NextEliteEncounter = eliteEncounters[visited % Count]（RoomSet.cs:74）",
+   "event": "RoomSet.NextEvent = events[visited % Count]（RoomSet.cs:70）",
+   "boss": "RoomSet.NextBossEncounter：第一次给 Boss，第二次起给 SecondBoss（若设置）（RoomSet.cs:76-86）",
+   "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Rooms/RoomSet.cs:70-86"
+  },
+  "boss_discovery_order": [
+   {
+    "id": "queen_boss",
+    "class": "QueenBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/QueenBoss.cs"
+   },
+   {
+    "id": "test_subject_boss",
+    "class": "TestSubjectBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/TestSubjectBoss.cs"
+   },
+   {
+    "id": "aeonglass_boss",
+    "class": "AeonglassBoss",
+    "csharp_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Encounters/AeonglassBoss.cs"
+   }
+  ],
+  "boss_discovery_order_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:16",
+  "discovery_order_swaps": [],
+  "discovery_order_swaps_source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models.Acts/Glory.cs:98",
+  "discovery_order_swaps_note": "该方法为空实现：本幕没有首局固定顺序",
+  "discovery_order_guard": null,
+  "encounter_classification": {
+   "weak_encounters": {
+    "predicate": "_allWeakEncounters ?? (_allWeakEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && e.IsWeak))",
+    "human": "monster + is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:149",
+    "is_null_checked": true
+   },
+   "regular_encounters": {
+    "predicate": "_allRegularEncounters ?? (_allRegularEncounters = AllEncounters.Where((EncounterModel e) => e != null && e.RoomType == RoomType.Monster && !e.IsWeak))",
+    "human": "monster + not is_weak",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:154",
+    "is_null_checked": true
+   },
+   "elite_encounters": {
+    "predicate": "_allEliteEncounters ?? (_allEliteEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Elite))",
+    "human": "elite",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:159",
+    "is_null_checked": false
+   },
+   "boss_encounters": {
+    "predicate": "_allBossEncounters ?? (_allBossEncounters = AllEncounters.Where((EncounterModel e) => e.RoomType == RoomType.Boss))",
+    "human": "boss",
+    "source": "data/decompiled/sts2/MegaCrit.Sts2.Core.Models/ActModel.cs:164",
+    "is_null_checked": false
+   }
+  },
+  "unsupported": []
+ }
+]
