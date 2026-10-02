@@ -59,7 +59,14 @@ REMOVE = "remove"
 #: 之前先给你上易伤"这类联动会少算一整个回合的量。正确时机是**敌方阵营回合结束时**，
 #: 对场上所有持有者一起递减。
 DECREMENTS_AT_ENEMY_SIDE_TURN_END = frozenset({"vulnerable", "weak", "frail",
-                                                "debilitate", "no_block"})
+                                                "debilitate", "no_block",
+                                                # `ConquerorPower.AfterSideTurnEnd`：
+                                                # `participants.Contains(base.Owner)` →
+                                                # `PowerCmd.Decrement(this)`。它贴在**敌人**
+                                                # 身上（卡的目标是敌方），所以"自己阵营
+                                                # 回合结束"正好是敌方阵营结束 —— 与上表
+                                                # 的时机等价（同上一条 `debilitate` 的理由）。
+                                                "conqueror"})
 
 
 @dataclass
@@ -5825,6 +5832,12 @@ RULES: dict[str, PowerRules] = {
         PowerRules("seeking_edge", "SeekingEdgePower：**纯标记**（StackType=Single）——"
                    "`SovereignBlade.TargetType` 读它把单体改成全体；"
                    "`core.card_target` 是唯一判据，伤害落点跟着一起改"),
+        PowerRules("conqueror", "ConquerorPower（Debuff）：`ModifyDamageMultiplicative` —— "
+                   "**来自 `SovereignBlade` 的有效攻击打在拥有者身上**时 ×2"
+                   "（cardSource / powered attack / target 三个条件缺一不可，见 "
+                   "`powers.damage_multipliers`）；`AfterSideTurnEnd` 在自己阵营"
+                   "回合结束时递减一层（走 `DECREMENTS_AT_ENEMY_SIDE_TURN_END`）",
+                   duration=True),
         PowerRules("confused", "ConfusedPower.AfterCardDrawn：拥有者抽牌时随机设为 0..3 费，"
                    "持续本场战斗；X 费消耗随机数但仍花全部能量",
                    on_card_drawn=_confused),
@@ -6817,6 +6830,15 @@ def damage_multipliers(attacker: "Combatant | None",
     # 是**多人专用**：`GetTeammatesOf` 在单人局恒为空，引擎只模拟单人，故无可实现部分。
     if defender.power("tank") > 0:
         out.append(("tank", "1.5"))
+    # ⭐ `ConquerorPower.ModifyDamageMultiplicative`（`ConquerorPower.cs`）：
+    # **三个条件**缺一不可 —— ``cardSource is SovereignBlade``、
+    # ``props.IsPoweredAttack()``、``target == base.Owner``（拥有者**自己**挨打）→ ×2。
+    # 引擎的 `card` 参数就是 `cardSource`；"有效攻击"由"走到 compute_damage"保证
+    # （与 `tank` 同理：``Unpowered`` 的伤害不走这条管线）。
+    # ⚠️ 不判卡来源的话，**任何**攻击打在有征服者的敌人身上都会翻倍 —— 静默变强得多。
+    if (card is not None and defender.power("conqueror") > 0
+            and getattr(card, "cid", "") == "sovereign_blade"):
+        out.append(("conqueror", "2"))
     # ⭐ 带条件的倍率族（`ModifyDamageMultiplicative` 逐条照抄）。
     # 与上面几个的区别：它们的条件要看**谁打的**（dealer）、**有没有牌来源**（cardSource）、
     # 以及**被打的是不是自己**（target == base.Owner）。

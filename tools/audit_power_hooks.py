@@ -106,6 +106,10 @@ QUERY_OR_DATA_MEMBERS = frozenset({
 #: 格式 ``(能力 id, 成员) → 理由``。**只放"数值上等价或不可达"的**；
 #: 凡是会改数值的缺口都不许进这里（要修，不是要记账）。
 KNOWN_UNWIRED: dict[tuple[str, str], str] = {
+    ("conqueror", "AfterSideTurnEnd"):
+        "走 ``powers.DECREMENTS_AT_ENEMY_SIDE_TURN_END`` 表（``tick_durations``）——"
+        "与 ``vulnerable`` / ``weak`` 同一条路径：它贴在**敌人**身上，"
+        "「自己阵营回合结束」就是敌方阵营结束，数值上等价（`docs/12` §2.46）",
     ("barricade", "AfterApplied"):
         "只写 ``DynamicVars['ApplierName']``（给界面看施加者名字），无数值作用",
     ("tank", "AfterApplied"):
